@@ -35,10 +35,10 @@ META-INF/
 # Ignore a local.cfg file in root folder, if it exists
 /local.cfg
 # Also ignore it under dspace/config
-/dspace/config/local.cfg
-/dspace/config/xmlui.xconf
-/dspace/config/imput-forms.xml
-/dspace/modules/xmlui/src/main/resources/aspects/BrowseArtifacts/sitemap.xmap
+#/dspace/config/local.cfg
+#/dspace/config/xmlui.xconf
+#/dspace/config/imput-forms.xml
+#/dspace/modules/xmlui/src/main/resources/aspects/BrowseArtifacts/sitemap.xmap
 
 ##Mac noise
 .DS_Store
