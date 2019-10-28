@@ -1,0 +1,1117 @@
+<import_structure>
+<community>
+  <name>01.Saúde Ambiental</name>
+  <community>
+    <name>01.01.Ações e Projetos Estratégicos</name>
+    <community>
+        <name>01.01.01.Territórios Saudáveis e Sustentáveis</name>
+       
+        <collection>
+          <name>Legislação</name>
+        </collection>
+        <collection>
+          <name>Materiais Multimidia</name>
+        </collection>
+        <collection>
+          <name>Políticas, Planejamento, Gestão e Projetos</name>
+        </collection>
+        <collection>
+          <name>Produção Científica</name>
+        </collection>
+        <collection>
+          <name>Produções Educacionais</name>
+        </collection>
+              
+      </community>
+      <community>
+        <name>01.01.02.Apoio as situações de Vulnerabilidade e Risco a Saúde.</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>
+      </community>  
+          
+      <community>
+        <name>01.01.03.Remediar</name>
+        <collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>     
+      </community>
+	</community>	
+	
+	<community>
+	  <name>01.02.Educação em Saúde Ambiental</name>
+	  <community>
+        <name>01.02.01.Recurso metodológicos e Pedagógicos</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+      </community>
+	</community>
+	
+	<community>
+	  <name>01.03.Água para Consumo Humano</name>
+	  <community>
+        <name>01.03.01 Qualidade da água</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+      </community>
+	  
+	  <community>
+        <name>01.03.02.Segurança da água</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+      </community>
+	  
+	  <community>
+        <name>01.03.03.Tratamento da água</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+      </community>
+	  
+	  <community>
+        <name>01.03.04.Estruturas para Controle da qualidade da água</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+      </community>
+	</community>
+</community>	
+
+
+<community>
+  <name>02.Saneamento</name>
+  <community>
+    <name>02.01.Universalização das Ações de Saneamento</name>   	
+	<community>
+		<name>02.01.01.Saneamento Rural</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+	
+	<community>
+		<name>02.01.02.Saneamento Urbano</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+  </community>
+  
+  <community>
+		<name>02.02.Comunidades Tradicionais (Quilombolas, Ribeirinhos, Extrativistas e Assentamentos)</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+   </community>
+   
+   <community>
+    <name>02.03.Resíduos Sólidos</name>   	
+	<community>
+		<name>02.03.01.Apoio a Catadores</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+	
+	<community>
+		<name>02.03.02.Coleta e Manejo de Resíduos Sólidos</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+  </community>
+</community>
+
+<community>
+  <name>03.Engenharia de Saúde Pública</name>
+  <community>
+		<name>03.01.Edificações para Saúde (Laboratórios para CQA)</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+	<community>
+		<name>03.02.Melhorias Sanitárias Domiciliares - MSD</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+	<community>
+		<name>03.03.Melhorias Habitacionais para o Controle da Doença de Chagas - MHCDC</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+	
+	<community>
+		<name>03.04.Apoio a Gestão dos Serviços Municipais de Saneamento</name>
+		<community>
+			<name>03.04.01.Gestão Estruturada</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+		<community>
+			<name>03.04.02.Gestão Não Estruturada</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+		<community>
+			<name>03.04.03.Gestão Consorciada</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+	</community>
+	
+	<community>
+		<name>03.05.Drenagem e Manejo Ambiental (Áreas Endêmicas de Malária)</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+  
+	<community>
+		<name>03.06.Hidrogeologia</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+	</community>
+</community>  
+<community>
+	<name>04.Cooperações Técnicas Nacionais e Internacionais</name>
+	<community>
+		<name>04.01.Cooperações multilaterais</name>
+		<community>
+			<name>04.01.01.OPAS</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		<community>
+			<name>04.01.02.OEI</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		<community>
+			<name>04.01.03.IFEH</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+	</community>
+	
+	<community>
+		<name>04.02.Cooperações bilaterais</name>
+		<community>
+			<name>04.02.01.Suiça</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		<community>
+			<name>04.02.02.Itália</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+	</community>	
+		
+	<community>
+		<name>04.03.Cooperações Sul-Sul</name>
+		<community>
+			<name>04.03.01.Palestina</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		<community>
+			<name>04.03.02.Haiti</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		
+	</community>
+	
+	
+	<community>
+		<name>04.04.Cooperações trilaterais</name>
+		<community>
+			<name>04.04.01.Etiópia</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+	</community>
+	
+	<community>
+		<name>04.05.Universidades e Institutos</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   
+		
+	</community>
+		
+	
+</community>
+
+<community>
+	<name>05.Gestão Administrativa e Estratégica</name>
+	<community>
+		<name>05.01.Gestão da logística</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	<community>
+		<name>05.02.Gestão de Pessoas</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	<community>
+		<name>05.03.Gestão da Informação e documentação</name>
+		<community>
+			<name>05.03.01.Arquivo</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   		
+		</community>
+		<community>
+			<name>05.03.02.Biblioteca</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   		
+		</community>
+		<community>
+			<name>05.03.03.Museu</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   		
+		</community>
+		<community>
+			<name>05.03.04.Georeferenciamento</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   		
+		</community>
+	</community>
+	<community>
+		<name>05.04.Tecnologias da informação e comunicação</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	
+	<community>
+		<name>05.05.Gestão orçamentária e financeira</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	
+	<community>
+		<name>05.06.Planejamento Estratégico</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	
+	<community>
+		<name>05.07.Comunicação Institucional</name>
+		<collection>
+		<name>Legislação</name>
+		</collection>
+		<collection>
+		<name>Materiais Multimidia</name>
+		</collection>
+		<collection>
+		<name>Políticas, Planejamento, Gestão e Projetos</name>
+		</collection>
+		<collection>
+		<name>Produção Científica</name>
+		</collection>
+		<collection>
+		<name>Produções Educacionais</name>
+		</collection>                   		
+	</community>
+	
+</community>
+
+
+<community>
+	<name>06.História Institucional (Antecedentes Históricos)</name>
+	<community>
+		<name>06.01.Sucam</name>
+		<community>
+			<name>06.01.01.Controle e combate de Endemias</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+		
+		<community>
+			<name>06.01.02.Controle e combate de Esquistossomose</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+		
+		
+		<community>
+			<name>06.01.03.Controle e combate da doença de Chagas</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>	
+		
+		
+		<community>
+			<name>06.01.04.Controle e combate Malária</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+
+		
+		<community>
+			<name>06.01.05.Controle e combate da Dengue</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		
+		<community>
+			<name>06.01.06.Controle e combate da Peste</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+		
+		<community>
+			<name>06.01.07.História Sucam</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection>                   
+		</community>
+	</community>
+	<community>
+		<name>06.02.FSESP</name>
+		<community>
+			<name>06.02.01.Controle e combate de Endemias</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection> 
+		</community>	
+		<community>
+			<name>06.02.02.História FSESP</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection> 
+		</community>	
+			
+	</community>
+	
+	
+	<community>
+		<name>06.03.CENEPI</name>
+		<community>
+			<name>06.03.01.História CENEPI</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection> 
+		</community>	
+			
+	</community>
+	
+	
+	<community>
+		<name>06.04.Saúde Indígena</name>
+		<community>
+			<name>06.04.01.História Saúde Indígena</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection> 
+		</community>	
+			
+	</community>
+	
+	<community>
+		<name>06.05.Imunização / Vacinação</name>
+		<community>
+			<name>06.05.01.História Imunização / Vacinação</name>
+			<collection>
+			<name>Legislação</name>
+			</collection>
+			<collection>
+			<name>Materiais Multimidia</name>
+			</collection>
+			<collection>
+			<name>Políticas, Planejamento, Gestão e Projetos</name>
+			</collection>
+			<collection>
+			<name>Produção Científica</name>
+			</collection>
+			<collection>
+			<name>Produções Educacionais</name>
+			</collection> 
+		</community>
+	</community>
+</community>	
+
+
+<community>
+	<name>07.Solução Alternativa de Tratamento de Água (Salta – Z)</name>
+	<collection>
+	<name>Legislação</name>
+	</collection>
+	<collection>
+	<name>Materiais Multimidia</name>
+	</collection>
+	<collection>
+	<name>Políticas, Planejamento, Gestão e Projetos</name>
+	</collection>
+	<collection>
+	<name>Produção Científica</name>
+	</collection>
+	<collection>
+	<name>Produções Educacionais</name>
+	</collection>                   
+</community>
+
+
+<community>
+	<name>08.Programa Nacional de Saneamento Rural (PNSR)</name>
+	<collection>
+	<name>Legislação</name>
+	</collection>
+	<collection>
+	<name>Materiais Multimidia</name>
+	</collection>
+	<collection>
+	<name>Políticas, Planejamento, Gestão e Projetos</name>
+	</collection>
+	<collection>
+	<name>Produção Científica</name>
+	</collection>
+	<collection>
+	<name>Produções Educacionais</name>
+	</collection>                   
+</community>
+
+<community>
+	<name>09.Sustentar</name>
+	<collection>
+	<name>Legislação</name>
+	</collection>
+	<collection>
+	<name>Materiais Multimidia</name>
+	</collection>
+	<collection>
+	<name>Políticas, Planejamento, Gestão e Projetos</name>
+	</collection>
+	<collection>
+	<name>Produção Científica</name>
+	</collection>
+	<collection>
+	<name>Produções Educacionais</name>
+	</collection>                   
+</community>
+
+
+
+</import_structure>      

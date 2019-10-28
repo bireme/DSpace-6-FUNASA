@@ -1,0 +1,12 @@
+# E-mail sent to DSpace users when new items appear in collections they are
+# subscribed to
+#
+# Parameters: {0} is the details of the new collections and items
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Repositório FUNASA - novas inserções
+Novos ítens foram adicionados na coleção que você está inscrito:
+
+{0}
+
+Equipe repositório FUNASA

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspace-dc-types>
+    <dc-schema>
+        <name>bireme</name>
+        <namespace>http://www.paho.org/bireme/schemas</namespace>
+    </dc-schema>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>date</element>
+        <qualifier>submitted</qualifier>
+        <scope_note>Legislation collection. Used for the date of submission of the document (not same as issued)</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>date</element>
+        <qualifier>vigencia</qualifier>
+        <scope_note>Legislation collection. Used for defining the date until this document will be valid</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>educational</element>
+        <qualifier>granularity</qualifier>
+        <scope_note>Educational resources. Understands how to describe the granularity of the educational resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>legislation</element>
+        <qualifier>scope</qualifier>
+        <scope_note>Legislation collection. Scope of the legislation (National, State, etc)</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>pages</element>
+        <!--unqualified-->
+        <scope_note>Pages of the entire publication where the item exists</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>part</element>
+        <!--unqualified-->
+        <scope_note>Part of the entire publication where the item exists</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>publisher</element>
+        <qualifier>city</qualifier>
+        <scope_note>Legislation collection. City that applies the legislation. Something similar to coverage</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>publisher</element>
+        <qualifier>country</qualifier>
+        <scope_note>Legislation collection. Country that applies the legislation. Something similar to coverage</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>publisher</element>
+        <qualifier>state</qualifier>
+        <scope_note>Legislation collection. State that applies the legislation. Something similar to coverage</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>altera</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>cambiadopor</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>complementa</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>complementadopor</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>ebasepara</qualifier>
+        <scope_note>Educational resources</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>epartede</qualifier>
+        <scope_note>Educational resources</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>eversaode</qualifier>
+        <scope_note>Educational resources</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>excluidopor</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>excluye</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>incluidoen</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>incluye</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>requer</qualifier>
+        <scope_note>Educational resources</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>revoga</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>relation</element>
+        <qualifier>revogadopor</qualifier>
+        <scope_note>Legislation collection. Relation between documents</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>section</element>
+        <!--unqualified-->
+        <scope_note>Section of the entire publication where the item exists</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>volume</element>
+        <!--unqualified-->
+        <scope_note>Volume of the entire publication where the item exists</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>youtubeid</element>
+        <!--unqualified-->
+        <scope_note>Youtube identifier to play videos online</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>bireme</schema>
+        <element>subject</element>
+        <!--unqualified-->
+        <scope_note>Subject for secondary controlled vocabulary</scope_note>
+    </dc-type>
+</dspace-dc-types>

@@ -1,0 +1,15 @@
+# E-mail sent to DSpace users when they register for an account
+#
+# Parameters: {0} is expanded to a special registration URL
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Cadastramento de conta no repositório FUNASA
+Para concluir o registro de uma conta repositório FUNASA, clique no link abaixo:
+
+  {0}
+
+Se você precisar de ajuda com sua conta, envie um email
+dspace-help@myu.edu ou ligue para xxx-555-xxxx.
+
+Equipe do repositório FUNASA

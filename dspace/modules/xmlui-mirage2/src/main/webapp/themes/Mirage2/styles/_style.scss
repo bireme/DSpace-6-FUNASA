@@ -1,0 +1,323 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE and NOTICE files at the root of the source
+ * tree and available online at
+ *
+ * http://www.dspace.org/license/
+ */
+
+/**
+ * You can put your own style in this file.
+ * It will be included in all color schemes
+ */
+
+//example mixin to set the text-selection style
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+@include selection {
+    color: white;
+    background: hotpink;
+}
+
+.publication-records-modal, .publication-records-modal ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.publication-records-import-btn {
+  margin: 5px 0px 15px 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.imported {
+  background-color: #E2E2E2;
+}
+
+#aspect_submission_StepTransformer_div_StartSubmissionLookupStep {
+
+  #aspect_submission_StepTransformer_field_search {
+    width: 81%;
+    display: inline;
+  }
+
+  #aspect_submission_StepTransformer_field_lookup {
+    width:19%
+  }
+
+  .modal .modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  #aspect_submission_StepTransformer_item_publication-title{
+    margin-bottom:5px;
+  }
+}
+
+
+header .navbar-default {
+    background-color: #2160bd;
+}
+
+
+header .navbar-brand img {
+	height: 100px;
+    max-height: 100px;
+}
+
+.navbar-brand {
+    height: 130px;
+    max-height: 130px; 
+}
+
+@font-face{
+		font-family:"OpenSans_ExtraBold";
+		src: url('../images/fonts/OpenSans-ExtraBold-webfont.woff') format('woff');
+}		
+
+@font-face{
+		font-family:"OpenSans_Regular";
+		src: url('../images/fonts/OpenSans-Regular-webfont.woff') format('woff');
+}		
+
+
+
+
+.headerline1 {
+    font-family: "OpenSans_ExtraBold",Arial,Helvetica,Verdana,sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
+	color: white;
+}
+
+.headerline2 {
+    font-family: "OpenSans_Regular",Helvetica,Arial,sans-serif !important;
+    font-size: 0.5em;
+    font-weight: normal;
+	color: white;
+}
+
+body {
+    margin: 0;
+    font-family: "OpenSans_Regular",Helvetica,Arial,sans-serif !important;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: white;
+}
+
+
+#franjahead {
+    height: 190px;
+    background-color: #eaebee;
+   
+    margin: 0;
+}
+
+.form-control-searchhome {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+
+#main-container #sidebar {
+    background-color: white;
+}
+
+.link-item {
+    border-right: 1px solid white;
+    display: inline;
+}
+
+.link-item-last {
+    display: inline;
+}
+
+.listagem-links {
+    list-style: none;
+    margin: 0;
+}
+
+nav#services {
+    text-align: right;
+    padding: .4em 0;
+}
+
+div#services-container {
+    background: #0e4097;
+    width: 100%;
+    height: auto;
+}
+
+li.link-item a {
+    line-height: 20px;
+    margin-top: 1em;
+	color: white;
+    padding: 0 .5em 0 .8em;
+}
+
+li.link-item-last a {
+    line-height: 20px;
+    margin-top: 1em;
+	color: white;
+    padding: 0 .5em 0 .8em;
+}
+
+.trail-wrapper {
+    background-color: #eaebee;
+    border-bottom: 1px solid #d3d6dc;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #2160bd;
+    border-color: #1b4b96;
+}
+
+#main-container .row-offcanvas {
+    background-color: white;
+}
+
+
+.ds-option-set-head {
+    /*z-index: 2;
+    color: #fff;
+    background-color: #607890;
+    border-color: #607890; */
+	
+	border-top: 4px solid #2c66ce;
+    color: #2c66ce;
+    padding: .6em .66em .6em .83em;
+    border-bottom: 0;
+    background: #eaebee;
+    text-transform: uppercase;
+    min-height: 2rem;
+}
+
+
+.list-group-item {
+	border-top: 0px;
+	border-left: 0px;
+	border-right:0px;
+    
+	position: relative;
+    display: block;
+	
+    padding-left: 7px;
+	padding-right: 18px;
+	padding-top: 3px;
+	padding-bottom: 6px;
+    
+	border-bottom:0;
+	
+}
+
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #2c66ce;
+    background-color: #fff;
+	border-bottom: 0;
+    
+}
+
+.termsearch
+{
+	padding-top: 0.8em;
+}
+
+.mayuscula{
+	margin-right: 0.2em;
+	background-color: #d7d7d7;
+	border-color: #d7d7d7;
+	color: #2c66ce;
+}
+
+footer{
+	
+	    background: #1659bf;
+    margin-top: 1.5em;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+	    border-left: 1px dotted #8bacdf;
+    margin: .83em 0 1.66em;
+    overflow: hidden;
+    padding: 0 .83em .83em;
+	
+}
+
+footer .row>div {
+    padding-top: 20px;
+    border: 0;
+    
+}
+
+footer h3{
+		color: white;
+}
+
+footer a:link, footer a:visited
+{
+	color: white;	
+}	
+
+footer>.container {
+    border-top: 0;
+    
+}
+
+div#footer-brasil {
+    background: none repeat scroll 0 0 #0042b1;
+    padding: 1em;
+    max-width: 100%;
+}
+
+div#wrapper-footer-brasil {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 20px;
+    max-width: 100% !important;
+}
+
+.voltar-topo {
+    padding: 7px;
+    text-align: right;
+	
+}
+
+.voltar-topo-a
+{
+	font-size: small;
+}	
+
+.desenvolvido
+{
+	color: white;
+	font-size: 12px;
+}
+

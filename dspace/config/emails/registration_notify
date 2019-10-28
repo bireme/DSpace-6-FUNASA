@@ -1,0 +1,17 @@
+# Registration notification email
+#
+# Parameters: {0} The name of the DSpace instance
+#             {1} The URL of the DSpace instance 
+#             {2} Name:
+#             {3} Email:
+#             {4} Registration Date:
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Repositório FUNASA: Notificação de registro
+
+Um novo usuário realizou inscrição em {0} as {1}:
+
+Nome:                   {2}
+Email:                  {3}
+Data:                   {4}

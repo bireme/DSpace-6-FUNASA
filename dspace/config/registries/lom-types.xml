@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspace-dc-types>
+    <dc-schema>
+        <name>lom</name>
+        <namespace>https://standards.ieee.org/lom/schema</namespace>
+    </dc-schema>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>context</qualifier>
+        <scope_note>The main objective of knowledge is the resource should be used</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>difficulty</qualifier>
+        <scope_note>Difficulty of the resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>instructionalMethod</qualifier>
+        <scope_note>Understands how to qualify the educational resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>interactivityLevel</qualifier>
+        <scope_note>Level of interactivity of the resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>learningResourceType</qualifier>
+        <scope_note>Type of learning resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>educational</element>
+        <qualifier>typicalLearningTime</qualifier>
+        <scope_note>Typical learning time for the resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>general</element>
+        <qualifier>aggregationLevel</qualifier>
+        <scope_note>Level of granularity of the resource</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>lom</schema>
+        <element>technical</element>
+        <qualifier>requirement</qualifier>
+        <scope_note>Technical requirements required for the resource</scope_note>
+    </dc-type>
+</dspace-dc-types>

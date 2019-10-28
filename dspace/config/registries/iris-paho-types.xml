@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!--
+  - iris-paho-types.xml
+  -
+  - Version:  $Revision$
+  -
+  - Date:     $Date$
+  -
+  - Initial contents for Dublin Core type registry.  Once the registry has
+  - been loaded, this file becomes obsolete; the current version of the
+  - registry must be read from the database.
+  - Use org.dspace.content.MetadataSchema, org.dspace.content.MetadataField, org.dspace.content.MetadataValue instead.
+  - Omit <qualifier> tags for unqualified elements
+  - 
+  - <dc-type>
+  -   <schema></schema>
+  -   <element></element>
+  -   <qualifier></qualifier>
+  -   <scope_note></scope_note>
+  - </dc-type>
+  -->
+
+<!-- start of XML -->
+
+<dspace-dc-types>
+
+  <dspace-header>
+    <title>IRIS PAHO Local metadata</title>
+    <contributor.author>Eliane Pereira dos Santos</contributor.author>
+    <contributor.editor>$Author$</contributor.editor>
+    <date.created>$Date$</date.created>
+    <description>
+    
+    </description>
+    <description.version>$Revision$</description.version>
+  </dspace-header>
+
+  <dc-schema>
+          <name>paho</name>
+          <namespace>http://iris.paho.org/schemas/</namespace>
+  </dc-schema>
+
+  <dc-type>
+	<schema>paho</schema>
+    <element>articletype</element>
+    <!-- unqualified -->
+    <scope_note>Type of article.</scope_note>
+  </dc-type>
+  
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>publisher</element>
+    <qualifier>city</qualifier>
+    <scope_note>City of publication</scope_note>
+  </dc-type>
+  
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>publisher</element>
+    <qualifier>country</qualifier>
+    <scope_note>Country of publication</scope_note>
+  </dc-type>
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>relation</element>
+    <qualifier>languageVersion</qualifier>
+    <scope_note>Copy and paste handle number and item number of the language translation(s) of the same document
+ Example: 123456789/26722</scope_note>
+  </dc-type>
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>source</element>
+    <qualifier>centercode</qualifier>
+    <scope_note>Code of PAHO K-centers</scope_note>
+  </dc-type>
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>subject</element>
+    <!-- unqualified -->
+    <scope_note>Categories of PAHO strategic plan 2014-2019</scope_note>
+  </dc-type>
+  
+  
+  <dc-type>
+	<schema>paho</schema>
+    <element>isfeatured</element>
+    <!-- unqualified -->
+    <scope_note>To highlight items in home.</scope_note>
+  </dc-type>
+  
+</dspace-dc-types>  

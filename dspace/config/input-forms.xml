@@ -1,0 +1,3314 @@
+<?xml version="1.0"?>
+<!DOCTYPE input-forms SYSTEM "input-forms.dtd">
+
+
+<input-forms>
+
+    <!-- The form-map maps collection handles to forms. DSpace does not       -->
+    <!-- require that a collection's name be unique, even within a community .-->
+    <!-- DSpace does however insure that each collection's handle is unique.  -->
+    <!-- Form-map provides the means to associate a unique collection name    -->
+    <!-- with a form. The form-map also provides the special handle "default" -->
+    <!-- (which is never a collection), here mapped to "traditional". Any     -->
+    <!-- collection which does not appear in this map will be associated with -->
+    <!-- the mapping for handle "default".                                    -->
+
+    <form-map>
+        <name-map collection-handle="default" form-name="generalpub" />
+
+        <name-map collection-handle="123456789/57" form-name="legi" />
+        <name-map collection-handle="123456789/63" form-name="legi" />
+        <name-map collection-handle="123456789/69" form-name="legi" />
+        <name-map collection-handle="123456789/76" form-name="legi" />
+
+
+        <name-map collection-handle="123456789/58" form-name="multimedia" />
+        <name-map collection-handle="123456789/70" form-name="multimedia" />
+        <name-map collection-handle="123456789/77" form-name="multimedia" />
+
+        <name-map collection-handle="123456789/61" form-name="lom" />
+        <name-map collection-handle="123456789/67" form-name="lom" />
+
+        <!-- Políticas, Planejamento, Gestão e Projetos e Produção Científica -->
+        <name-map collection-handle="123456789/59" form-name="pppp" />
+        <name-map collection-handle="123456789/60" form-name="pppp" />
+
+    </form-map>
+
+
+    <!-- The form-definitions map lays out the detailed definition of all the -->
+    <!-- submission forms.Each separate form set has a unique name as an      -->
+    <!-- attribute. This name matches one of the names in the form-map. One   -->
+    <!-- named form set has the name "traditional"; as this name suggests,    -->
+    <!-- it is the old style and is also the default, which gets used when    -->
+    <!-- the specified collection has no correspondingly named form set.      -->
+    <!--                                                                      -->
+    <!-- Each form set contains an ordered set of pages; each page defines    -->
+    <!-- one submission metadata entry screen. Each page has an ordered list  -->
+    <!-- of field definitions, Each field definition corresponds to one       -->
+    <!-- metatdata entry (a so-called row), which has a DC element name, a    -->
+    <!-- displayed label, a text string prompt which is called a hint , and   -->
+    <!-- an input-type. Each field also may hold optional elements: DC        -->
+    <!-- qualifier name, a repeatable flag, and a text string whose presence  -->
+    <!-- serves as a 'this field is required' flag.                           -->
+
+    <form-definitions>
+
+        <form name="legi">
+            <page number="1">
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>country</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>País do alcance do ato</label>
+                    <!--input-type>onebox</input-type-->
+                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
+                    <hint>Preencher este campo sempre que o ato for de alcance geográfico municipal, estadual ou nacional</hint>
+                    <required>Obrigatório selecionar o país de alcance do ato</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tipo do ato</label>
+                    <input-type value-pairs-name="common_tipoato">dropdown</input-type>
+                    <hint>Selecione o tipo de ato administrativo a cadastrar</hint>
+                    <required>Obrigatório selecionar um tipo de ato</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Órgão emissor</label>
+                    <input-type>onebox</input-type>
+                    <hint>Órgão emissor do ato administrativo</hint>
+                    <required>Obrigatório ingressar um órgão emissor</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>other</dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Número do ato</label>
+                    <input-type>onebox</input-type>
+                    <hint>Um tipo de identificador para o ato</hint>
+                    <required>Obrigatório ingressar um identificador</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Título do ato</label>
+                    <input-type>onebox</input-type>
+                    <hint>O Título do ato administrativo</hint>
+                    <required>Obrigatório ingressar o título do ato</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Denominação do Ato</label>
+                    <input-type>onebox</input-type>
+                    <hint>Denominação do ato administrativo</hint>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>legislation</dc-element>
+                    <dc-qualifier>scope</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>false</repeatable>
+                    <label>Esfera do ato</label>
+                    <input-type value-pairs-name="common_scopes">dropdown</input-type>
+                    <hint>Alcance geográfico (abrangência) do ato normativo</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>state</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Estado do alcance do ato</label>
+                    <input-type>onebox</input-type>
+                    <hint>Preencher este campo apenas quando o ato for de alcance geográfico estadual</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>city</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Cidade do alcance do ato</label>
+                    <input-type>onebox</input-type>
+                    <hint>Preencher este campo apenas quando o ato for de alcance geográfico municipal</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>source</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Nome da Fonte</label>
+                    <input-type value-pairs-name="common_fontes">dropdown</input-type>
+                    <hint>Ingresse o Título da fonte publicadora do ato</hint>
+                    <required>Obrigatório selecionar o título da fonte publicadora do ato</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>section</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Seção</label>
+                    <input-type>onebox</input-type>
+                    <hint>Código alfanumérico utilizado para identificar o agrupamento (seção) em que está localizado o artigo.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>volume</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Volume</label>
+                    <input-type>onebox</input-type>
+                    <hint>Código numérico que corresponde à maior subdivisão da série, podendo aparecer sob a denominação de volume, ano ou tomo. Registrar o volume como aparece na fonte (algarismos arábicos ou romanos)</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>part</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Número do fascículo</label>
+                    <input-type>onebox</input-type>
+                    <hint>Código alfanumérico sequencial que identifica cada uma das partes de uma série em um volume, podendo aparecer sob a denominação de número e edição</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>pages</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Páginas</label>
+                    <input-type>onebox</input-type>
+                    <hint>Números inicial e final das páginas em que se encontra o documento. Exemplos: inicial 12 final 14, inicial II final IV</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>submitted</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de emissão do ato</label>
+                    <input-type>date</input-type>
+                    <hint>Ingresse a data de emissão do ato</hint>
+                    <required>Obrigatório ingressar uma data de emissão</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de publicação do ato</label>
+                    <input-type>date</input-type>
+                    <hint>Ingresse a data do publicação do ato</hint>
+                    <required>Obrigatório ingressar uma data de publicação</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint>Ingresse o idioma do ato</hint>
+                    <required>Obrigatório selecionar um idioma</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>vigencia</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de vigência do ato</label>
+                    <input-type>date</input-type>
+                    <hint>Ingresse a data de vigência do ato</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Ementa oficial</label>
+                    <input-type>textarea</input-type>
+                    <hint>Ementa oficial do ato administrativo</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>notes</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Notas adicionais</label>
+                    <input-type>textarea</input-type>
+                    <hint>Notas adicionais</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <required>Obrigatório ingressar pelo menos um descritor</required>
+                </field>
+                
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto (vocab FUNASA)</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no vocabulario FUNASA. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado.</hint>
+                    <required></required>
+                </field>
+
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Ingresse o tipo de relacionamento e o handle do documento relacionado</label>
+                    <input-type value-pairs-name="common_relations">qualdrop_value</input-type>
+                    <hint>Selecione o tipo de relacionamento e handle (identificador no repositório) do documento relacionado</hint>
+                    <required></required>
+                </field>
+
+            </page>
+        </form>
+
+
+        <form name="multimedia">
+            <page number="1">
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Título</label>
+                    <input-type>onebox</input-type>
+                    <hint>O Título do recurso</hint>
+                    <required>Obrigatório ingressar o título do recurso</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Título em outro idioma</label>
+                    <input-type>onebox</input-type>
+                    <hint>O título em outro idioma (no caso de existir)</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor</label>
+                    <input-type>onebox</input-type>
+                    <hint>Autor do recurso</hint>
+                    <required>Obrigatório ingressar o autor do recurso</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor institucional</label>
+                    <input-type>onebox</input-type>
+                    <hint>Autor institucional do recurso</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint>Ingresse o idioma do ato</hint>
+                    <required>Obrigatório selecionar um idioma</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Resumo</label>
+                    <input-type>textarea</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>notes</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Notas adicionais</label>
+                    <input-type>textarea</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>country</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>País do publicação</label>
+                    <!--input-type>onebox</input-type-->
+                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>state</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Estado de publicação</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>city</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Cidade de publicação</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Tipo de material</label>
+                    <input-type value-pairs-name="common_type_multimedia">dropdown</input-type>
+                    <hint>Selecione o tipo de material a cadastrar</hint>
+                    <required>Obrigatório selecionar um tipo de material</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de publicação</label>
+                    <input-type>date</input-type>
+                    <hint></hint>
+                    <required>Obrigatório ingressar pelo menos um data</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartofseries</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Número de Serie</label>
+                    <input-type>series</input-type>
+                    <hint>Nome e número da série dentro dessa série, se disponível</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartof</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Parte de</label>
+                    <input-type>onebox</input-type>
+                    <hint>Referência física ou lógica a um conteúdo de um item</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Notas de versão</label>
+                    <input-type>onebox</input-type>
+                    <hint>Ex.: Vídeo publicado no youtube</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Identificadores</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>Se o documento apresentar números de identificação ou códigos associados, escolha o tipo de identificador e registre-o</hint>
+                    <required></required>
+                </field>
+
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <required>Obrigatório ingressar pelo menos um descritor</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto (vocab FUNASA)</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no vocabulario FUNASA. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>format</dc-element>
+                    <dc-qualifier>mimetype</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Formato (tipo MIME)</label>
+                    <input-type value-pairs-name="common_formats">dropdown</input-type>
+                    <hint>Ingresse o formato tecnológico do recurso</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>format</dc-element>
+                    <dc-qualifier>extent</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Resolução</label>
+                    <input-type>onebox</input-type>
+                    <hint>Ingresse o tamanho ou duração do recurso (quando for o caso). Resolução da imagem, vídeo, etc.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>youtubeid</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>ID do vídeo de Youtube</label>
+                    <input-type>onebox</input-type>
+                    <hint>Ingresse o código de video de Youtube para apresentar o visor online</hint>
+                    <required></required>
+                </field>
+
+            </page>
+        </form>
+
+        <form name="pppp">
+            <page number="1">
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Título</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required>Obrigatório ingressar o título</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Título alternativo</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor pessoal</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor institucional</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Resumo</label>
+                    <input-type>textarea</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>notes</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Notas adicionais</label>
+                    <input-type>textarea</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de publicação</label>
+                    <input-type>date</input-type>
+                    <hint></hint>
+                    <required>Obrigatório ingressar pelo menos um data</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>other</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Identificador</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint></hint>
+                    <required>Obrigatório selecionar um idioma</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>country</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>País</label>
+                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
+                    <hint></hint>
+                    <required>Obrigatório selecionar o país</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>state</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Estado</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>city</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Cidade</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Editora</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartof</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>É parte de</label>
+                    <input-type>onebox</input-type>
+                    <hint>Referência física ou lógica a um conteúdo de um item</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartofseries</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Número de série</label>
+                    <input-type>series</input-type>
+                    <hint>Nome e número da série dentro dessa série, se disponível</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>holder</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Titular dos direitos</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <required>Obrigatório ingressar pelo menos um descritor</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto (vocab FUNASA)</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no vocabulario FUNASA. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Tipo do ítem</label>
+                    <input-type value-pairs-name="common_types_funasa">dropdown</input-type>
+                    <hint>Selecione o tipo de material a cadastrar</hint>
+                    <required>Obrigatório selecionar um tipo de material</required>
+                </field>
+            </page>
+        </form>
+
+        <form name="lom">
+            <page number="1">
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Titulo</label>
+                    <input-type>onebox</input-type>
+                    <hint>Título do recurso educacional, no idioma e na forma em que aparece</hint>
+                    <required>Obrigatório o preenchimento do título</required>
+                </field>
+
+                <field>  
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Objetivos de aprendizado</label>
+                    <input-type>textarea</input-type>
+                    <hint>Objetivo educacional é o que se espera do aprendiz após aplicado as estratégias, conteúdos e ações de ensino</hint>
+                    <required>Obrigatório relatar os objetivos de aprendizado</required>
+                </field>
+
+                <field>  
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Descrição</label>
+                    <input-type>textarea</input-type>
+                    <hint>Breve descrição do conteúdo do material ou o que contém o material. Exemplo: roteiro, programa, tópicos abordados</hint>
+                    <required>Obrigatório descrever o conteúdo</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Contribuidor</label>
+                    <input-type>onebox</input-type>
+                    <hint>Pessoa fisica ou instituição que contribui para o desenvolvimento do recurso</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Criador</label>
+                    <input-type>onebox</input-type>
+                    <hint>Instituição, ou pessoa fisica reponsável pela criação do recurso</hint>
+                    <required>Obrigatório preencher esse campo</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de criação</label>
+                    <input-type>date</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>instructionalMethod</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tipo</label>
+                    <input-type value-pairs-name="common_educational_instructionalMethod">dropdown</input-type>
+                    <hint>Compreende a forma de qualificar o recurso educacional</hint>
+                    <required>Obrigatório</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint>Selecione o idioma</hint>
+                    <required>Obrigatório selecionar um idioma</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>granularity</dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Tipo do curso</label>
+                    <input-type value-pairs-name="common_educational_granularity">dropdown</input-type>
+                    <hint>Compreende a forma de descrever a granularidade do recurso educacional</hint>
+                    <required>Obrigatório</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>format</dc-element>
+                    <dc-qualifier>mimetype</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Formato (tipo MIME)</label>
+                    <input-type value-pairs-name="common_formats">dropdown</input-type>
+                    <hint>Compreende o formato, ou a tecnologia aplicada, no qual foi construido o recurso educacional</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>learningResourceType</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Tipo de recurso de aprendizagem</label>
+                    <input-type value-pairs-name="common_learning_resource">dropdown</input-type>
+                    <hint>Compreende recurso ou a estratégia educacional aplicada</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>interactivityLevel</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Nível de interatividade</label>
+                    <input-type value-pairs-name="common_interactivity">dropdown</input-type>
+                    <hint>Compreende os níveis de interação e distinguem-se pelo grau de sensações que são despertadas no utilizador</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>context</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Contexto de aprendizagem</label>
+                    <input-type value-pairs-name="common_context">dropdown</input-type>
+                    <hint>O principal objetivo de aprendizagem ao qual o recurso deve ser utilizado</hint>
+                    <required>Obrigatório</required>
+                </field>
+
+                <field>  
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>difficulty</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Dificuldade</label>
+                    <input-type value-pairs-name="common_dificuldade">dropdown</input-type>
+                    <hint>Nivel de dificuldade</hint>
+                    <required></required>
+                </field>
+
+                <field>  
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>general</dc-element>
+                    <dc-qualifier>aggregationLevel</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Nível de Agregação</label>
+                    <input-type value-pairs-name="common_aggregation">dropdown</input-type>
+                    <hint>Granularidade dos recursos digitais de aprendizagem refere-se ao tamanho, à decomposição e à extensão em que um recurso se destina a ser usado como parte de um recurso maior. Quanto maior a granularidade maior o nível de decomposição</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>audience</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Público</label>
+                    <input-type value-pairs-name="common_audience">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field> 
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Editora</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <required>Obrigatório ingressar pelo menos um descritor</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Descritores de assunto (vocab FUNASA)</label>
+                    <input-type>twobox</input-type>
+                    <hint>Busque os descritores desse documento com base no vocabulario FUNASA. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>format</dc-element>
+                    <dc-qualifier>extent</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Duração</label>
+                    <input-type>onebox</input-type>
+                    <hint>Ingresse o tamanho ou duração do recurso (quando for o caso). Resolução da imagem, vídeo, etc.</hint>
+                    <required></required>
+                </field>
+
+                <field>  
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>technical</dc-element>
+                    <dc-qualifier>requirement</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Requerimentos técnicos</label>
+                    <input-type>onebox</input-type>
+                    <hint>Requerimento técnico mínimo, exemplo: internet, adobe etc...</hint>
+                    <required></required>
+                </field>
+
+                <field>  
+                    <dc-schema>lom</dc-schema>
+                    <dc-element>educational</dc-element>
+                    <dc-qualifier>typicalLearningTime</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tempo de aprendizagem típico</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Ingresse o tipo de relacionamento e o handle do documento relacionado</label>
+                    <input-type value-pairs-name="common_relations_lom">qualdrop_value</input-type>
+                    <hint>Selecione o tipo de relacionamento e handle (identificador no repositório) do documento relacionado</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>youtubeid</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>ID do vídeo de Youtube</label>
+                    <input-type>onebox</input-type>
+                    <hint>Ingresse o código de vídeo do Youtube para apresentar o visor online</hint>
+                    <required></required>
+                </field>
+
+            </page>
+        </form>
+
+
+        <form name="generalpub">
+            <page number="1">
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Institutional Author / Autor institucional</label>
+                    <input-type value-pairs-name="common_institutional_author">dropdown</input-type>
+                    <hint>Select the institutional author / Seleccione el autor institucional según figura en el documento</hint>
+                    <required>true</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Institutional Co-Author(External organization) / Coautor institucional (organización externa)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the external institutional author / Ingrese el autor institucional externo</hint>
+                </field>
+
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Personal Author / Autor personal</label>
+                    <input-type>name</input-type>
+                    <hint>Enter the personal author / Ingrese el autor personal. Después del nombre, puede colocar entre paréntesis la función específica: coordinador (Coord.), compilador (Com.), editor (Edt.), u organizador (Org.)</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Title / Título</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the main title of the item / Ingrese el título del documento en el idioma original. En el caso de una publicación en más de una lengua (bilingue, trilingue...), añada los títulos en todos los idiomas disponibles</hint>
+                    <required>You must enter a main title for this item / Debe ingresar un título para este ítem</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Translated Title / Título traducido</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter translation titles of the item / Ingrese el título en otro idioma (solo si figura en el documento). Si la publicación se encuentra en más de un idioma, registre el título en el campo Título</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>release</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Edition / Edición</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the edition of the publication / Ingrese la edición (solo a partir de la segunda). Ej: 3.ed. third edition</hint>
+                    <required></required>
+                </field>
+
+                <field>  
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Abstract / Resumen</label>
+                    <input-type>textarea</input-type>
+                    <hint>Enter the abstract of the publication / Ingrese el resumen del documento. Mencione entre [] la fuente del resumen antes de escribirlo, ej., [Prólogo], [Prefacio], [Introducción]</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>tableofcontents</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Table of Contents/Tabla de contenidos</label>
+                    <input-type>textarea</input-type>
+                    <hint>Enter the table of contents of the publication separated by ; / Ingrese en base a la tabla de contenidos/índice del ítem, ej., Introducción; Capítulo 1: Cobertura Universal; Capítulo 2: Desigualdad.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Language / Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint>Select the languages of the item.  If the language does not appear in the list below, please select 'Other'. If it does not apply, select 'N/A' / Seleccione el idioma del documento. Si el idioma no figura en el listado, seleccionar 'Otro'. Si no aplica especificar un idioma, seleccionar 'N/A'. Puede seleccionar más de uno manteniendo presionada la tecla CTRL mientras hace clic con el mouse</hint>
+                    <required>You must select the language of the item / Debe seleccionar un idioma para este ítem</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Type / Tipo de ítem</label>
+                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" key / Seleccione los tipos de contenidos del item. Puede seleccionar más de uno manteniendo presionada la tecla CTRL mientras hace clic con el mouse</hint>
+                    <required>You must select a type for the item / Debe seleccionar un tipo para este ítem</required>
+                </field>
+
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Subject Keywords / Temas</label>
+                    <input-type>twobox</input-type>
+                    <hint>Enter appropriate subject keywords or phrases below: only possible in Spanish language. You may also add keywords in your own language, capitalizing each significant word (EX: Noncommunicable Diseases) / Localice los descriptores del documento en base al DeCS: solo disponible en español. Puede registrar los descriptores en otro idioma y también términos no reconocidos en DeCS colocando en mayúscula la primera letra significativa de cada palabra, ej., Enfermedades no Transmisibles</hint>
+                    <required>You must insert at least one subject for the item / Debe registrar al menos un tema para este ítem</required>
+
+                </field>
+
+                <field>
+                    <dc-schema>paho</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Category of the PAHO/WHO Strategic Plan 2014-2019 / Categoría del Plan Estratégico de OPS/OMS 2014-2019</label>
+                    <input-type value-pairs-name="common_cat_strategic_plan">dropdown</input-type>
+                    <hint>Only applicable for documents issued from 2014 to 2019 / Solo se aplica para documentos editados a partir de 2014 hasta 2019</hint>
+                </field>	   
+
+
+
+
+
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Publisher / Editor</label>
+                    <input-type value-pairs-name="common_publisher">dropdown</input-type>
+                    <hint>Select the correct form in case PAHO is the publisher of the publication / Seleccione una opción en caso que el editor de la publicación sea la OPS</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>other</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>External publisher / Editor externo</label>
+                    <input-type>onebox</input-type>
+                    <hint>Add other publisher diferent than PAHO / Agregue otro editor diferente de OPS en este campo</hint>
+                </field>
+
+                <field>
+                    <dc-schema>paho</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>country</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>Country / País</label>
+                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
+                    <hint>Select the country of edition (Ex: United States) / Seleccione el país de edición del documento, ej., Estados Unidos</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>paho</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>city</dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable></repeatable>
+                    <label>City / Ciudad</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the city of edition (Ex: Washington, D.C) / Ingrese la ciudad de edición del documento, ej., Washington, D.C</hint>
+                    <required>You must enter the city of publication / Debe ingresar la ciudad de publicación</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Publication Date / Fecha de publicación</label>
+                    <input-type>date</input-type>
+                    <hint>Please give the date of the publication / Solo completar con el año de edición de la publicación sin utilizar la opción día y mes</hint>
+                    <required>You must enter at least the year / Debe ingresar el año de edición</required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Identifiers / Identificadores</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below / Si el documento presenta números de identificación o códigos asociados, por favor elija el tipo de identificador y regístrelo</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartofseries</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Series/Report No. / Número de Serie o Informe</label>
+                    <input-type>series</input-type>
+                    <hint>Enter the series and number assigned to this item by your community / Ingrese la serie y el número asignado (sin puntuaciones, las genera automáticamente el Sistema)</hint>
+                    <required></required>
+                </field>
+
+<!--
+<field>
+<dc-schema>dc</dc-schema>
+<dc-element>contributor</dc-element>
+<dc-qualifier>department</dc-qualifier>
+<repeatable>false</repeatable>
+<label>PAHO Area</label>
+<input-type>onebox</input-type>
+<hint>Enter the area of PAHO/OPS that contributes the item to the repository</hint>
+<required></required>
+</field> -->
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>identifier</dc-element>
+    <dc-qualifier>citation</dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Citation</label>
+    <input-type>onebox</input-type>
+    <hint>Enter the provided citation for the Publication. Do not enter if the correct information is not available / Ingrese la citación provista directamente por la publicacion. No ingrese este dato si la información no está disponible</hint>
+
+    <required></required>
+</field>
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>description</dc-element>
+    <dc-qualifier>notes</dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Additional notes for the item / Notas adicionales para el ítem</label>
+    <input-type>textarea</input-type>
+    <hint>Enter the additional observations for the item / Ingrese las observaciones adicionales para el ítem</hint>
+    <required></required>
+</field>
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>rights</dc-element>
+    <dc-qualifier>holder</dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Rights Holder</label>
+    <input-type value-pairs-name="common_iso_rights">dropdown</input-type>
+
+    <hint>To be filled up by PAHO Headquarters only / A ser llenado por la OPS Sede solamente.</hint>
+    <required></required>
+</field> 
+
+
+
+
+
+<field>
+    <dc-schema>paho</dc-schema>
+    <dc-element>isfeatured</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Destacado?</label>
+    <input-type value-pairs-name="es_destacado">list</input-type>
+    <hint>Ingrese si el item aparecera entre los 10 (maximo) destacados</hint>
+    <required></required>
+</field> 
+
+</page>
+</form>
+
+
+<form name="articles">
+    <page number="1">	 
+
+
+        <field>
+            <dc-schema>dc</dc-schema>
+            <dc-element>contributor</dc-element>
+            <dc-qualifier>author</dc-qualifier>
+            <repeatable>true</repeatable>
+            <label>Personal Authors / Autores personales</label>
+            <input-type>name</input-type>
+            <hint>Register upon five authors. In case of six or more, please register the first five and then 'Et. al' as the sixth author / Registre los nombres de los primeros cinco autores. En caso de seis o más, registre el sexto autor como 'Et. al'</hint>
+            <required>You must fill an author / Debe registrar al menos un autor</required>
+        </field>
+
+
+        <field>
+            <dc-schema>dc</dc-schema>
+            <dc-element>title</dc-element>
+            <dc-qualifier></dc-qualifier>
+            <repeatable>true</repeatable>
+            <label>Title / Título</label>
+            <input-type>onebox</input-type>
+            <hint>Enter the main title of the item / Ingrese el título del ítem en el idioma original. En el caso de encontrarse un artículo escrito en más de una lengua, registre los títulos en todos los idiomas disponibles</hint>
+            <required>You must enter a main title for this item / Debe ingresar un título para este ítem</required>
+        </field>
+
+
+        <field>
+            <dc-schema>dc</dc-schema>
+            <dc-element>title</dc-element>
+            <dc-qualifier>alternative</dc-qualifier>
+            <repeatable>true</repeatable>
+            <label>Translated Title / Título traducido</label>
+            <input-type>onebox</input-type>
+            <hint>Enter translation titles of the item / Ingrese el título en otro idioma (solo si figura en el artículo). Si la publicación se encuentra en más de un idioma, registre los títulos en el campo Título</hint>
+            <required></required>
+        </field> 
+
+
+        <field>
+            <dc-schema>dc</dc-schema>
+            <dc-element>date</dc-element>
+            <dc-qualifier>issued</dc-qualifier>
+            <repeatable>false</repeatable>
+            <label>Publication Date / Fecha de publicación</label>
+            <input-type>date</input-type>
+            <hint>Issue Date from the vol/number of the journal / Fecha de publicación del vol. o nro. del artículo</hint>
+            <required>You must fill the issue date of the vol/number / Debe completar al menos el año del vol./nro. del artículo</required>
+        </field>
+
+        <field>
+            <dc-schema>dc</dc-schema>
+            <dc-element>relation</dc-element>
+            <dc-qualifier>ispartofseries</dc-qualifier>
+            <repeatable>true</repeatable>
+            <label>Journal title / Título de la revista</label>
+            <input-type>series</input-type>
+            <hint>Enter the oficial journal title and the volume and/or number in this form: Vol(No.), Ex: 5(38) / Ingrese el título oficial de la revista y registre el volumen y/o número en el siguiente formato: Vol(Nro), ej., 5(38)</hint>
+            <required></required>
+        </field>
+
+<!--	   <field>
+<dc-schema>dc</dc-schema>
+<dc-element>identifier</dc-element>
+<dc-qualifier></dc-qualifier>
+An input-type of qualdrop_value MUST be marked as repeatable 
+<repeatable>true</repeatable>
+<label>ISSN</label>
+<input-type value-pairs-name="solo-issn">qualdrop_value</input-type>
+<hint>If the Journal has a number for Print and Online please provide both.</hint>
+<required></required>
+</field> -->
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>language</dc-element>
+    <dc-qualifier>iso</dc-qualifier>
+    <repeatable>true</repeatable>
+    <label>Language / Idioma</label>
+    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+    <hint>Select the languages of the item.  If the language does not appear in the list below, please select 'Other'. To select more than one value in the list, you have to hold down the "CTRL" key / Seleccione los idiomas del artículo. Si el idioma no figura en el listado, seleccionar 'Otro'. Puede seleccionar más de uno manteniendo presionada la tecla CTRL mientras hace clic con el mouse</hint>
+    <required>You must select the language of the item / Debe seleccionar una opción de idioma del ítem</required>
+</field>
+
+
+
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>identifier</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+    <repeatable>true</repeatable>
+    <label>Identifiers</label>
+    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+    <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes below.</hint>
+    <required></required>
+</field>
+
+
+<field>
+
+    <dc-schema>dc</dc-schema>
+    <dc-element>type</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Type</label>
+    <input-type value-pairs-name="solo_journal">dropdown</input-type>
+    <hint>Do not change this value / No modificar este valor</hint>
+    <required>You must select a type for the item</required>
+</field>
+
+
+<field>
+    <dc-schema>paho</dc-schema>
+    <dc-element>articletype</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <repeatable>true</repeatable>
+    <label>Type of article / Tipo de artículo</label>
+    <input-type value-pairs-name="paho_types">dropdown</input-type>
+    <hint> Select the type of the article of the journal / Seleccione el tipo de artículo</hint>
+    <required>You must select a sub-type for the item / Debe seleccionar un tipo de artículo</required>
+</field>
+
+<field> 
+    <dc-schema>dc</dc-schema>
+    <dc-element>description</dc-element>
+    <dc-qualifier>abstract</dc-qualifier>
+    <repeatable>true</repeatable>
+    <label>Abstract / Resumen</label>
+    <input-type>textarea</input-type>
+    <hint>Enter the abstract of the article / Ingrese el resumen del artículo</hint>
+    <required></required>
+</field>
+
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>subject</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <!-- An input-type of twobox MUST be marked as repeatable -->
+    <repeatable>true</repeatable>
+    <label>Subject Keywords / Temas</label>
+    <input-type>twobox</input-type>
+    <hint>Enter appropriate subject keywords or phrases below: only possible in Spanish language. You may also add keywords in your own language, capitalizing each significant word (EX: Noncommunicable Diseases) / Localice los descriptores del documento en base al DeCS: solo disponible en español. Puede registrar los descriptores en otro idioma y también términos no reconocidos en DeCS colocando en mayúscula la primera letra significativa de cada palabra, ej., Enfermedades no Transmisibles</hint>
+    <required>You must insert at least one subject for the item / Debe seleccionar al menos un tema para el ítem</required>
+</field>
+
+
+
+<field>
+    <dc-schema>paho</dc-schema>
+    <dc-element>subject</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <repeatable>true</repeatable>
+    <label>Category of the PAHO/WHO Strategic Plan 2014-2019 / Categoría del Plan Estratégico de OPS/OMS 2014-2019</label>
+    <input-type value-pairs-name="common_cat_strategic_plan">dropdown</input-type>
+    <hint>Only applicable for documents issued from 2014 to 2019 / Solo se aplica para documentos editados a partir de 2014 hasta 2019</hint>
+</field>	  
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>identifier</dc-element>
+    <dc-qualifier>citation</dc-qualifier>
+    <!-- An input-type of twobox MUST be marked as repeatable -->
+    <repeatable></repeatable>
+    <label>Citation / Citación</label>
+    <input-type>textarea</input-type>
+    <hint>Enter the provided citation from the Journal. Do not enter if the correct information is not available / Ingrese la citación provista directamente por la revista. No ingrese este dato si la información no está disponible</hint>
+    <required></required>
+
+</field>
+
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>relation</dc-element>
+    <dc-qualifier>isversionof</dc-qualifier>
+    <!-- An input-type of twobox MUST be marked as repeatable -->
+    <repeatable></repeatable>
+    <label>Available also at / También disponible en</label>
+    <input-type>textarea</input-type>
+    <hint>Please add other databases where the article is available from (SciELO for instance) / Por favor agregue el nombre de otras bases de datos donde el artículo se encuentra disponible (ej., SciELO)</hint>
+    <required></required>
+
+</field>
+
+
+<field>
+    <dc-schema>dc</dc-schema>
+    <dc-element>rights</dc-element>
+    <dc-qualifier>holder</dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Rights Holder</label>
+    <input-type value-pairs-name="common_iso_rights">dropdown</input-type>
+
+    <hint>To be filled up by PAHO Headquarters only / A ser llenado por la OPS Sede solamente.</hint>
+    <required></required>
+</field> 
+
+<field>
+    <dc-schema>paho</dc-schema>
+    <dc-element>isfeatured</dc-element>
+    <dc-qualifier></dc-qualifier>
+    <repeatable>false</repeatable>
+    <label>Destacado?</label>
+    <input-type value-pairs-name="es_destacado">list</input-type>
+    <hint>Ingrese si el item aparecera entre los 10 (maximo) destacados</hint>
+    <required></required>
+</field> 
+
+
+</page>
+</form>
+
+
+
+
+
+
+</form-definitions>
+
+
+<!-- form-value-pairs populate dropdown and qualdrop-value lists.          -->
+<!-- The form-value-pairs element holds child elements named 'value-pairs' -->
+<!-- A 'value-pairs' element has a value-pairs-name and a dc-term          -->
+<!-- attribute. The dc-term attribute specifies which to which Dublin Core -->
+<!-- Term this set of value-pairs applies.                                 -->
+<!--     Current dc-terms are: identifier-pairs, type-pairs, and           -->
+<!--     language_iso-pairs. The name attribute matches a name             -->
+<!--     in the form-map, above.                                           -->
+<!-- A value-pair contains one 'pair' for each value displayed in the list -->
+<!-- Each pair contains a 'displayed-value' element and a 'stored-value'   -->
+<!-- element. A UI list displays the displayed-values, but the program     -->
+<!-- stores the associated stored-values in the database.                  -->
+
+<form-value-pairs>
+    <!-- valores generados por bireme para cada pais. -->
+
+
+    <value-pairs value-pairs-name="common_relations_lom" dc-term="identifier">
+
+
+        <pair>
+            <displayed-value>É versão de</displayed-value>
+            <stored-value>eversaode</stored-value>
+        </pair>
+
+        <pair>
+            <displayed-value>É parte de</displayed-value>
+            <stored-value>epartede</stored-value>
+        </pair>
+
+
+        <pair>
+            <displayed-value>É base para</displayed-value>
+            <stored-value>ebasepara</stored-value>
+        </pair>
+
+        <pair>
+            <displayed-value>Requer</displayed-value>
+            <stored-value>requer</stored-value>
+        </pair>
+
+
+    </value-pairs>  
+
+
+    <value-pairs value-pairs-name="common_learning_resource" dc-term="scope">
+        <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
+        <pair>
+            <displayed-value>Diagrama</displayed-value>
+            <stored-value>Diagrama</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Exames</displayed-value>
+            <stored-value>Exames</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Exercícios</displayed-value>
+            <stored-value>Excercícios</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Experimento</displayed-value>
+            <stored-value>Experimento</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Ilustração</displayed-value>
+            <stored-value>Ilustração</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Gráficos</displayed-value>
+            <stored-value>Gráficos</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Palestra</displayed-value>
+            <stored-value>Palestra</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Simulador</displayed-value>
+            <stored-value>Simulador</stored-value>
+        </pair>
+    </value-pairs>
+
+    <value-pairs value-pairs-name="common_interactivity" dc-term="scope">
+        <pair>
+            <displayed-value>Alto</displayed-value>
+            <stored-value>Alto</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Baixo</displayed-value>
+            <stored-value>Baixo</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Médio</displayed-value>
+            <stored-value>Médio</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Muito alto</displayed-value>
+            <stored-value>Muito alto</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Muito baixo</displayed-value>
+            <stored-value>Muito baixo</stored-value>
+        </pair>
+    </value-pairs>  
+
+    <value-pairs value-pairs-name="common_dificuldade" dc-term="scope">
+        <pair>
+            <displayed-value>Difícil</displayed-value>
+            <stored-value>Difícil</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Fácil</displayed-value>
+            <stored-value>Fácil</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Médio</displayed-value>
+            <stored-value>Médio</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Muito Difícil</displayed-value>
+            <stored-value>Muito Difícil</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Muito Fácil</displayed-value>
+            <stored-value>Muito Fácil</stored-value>
+        </pair>
+    </value-pairs>
+
+    <value-pairs value-pairs-name="common_aggregation" dc-term="scope">
+        <pair>
+            <displayed-value>0</displayed-value>
+            <stored-value>0</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>1</displayed-value>
+            <stored-value>1</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>2</displayed-value>
+            <stored-value>2</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>3</displayed-value>
+            <stored-value>3</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>4</displayed-value>
+            <stored-value>4</stored-value>
+        </pair>
+    </value-pairs>  
+
+    <value-pairs value-pairs-name="common_type_multimedia" dc-term="scope">
+        <pair>
+            <displayed-value>Animação</displayed-value>
+            <stored-value>Animação</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Fotografia</displayed-value>
+            <stored-value>Fotografia</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Gráficos</displayed-value>
+            <stored-value>Gráficos</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Software</displayed-value>
+            <stored-value>Software</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Som</displayed-value>
+            <stored-value>Som</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Textos</displayed-value>
+            <stored-value>Textos</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Vídeo</displayed-value>
+            <stored-value>Vídeo</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Website</displayed-value>
+            <stored-value>Website</stored-value>
+        </pair>
+    </value-pairs> 
+
+
+
+
+    <value-pairs value-pairs-name="common_formats" dc-term="format">
+        <pair>
+            <displayed-value>Selecione um formato</displayed-value>
+            <stored-value></stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Adobe PDF</displayed-value>
+            <stored-value>application/pdf</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>CSS</displayed-value>
+            <stored-value>text/css</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>GIF</displayed-value>
+            <stored-value>image/gif</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>HTML</displayed-value>
+            <stored-value>text/html</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>JPEG</displayed-value>
+            <stored-value>image/jpeg</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Microsoft Powerpoint</displayed-value>
+            <stored-value>application/vnd.ms-powerpoint</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Microsoft Word</displayed-value>
+            <stored-value>application/msword</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>MPEG</displayed-value>
+            <stored-value>video/mpeg</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Postscript</displayed-value>
+            <stored-value>application/postscript</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>RTF</displayed-value>
+            <stored-value>text/richtext</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>SGML</displayed-value>
+            <stored-value>application/sgml</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Text</displayed-value>
+            <stored-value>text/plain</stored-value>
+        </pair>
+    </value-pairs>
+
+
+
+    <value-pairs value-pairs-name="common_fontes" dc-term="scope">
+        <pair>
+            <displayed-value>Selecione o nome da Fonte</displayed-value>
+            <stored-value></stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Diário Oficial da União</displayed-value>
+            <stored-value>Diário Oficial da União</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Diário Oficial do Distrito Federal</displayed-value>
+            <stored-value>Diário Oficial do Distrito Federal</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Diário Oficial do Estado de São Paulo</displayed-value>
+            <stored-value>Diário Oficial do Estado de São Paulo</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Boletim de Serviço</displayed-value>
+            <stored-value>Boletim de Serviço</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Outro</displayed-value>
+            <stored-value>Outro</stored-value>
+        </pair>
+
+    </value-pairs>    
+
+
+    <value-pairs value-pairs-name="common_tipoato" dc-term="scope">
+        <pair>
+            <displayed-value>Selecione o tipo de ato</displayed-value>
+            <stored-value></stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Acordo Interministerial</displayed-value>
+            <stored-value>Acordo Interministerial</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Acordo Ministerial</displayed-value>
+            <stored-value>Acordo Ministerial</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Ata</displayed-value>
+            <stored-value>Ata</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Codificação</displayed-value>
+            <stored-value>Codificação</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Constituição</displayed-value>
+            <stored-value>Constituição</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Declaração</displayed-value>
+            <stored-value>Declaração</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Decreto</displayed-value>
+            <stored-value>Decreto</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Decreto Executivo</displayed-value>
+            <stored-value>Decreto Executivo</stored-value></pair>
+            <pair>
+                <displayed-value>Decreto Federal</displayed-value>
+                <stored-value>Decreto Federal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Decreto Legislativo</displayed-value>
+                <stored-value>Decreto Legislativo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Decreto Lei</displayed-value>
+                <stored-value>Decreto Lei</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Decreto Supremo</displayed-value>
+                <stored-value>Decreto Supremo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Decreto com Força de Lei</displayed-value>
+                <stored-value>Decreto com Força de Lei</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Disposição</displayed-value>
+                <stored-value>Disposição</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lei</displayed-value>
+                <stored-value>Lei</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lei Estadual</displayed-value>
+                <stored-value>Lei Estadual</stored-value></pair>
+                <pair>
+                    <displayed-value>Norma Técnica</displayed-value>
+                    <stored-value>Norma Técnica</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Ordem de Serviço</displayed-value>
+                    <stored-value>Ordem de Serviço</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Portaria</displayed-value>
+                    <stored-value>Portaria</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Projeto de Lei</displayed-value>
+                    <stored-value>Projeto de Lei</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Recomendação</displayed-value>
+                    <stored-value>Recomendação</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Resolução</displayed-value>
+                    <stored-value>Resolução</stored-value>
+                </pair>
+                <pair>
+                    <displayed-value>Resolução Ministerial</displayed-value>
+                    <stored-value>Resolução Ministerial</stored-value></pair>
+                    <pair>
+                        <displayed-value>Resolução Normativa do Diretório</displayed-value>
+                        <stored-value>Resolução Normativa do Diretório</stored-value>
+                    </pair>
+                </value-pairs>    
+
+
+                <value-pairs value-pairs-name="common_scopes" dc-term="scope">
+                    <pair>
+                        <displayed-value>Selecione a esfera do ato</displayed-value>
+                        <stored-value></stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Nacional</displayed-value>
+                        <stored-value>Nacional</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Estadual</displayed-value>
+                        <stored-value>Estadual</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Municipal</displayed-value>
+                        <stored-value>Municipal</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Departamental</displayed-value>
+                        <stored-value>Departamental</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Federal</displayed-value>
+                        <stored-value>Federal</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Internacional</displayed-value>
+                        <stored-value>Internacional</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Provincial</displayed-value>
+                        <stored-value>Provincial</stored-value>
+                    </pair>
+                </value-pairs>    
+
+                <value-pairs value-pairs-name="center_codes" dc-term="source">
+                    <pair>
+                        <displayed-value>PAHO HQ Library: US1.1</displayed-value>
+                        <stored-value>US1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Argentina: AR5.1</displayed-value>
+                        <stored-value>AR5.1</stored-value>
+                    </pair> 
+
+                    <pair>
+                        <displayed-value>Barbados: BB1.1</displayed-value>
+                        <stored-value>BB1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Bahamas: BS1.1</displayed-value>
+                        <stored-value>BS1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Belize: BZ1.1</displayed-value>
+                        <stored-value>BZ1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>BIREME: BR1.1</displayed-value>
+                        <stored-value>BR1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Bolivia: BO2.1</displayed-value>
+                        <stored-value>BO2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Caribbean Epidemiology Centre CAREC: TT2.1</displayed-value>
+                        <stored-value>TT2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Centro de Documentación e Información Sobre SIDA de Perú: PE58.1</displayed-value>
+                        <stored-value>PE58.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>CFNI: JM2.1</displayed-value>
+                        <stored-value>JM2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Chile: CL4</displayed-value>
+                        <stored-value>CL4</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>CLAP Uruguay: UY4.1</displayed-value>
+                        <stored-value>UY4.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Colombia: CO5.1</displayed-value>
+                        <stored-value>CO5.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Costa Rica: CR271.1</displayed-value>
+                        <stored-value>CR271.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Cuba: CU2.1</displayed-value>
+                        <stored-value>CU2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Dominican Republic: DO2.1</displayed-value>
+                        <stored-value>DO2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>ECO: MX3.1</displayed-value>
+                        <stored-value>MX3.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Ecuador: EC2.1</displayed-value>
+                        <stored-value>EC2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>El Salvador: SV1.1</displayed-value>
+                        <stored-value>SV1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Representación Paso MEX/US: US2.1</displayed-value>
+                        <stored-value>US2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Guatemala: GT2.1</displayed-value>
+                        <stored-value>GT2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Guayana: GY1.1</displayed-value>
+                        <stored-value>GY1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Haiti: HT1.1</displayed-value>
+                        <stored-value>HT1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Honduras: HN2.1</displayed-value>
+                        <stored-value>HN2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>INCAP: GT3.1</displayed-value>
+                        <stored-value>GT3.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Jamaica: JM1.1</displayed-value>
+                        <stored-value>JM1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Mexico: MX2.1</displayed-value>
+                        <stored-value>MX2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Nicaragua: NI2.1</displayed-value>
+                        <stored-value>NI2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>PANAFTOSA- Brasil BR680.1</displayed-value>
+                        <stored-value>BR680.1</stored-value>
+                    </pair> 
+
+                    <pair>
+                        <displayed-value>Panama: PA1.1</displayed-value>
+                        <stored-value>PA1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Paraguay: PY2.1</displayed-value>
+                        <stored-value>PY2.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Peru: PE7.1</displayed-value>
+                        <stored-value>PE7.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Suriname: SR1.1</displayed-value>
+                        <stored-value>SR1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Trinidad y Tobago: TT1.1</displayed-value>
+                        <stored-value>TT1.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Unidad de Saneamiento Básico del Area de Desarrollo Sostenible y Salud Ambiental: PE8.1</displayed-value>
+                        <stored-value>PE8.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Uruguay: UY3.1</displayed-value>
+                        <stored-value>UY3.1</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Venezuela: VE5.1</displayed-value>
+                        <stored-value>VE5.1</stored-value>
+                    </pair>
+
+                </value-pairs>	 
+
+                <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
+
+
+
+                    <pair>
+                        <displayed-value>ISBN</displayed-value>
+                        <stored-value>isbn</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>ISSN</displayed-value>
+                        <stored-value>issn</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>DOI</displayed-value>
+                        <stored-value>doi</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>ISMN</displayed-value>
+                        <stored-value>ismn</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Gov't Doc #</displayed-value>
+                        <stored-value>govdoc</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>URL</displayed-value>
+                        <stored-value>uri</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Other</displayed-value>
+                        <stored-value>other</stored-value>
+                    </pair>
+                </value-pairs>
+
+
+                <value-pairs value-pairs-name="solo-issn" dc-term="identifier">
+                    <pair>
+                        <displayed-value>ISSN</displayed-value>
+                        <stored-value>issn</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>DOI</displayed-value>
+                        <stored-value>doi</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Other</displayed-value>
+                        <stored-value>other</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Gov't Doc #</displayed-value>
+                        <stored-value>govdoc</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>URL</displayed-value>
+                        <stored-value>uri</stored-value>
+                    </pair>
+
+                </value-pairs>
+
+
+                <value-pairs value-pairs-name="common_relations" dc-term="identifier">
+                    <pair>
+                        <displayed-value>Altera</displayed-value>
+                        <stored-value>altera</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Alterado por</displayed-value>
+                        <stored-value>cambiadopor</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Complementa</displayed-value>
+                        <stored-value>complementa</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Complementado por</displayed-value>
+                        <stored-value>complementadopor</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Inclui</displayed-value>
+                        <stored-value>incluye</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Incluído em</displayed-value>
+                        <stored-value>incluidoen</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Revoga</displayed-value>
+                        <stored-value>revoga</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Revogado por</displayed-value>
+                        <stored-value>revogadopor</stored-value>
+                    </pair>
+                </value-pairs>
+
+
+                <value-pairs value-pairs-name="solo-issn" dc-term="identifier">
+                    <pair>
+                        <displayed-value>ISSN</displayed-value>
+                        <stored-value>issn</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>DOI</displayed-value>
+                        <stored-value>doi</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Other</displayed-value>
+                        <stored-value>other</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Gov't Doc #</displayed-value>
+                        <stored-value>govdoc</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>URL</displayed-value>
+                        <stored-value>uri</stored-value>
+                    </pair>
+
+                </value-pairs>
+
+
+                <value-pairs value-pairs-name="common_publisher" dc-term="publisher">
+                    <pair>
+                        <displayed-value>FUNASA</displayed-value>
+                        <stored-value>FUNASA</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Governo de Brasil</displayed-value>
+                        <stored-value>Governo de Brasil</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Pan American Health Organization</displayed-value>
+                        <stored-value>Pan American Health Organization</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Organisation panaméricaine de la Santé</displayed-value>
+                        <stored-value>Organisation panaméricaine de la Santé</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Organización Panamericana de la Salud</displayed-value>
+                        <stored-value>Organización Panamericana de la Salud</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Organização Pan-Americana da Saúde</displayed-value>
+                        <stored-value>Organização Pan-Americana da Saúde</stored-value>
+                    </pair>
+                </value-pairs>
+
+                <value-pairs value-pairs-name="common_institutional_author" dc-term="publisher">
+                    <pair>
+                        <displayed-value>Fundação Nacional de Saúde (FUNASA)</displayed-value>
+                        <stored-value>Fundação Nacional de Saúde (FUNASA)</stored-value>
+                    </pair>
+
+                    <pair>
+                        <displayed-value>Organização Pan-Americana da Saúde</displayed-value>
+                        <stored-value>Organização Pan-Americana da Saúde</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>MINISTÉRIO DA SAÚDE</displayed-value>
+                        <stored-value>MINISTÉRIO DA SAÚDE</stored-value>  
+                    </pair>
+                </value-pairs>
+
+                <value-pairs value-pairs-name="solo_journal" dc-term="type">
+                    <pair>
+                        <displayed-value>Journal Article</displayed-value>
+                        <stored-value>Journal Article</stored-value>
+                    </pair>
+                </value-pairs> 
+
+                <value-pairs value-pairs-name="solo_photo" dc-term="type">
+                    <pair>
+                        <displayed-value>Photo</displayed-value>
+                        <stored-value>Photo</stored-value>
+                    </pair>
+                </value-pairs> 
+
+                <value-pairs value-pairs-name="solo_premio" dc-term="type">
+                    <pair>
+                        <displayed-value>Award/Distinction</displayed-value>
+                        <stored-value>Award/Distinction</stored-value>
+                    </pair>
+                </value-pairs> 
+
+                <value-pairs value-pairs-name="paho_types" dc-term="articletype">
+                    <pair>
+                        <displayed-value>Editorials</displayed-value>
+                        <stored-value>Editorials</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Original research articles</displayed-value>
+                        <stored-value>Original research articles</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Reviews</displayed-value>
+                        <stored-value>Reviews</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Special reports</displayed-value>
+                        <stored-value>Special reports</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Opinion and analysis</displayed-value>
+                        <stored-value>Opinion and analysis</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Brief communications</displayed-value>
+                        <stored-value>Brief communications</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Current topics</displayed-value>
+                        <stored-value>Current topics</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Letters</displayed-value>
+                        <stored-value>Letters</stored-value>
+                    </pair>
+
+                </value-pairs> 
+
+
+                <value-pairs value-pairs-name="common_types" dc-term="type">
+                    <pair>
+                        <displayed-value>Publication</displayed-value>
+                        <stored-value>Publication</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Official Document</displayed-value>
+                        <stored-value>Official Document</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Governing Bodies document</displayed-value>
+                        <stored-value>Governing Bodies document</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Guidelines</displayed-value>
+                        <stored-value>Guidelines</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Annual, Quadrennial reports</displayed-value>
+                        <stored-value>Annual, Quadrennial reports</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Country Cooperation Strategy</displayed-value>
+                        <stored-value>Country Cooperation Strategy</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Newsletter</displayed-value>
+                        <stored-value>Boletín</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Learning/training material</displayed-value>
+                        <stored-value>Learning/training material</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Map/ Interactive map</displayed-value>
+                        <stored-value>Map/ Interactive map</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Meeting report</displayed-value>
+                        <stored-value>Meeting report</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Policy brief</displayed-value>
+                        <stored-value>Policy brief</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Progress report</displayed-value>
+                        <stored-value>Progress report</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Technical report</displayed-value>
+                        <stored-value>Technical report</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Dataset/ statistical data</displayed-value>
+                        <stored-value>Dataset/ statistical data</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Animation</displayed-value>
+                        <stored-value>Animation</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Award/Distinction</displayed-value>
+                        <stored-value>Award/Distinction</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Information kit (folder, banner, brochure)</displayed-value>
+                        <stored-value>Information kit (folder, banner, brochure)</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Certificate/Diploma</displayed-value>
+                        <stored-value>Certificate/Diploma</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Fact sheets</displayed-value>
+                        <stored-value>Fact sheets</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Presentation</displayed-value>
+                        <stored-value>Presentation</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Speech</displayed-value>
+                        <stored-value>Speech</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Photo</displayed-value>
+                        <stored-value>Photo</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Video</displayed-value>
+                        <stored-value>Video</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Software</displayed-value>
+                        <stored-value>Software</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Website</displayed-value>
+                        <stored-value>Website</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>External publication</displayed-value>
+                        <stored-value>External publication</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Journal article</displayed-value>
+                        <stored-value>Journal article</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Recording, musical</displayed-value>
+                        <stored-value>Recording, musical</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Recording, oral</displayed-value>
+                        <stored-value>Recording, oral</stored-value>
+                    </pair>
+                    <pair>
+                        <displayed-value>Other</displayed-value>
+                        <stored-value>Other</stored-value>
+                    </pair>   
+<!--      
+<pair>
+<displayed-value>Animation</displayed-value>
+<stored-value>Animation</stored-value>
+</pair>
+<pair>
+<displayed-value>Article</displayed-value>
+<stored-value>Article</stored-value>
+</pair>
+<pair>
+<displayed-value>Award/Disctintion</displayed-value>
+<stored-value>Award/Distiction</stored-value>
+</pair>
+<pair>
+<displayed-value>Book</displayed-value>
+<stored-value>Book</stored-value>
+</pair>
+<pair>
+<displayed-value>Book chapter</displayed-value>
+<stored-value>Book chapter</stored-value>
+</pair>
+<pair>
+<displayed-value>Dataset</displayed-value>
+<stored-value>Dataset</stored-value>
+</pair>
+<pair>
+<displayed-value>Diploma/Certificate</displayed-value>
+<stored-value>Diploma/Certificate</stored-value>
+</pair>	 
+<pair>
+<displayed-value>Photo</displayed-value>
+<stored-value>Photo</stored-value>
+</pair>
+<pair>
+<displayed-value>Learning Object</displayed-value>
+<stored-value>Learning Object</stored-value>
+</pair>
+<pair>
+<displayed-value>Image</displayed-value>
+<stored-value>Image</stored-value>
+</pair>
+<pair>
+<displayed-value>Image, 3-D</displayed-value>
+<stored-value>Image, 3-D</stored-value>
+</pair>
+<pair>
+<displayed-value>Map</displayed-value>
+<stored-value>Map</stored-value>
+</pair>
+<pair>
+<displayed-value>Musical Score</displayed-value>
+<stored-value>Musical Score</stored-value>
+</pair>
+<pair>
+<displayed-value>Plan or blueprint</displayed-value>
+<stored-value>Plan or blueprint</stored-value>
+</pair>
+<pair>
+<displayed-value>Preprint</displayed-value>
+<stored-value>Preprint</stored-value>
+</pair>
+<pair>
+<displayed-value>Presentation</displayed-value>
+<stored-value>Presentation</stored-value>
+</pair>
+<pair>
+<displayed-value>Recording, acoustical</displayed-value>
+<stored-value>Recording, acoustical</stored-value>
+</pair>
+<pair>
+<displayed-value>Recording, musical</displayed-value>
+<stored-value>Recording, musical</stored-value>
+</pair>
+<pair>
+<displayed-value>Recording, oral</displayed-value>
+<stored-value>Recording, oral</stored-value>
+</pair>
+<pair>
+<displayed-value>Resolution</displayed-value>
+<stored-value>resolution</stored-value>
+</pair>
+<pair>
+<displayed-value>Software</displayed-value>
+<stored-value>Software</stored-value>
+</pair>
+<pair>
+<displayed-value>Technical Report</displayed-value>
+<stored-value>Technical Report</stored-value>
+</pair>
+<pair>
+<displayed-value>Thesis</displayed-value>
+<stored-value>Thesis</stored-value>
+</pair>
+<pair>
+<displayed-value>Video</displayed-value>
+<stored-value>Video</stored-value>
+</pair>
+<pair>
+<displayed-value>Work of art</displayed-value>
+<stored-value>Art/Work of Art</stored-value>
+</pair>     
+<pair>
+<displayed-value>Working Paper</displayed-value>
+<stored-value>Working Paper</stored-value>
+</pair>
+<pair>
+<displayed-value>Other</displayed-value>
+<stored-value>Other</stored-value>
+</pair> 
+-->
+
+</value-pairs>
+
+<!-- default language order: (from dspace 1.2.1)
+"en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
+-->
+<value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+    <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
+    <pair><displayed-value>Português</displayed-value><stored-value>pt</stored-value></pair>
+    <pair><displayed-value>Inglês</displayed-value><stored-value>en</stored-value></pair>
+    <pair><displayed-value>Espanhol</displayed-value><stored-value>es</stored-value></pair>
+    <pair><displayed-value>Francês</displayed-value><stored-value>fr</stored-value></pair>
+    <pair><displayed-value>Italiano</displayed-value><stored-value>it</stored-value></pair>
+    <pair><displayed-value>Alemão</displayed-value><stored-value>de</stored-value></pair>
+    <pair><displayed-value>Abkhazian</displayed-value><stored-value>ab</stored-value></pair>
+    <pair><displayed-value>Acan</displayed-value><stored-value>ak</stored-value></pair>
+    <pair><displayed-value>Afar</displayed-value><stored-value>aa</stored-value></pair>
+    <pair><displayed-value>Africano</displayed-value><stored-value>af</stored-value></pair>
+    <pair><displayed-value>Aimará</displayed-value><stored-value>ay</stored-value></pair>
+    <pair><displayed-value>Albanês</displayed-value><stored-value>sq</stored-value></pair>
+    <pair><displayed-value>Amárico</displayed-value><stored-value>am</stored-value></pair>
+    <pair><displayed-value>Árabe, Arábico</displayed-value><stored-value>ar</stored-value></pair>
+    <pair><displayed-value>Aragonês</displayed-value><stored-value>an</stored-value></pair>
+    <pair><displayed-value>Armênio</displayed-value><stored-value>hy</stored-value></pair>
+    <pair><displayed-value>Assamés</displayed-value><stored-value>as</stored-value></pair>
+    <pair><displayed-value>Avar</displayed-value><stored-value>av</stored-value></pair>
+    <pair><displayed-value>Avéstico</displayed-value><stored-value>ae</stored-value></pair>
+    <pair><displayed-value>Azerbaidjano</displayed-value><stored-value>az</stored-value></pair>
+    <pair><displayed-value>Bachquir</displayed-value><stored-value>ba</stored-value></pair>
+    <pair><displayed-value>Bambara</displayed-value><stored-value>bm</stored-value></pair>
+    <pair><displayed-value>Basco</displayed-value><stored-value>eu</stored-value></pair>
+    <pair><displayed-value>Bengali</displayed-value><stored-value>bn</stored-value></pair>
+    <pair><displayed-value>Bielo-Russo</displayed-value><stored-value>be</stored-value></pair>
+    <pair><displayed-value>Bihari</displayed-value><stored-value>bh</stored-value></pair>
+    <pair><displayed-value>Birmanês</displayed-value><stored-value>my</stored-value></pair>
+    <pair><displayed-value>Bislama</displayed-value><stored-value>bi</stored-value></pair>
+    <pair><displayed-value>Bosnio</displayed-value><stored-value>bs</stored-value></pair>
+    <pair><displayed-value>Bretão</displayed-value><stored-value>br</stored-value></pair>
+    <pair><displayed-value>Búlgaro</displayed-value><stored-value>bg</stored-value></pair>
+    <pair><displayed-value>Cachemiriano</displayed-value><stored-value>ks</stored-value></pair>
+    <pair><displayed-value>Canadá</displayed-value><stored-value>kn</stored-value></pair>
+    <pair><displayed-value>Canuri</displayed-value><stored-value>kr</stored-value></pair>
+    <pair><displayed-value>Casaque</displayed-value><stored-value>kk</stored-value></pair>
+    <pair><displayed-value>Catalão</displayed-value><stored-value>ca</stored-value></pair>
+    <pair><displayed-value>Chamorro</displayed-value><stored-value>ch</stored-value></pair>
+    <pair><displayed-value>Chinês</displayed-value><stored-value>zh</stored-value></pair>
+    <pair><displayed-value>Congo</displayed-value><stored-value>kg</stored-value></pair>
+    <pair><displayed-value>Coreano</displayed-value><stored-value>ko</stored-value></pair>
+    <pair><displayed-value>Córnico</displayed-value><stored-value>kw</stored-value></pair>
+    <pair><displayed-value>Corso</displayed-value><stored-value>co</stored-value></pair>
+    <pair><displayed-value>Cree</displayed-value><stored-value>cr</stored-value></pair>
+    <pair><displayed-value>Curdo</displayed-value><stored-value>ku</stored-value></pair>
+    <pair><displayed-value>Dano-norueguês</displayed-value><stored-value>nb</stored-value></pair>
+    <pair><displayed-value>Dialeto Haitiano</displayed-value><stored-value>ht</stored-value></pair>
+    <pair><displayed-value>Dinamarquês</displayed-value><stored-value>da</stored-value></pair>
+    <pair><displayed-value>Divehi</displayed-value><stored-value>dv</stored-value></pair>
+    <pair><displayed-value>Dzongkha</displayed-value><stored-value>dz</stored-value></pair>
+    <pair><displayed-value>Escocês Gaélico</displayed-value><stored-value>gd</stored-value></pair>
+    <pair><displayed-value>Eslavo Eclesiático</displayed-value><stored-value>cu</stored-value></pair>
+    <pair><displayed-value>Eslovaco</displayed-value><stored-value>sk</stored-value></pair>
+    <pair><displayed-value>Esloveno</displayed-value><stored-value>sl</stored-value></pair>
+    <pair><displayed-value>Esperanto</displayed-value><stored-value>eo</stored-value></pair>
+    <pair><displayed-value>Estoniano</displayed-value><stored-value>et</stored-value></pair>
+    <pair><displayed-value>Ewe</displayed-value><stored-value>ee</stored-value></pair>
+    <pair><displayed-value>Faroés</displayed-value><stored-value>fo</stored-value></pair>
+    <pair><displayed-value>Fijian</displayed-value><stored-value>fj</stored-value></pair>
+    <pair><displayed-value>Finlandês</displayed-value><stored-value>fi</stored-value></pair>
+    <pair><displayed-value>Frisiano o frisón</displayed-value><stored-value>fy</stored-value></pair>
+    <pair><displayed-value>Fula</displayed-value><stored-value>ff</stored-value></pair>
+    <pair><displayed-value>Galês</displayed-value><stored-value>cy</stored-value></pair>
+    <pair><displayed-value>Gallego</displayed-value><stored-value>gl</stored-value></pair>
+    <pair><displayed-value>Georgiano</displayed-value><stored-value>ka</stored-value></pair>
+    <pair><displayed-value>Grego Moderno (após 1453)</displayed-value><stored-value>el</stored-value></pair>
+    <pair><displayed-value>Guarani</displayed-value><stored-value>gn</stored-value></pair>
+    <pair><displayed-value>Guzerate</displayed-value><stored-value>gu</stored-value></pair>
+    <pair><displayed-value>Haussa</displayed-value><stored-value>ha</stored-value></pair>
+    <pair><displayed-value>Hebraico</displayed-value><stored-value>he</stored-value></pair>
+    <pair><displayed-value>Herero</displayed-value><stored-value>hz</stored-value></pair>
+    <pair><displayed-value>Hindi</displayed-value><stored-value>hi</stored-value></pair>
+    <pair><displayed-value>Hiri Motu</displayed-value><stored-value>ho</stored-value></pair>
+    <pair><displayed-value>Holandês</displayed-value><stored-value>nl</stored-value></pair>
+    <pair><displayed-value>Húngaro</displayed-value><stored-value>hu</stored-value></pair>
+    <pair><displayed-value>Ido</displayed-value><stored-value>io</stored-value></pair>
+    <pair><displayed-value>Igbo</displayed-value><stored-value>ig</stored-value></pair>
+    <pair><displayed-value>Iídiche</displayed-value><stored-value>yi</stored-value></pair>
+    <pair><displayed-value>Indeterminado</displayed-value><stored-value>und</stored-value></pair>
+    <pair><displayed-value>Indonesio</displayed-value><stored-value>id</stored-value></pair>
+    <pair><displayed-value>Interlíngua</displayed-value><stored-value>ia</stored-value></pair>
+    <pair><displayed-value>Interlingue</displayed-value><stored-value>ie</stored-value></pair>
+    <pair><displayed-value>Inuktitut</displayed-value><stored-value>iu</stored-value></pair>
+    <pair><displayed-value>Inupiak o inuit</displayed-value><stored-value>ik</stored-value></pair>
+    <pair><displayed-value>Ioruba</displayed-value><stored-value>yo</stored-value></pair>
+    <pair><displayed-value>Irlandês</displayed-value><stored-value>ga</stored-value></pair>
+    <pair><displayed-value>Islandês</displayed-value><stored-value>is</stored-value></pair>
+    <pair><displayed-value>Japonês</displayed-value><stored-value>ja</stored-value></pair>
+    <pair><displayed-value>Javanês</displayed-value><stored-value>jv</stored-value></pair>
+    <pair><displayed-value>Kalâtdlisut</displayed-value><stored-value>kl</stored-value></pair>
+    <pair><displayed-value>Khmer</displayed-value><stored-value>km</stored-value></pair>
+    <pair><displayed-value>Komi</displayed-value><stored-value>kv</stored-value></pair>
+    <pair><displayed-value>Kuanyama</displayed-value><stored-value>kj</stored-value></pair>
+    <pair><displayed-value>Laosiano</displayed-value><stored-value>lo</stored-value></pair>
+    <pair><displayed-value>Latim</displayed-value><stored-value>la</stored-value></pair>
+    <pair><displayed-value>Letão</displayed-value><stored-value>lv</stored-value></pair>
+    <pair><displayed-value>Limburguês</displayed-value><stored-value>li</stored-value></pair>
+    <pair><displayed-value>Lingala</displayed-value><stored-value>ln</stored-value></pair>
+    <pair><displayed-value>Lituano</displayed-value><stored-value>lt</stored-value></pair>
+    <pair><displayed-value>Luba</displayed-value><stored-value>lu</stored-value></pair>
+    <pair><displayed-value>Luganda</displayed-value><stored-value>lg</stored-value></pair>
+    <pair><displayed-value>Luxemburguês</displayed-value><stored-value>lb</stored-value></pair>
+    <pair><displayed-value>Macedônio</displayed-value><stored-value>mk</stored-value></pair>
+    <pair><displayed-value>Malaiala</displayed-value><stored-value>ml</stored-value></pair>
+    <pair><displayed-value>Malaio</displayed-value><stored-value>ms</stored-value></pair>
+    <pair><displayed-value>Malgaxe</displayed-value><stored-value>mg</stored-value></pair>
+    <pair><displayed-value>Maltês</displayed-value><stored-value>mt</stored-value></pair>
+    <pair><displayed-value>Manx</displayed-value><stored-value>gv</stored-value></pair>
+    <pair><displayed-value>Maori</displayed-value><stored-value>mi</stored-value></pair>
+    <pair><displayed-value>Marati, Marata</displayed-value><stored-value>mr</stored-value></pair>
+    <pair><displayed-value>Marshall</displayed-value><stored-value>mh</stored-value></pair>
+    <pair><displayed-value>Moldávio</displayed-value><stored-value>mo</stored-value></pair>
+    <pair><displayed-value>Mongol</displayed-value><stored-value>mn</stored-value></pair>
+    <pair><displayed-value>Nauru</displayed-value><stored-value>na</stored-value></pair>
+    <pair><displayed-value>Navajo</displayed-value><stored-value>nv</stored-value></pair>
+    <pair><displayed-value>Ndebele (Sudáfrica)</displayed-value><stored-value>nr</stored-value></pair>
+    <pair><displayed-value>Ndebele (Zimbabwe)</displayed-value><stored-value>nd</stored-value></pair>
+    <pair><displayed-value>Ndonga</displayed-value><stored-value>ng</stored-value></pair>
+    <pair><displayed-value>Nepali</displayed-value><stored-value>ne</stored-value></pair>
+    <pair><displayed-value>Nianja</displayed-value><stored-value>ny</stored-value></pair>
+    <pair><displayed-value>Norueguês</displayed-value><stored-value>no</stored-value></pair>
+    <pair><displayed-value>Novo norueguês</displayed-value><stored-value>nn</stored-value></pair>
+    <pair><displayed-value>Occitan (a partir de 1500)</displayed-value><stored-value>oc</stored-value></pair>
+    <pair><displayed-value>Ojibwa</displayed-value><stored-value>oj</stored-value></pair>
+    <pair><displayed-value>Oriá</displayed-value><stored-value>or</stored-value></pair>
+    <pair><displayed-value>Oromo</displayed-value><stored-value>om</stored-value></pair>
+    <pair><displayed-value>Osseto</displayed-value><stored-value>os</stored-value></pair>
+    <pair><displayed-value>Páli</displayed-value><stored-value>pi</stored-value></pair>
+    <pair><displayed-value>Pandjabi</displayed-value><stored-value>pa</stored-value></pair>
+    <pair><displayed-value>Persa Moderno</displayed-value><stored-value>fa</stored-value></pair>
+    <pair><displayed-value>Polonês</displayed-value><stored-value>pl</stored-value></pair>
+    <pair><displayed-value>Pushto</displayed-value><stored-value>ps</stored-value></pair>
+    <pair><displayed-value>Quíchua</displayed-value><stored-value>qu</stored-value></pair>
+    <pair><displayed-value>Quicuiu</displayed-value><stored-value>ki</stored-value></pair>
+    <pair><displayed-value>Quiniaruanda</displayed-value><stored-value>rw</stored-value></pair>
+    <pair><displayed-value>Quirquiz</displayed-value><stored-value>ky</stored-value></pair>
+    <pair><displayed-value>Rético</displayed-value><stored-value>rm</stored-value></pair>
+    <pair><displayed-value>Romano</displayed-value><stored-value>ro</stored-value></pair>
+    <pair><displayed-value>Rundi</displayed-value><stored-value>rn</stored-value></pair>
+    <pair><displayed-value>Russo</displayed-value><stored-value>ru</stored-value></pair>
+    <pair><displayed-value>Sami del Norte</displayed-value><stored-value>se</stored-value></pair>
+    <pair><displayed-value>Samoano</displayed-value><stored-value>sm</stored-value></pair>
+    <pair><displayed-value>Sango</displayed-value><stored-value>sg</stored-value></pair>
+    <pair><displayed-value>Sânscrito</displayed-value><stored-value>sa</stored-value></pair>
+    <pair><displayed-value>Sardo</displayed-value><stored-value>sc</stored-value></pair>
+    <pair><displayed-value>Servo-Croata (Cirílico)</displayed-value><stored-value>sr</stored-value></pair>
+    <pair><displayed-value>Servo-Croata (Latino)</displayed-value><stored-value>hr</stored-value></pair>
+    <pair><displayed-value>Shona</displayed-value><stored-value>sn</stored-value></pair>
+    <pair><displayed-value>Sichuan Yi</displayed-value><stored-value>ii</stored-value></pair>
+    <pair><displayed-value>Sindi</displayed-value><stored-value>sd</stored-value></pair>
+    <pair><displayed-value>Singalés</displayed-value><stored-value>si</stored-value></pair>
+    <pair><displayed-value>Somali</displayed-value><stored-value>so</stored-value></pair>
+    <pair><displayed-value>Soto</displayed-value><stored-value>st</stored-value></pair>
+    <pair><displayed-value>Suaili</displayed-value><stored-value>sw</stored-value></pair>
+    <pair><displayed-value>Sudanês</displayed-value><stored-value>su</stored-value></pair>
+    <pair><displayed-value>Sueco</displayed-value><stored-value>sv</stored-value></pair>
+    <pair><displayed-value>Swazi</displayed-value><stored-value>ss</stored-value></pair>
+    <pair><displayed-value>Tadjique</displayed-value><stored-value>tg</stored-value></pair>
+    <pair><displayed-value>Tagalo</displayed-value><stored-value>tl</stored-value></pair>
+    <pair><displayed-value>Tahitian</displayed-value><stored-value>ty</stored-value></pair>
+    <pair><displayed-value>Tâmil</displayed-value><stored-value>ta</stored-value></pair>
+    <pair><displayed-value>Tátaro</displayed-value><stored-value>tt</stored-value></pair>
+    <pair><displayed-value>Tcheco</displayed-value><stored-value>cs</stored-value></pair>
+    <pair><displayed-value>Tchetcheno</displayed-value><stored-value>ce</stored-value></pair>
+    <pair><displayed-value>Tchuvache</displayed-value><stored-value>cv</stored-value></pair>
+    <pair><displayed-value>Telugo</displayed-value><stored-value>te</stored-value></pair>
+    <pair><displayed-value>Thai</displayed-value><stored-value>th</stored-value></pair>
+    <pair><displayed-value>Tibetano</displayed-value><stored-value>bo</stored-value></pair>
+    <pair><displayed-value>Tigrina</displayed-value><stored-value>ti</stored-value></pair>
+    <pair><displayed-value>Tonga (ilhas)</displayed-value><stored-value>to</stored-value></pair>
+    <pair><displayed-value>Tsonga</displayed-value><stored-value>ts</stored-value></pair>
+    <pair><displayed-value>Tswanano</displayed-value><stored-value>tn</stored-value></pair>
+    <pair><displayed-value>Tui</displayed-value><stored-value>tw</stored-value></pair>
+    <pair><displayed-value>Turco</displayed-value><stored-value>tr</stored-value></pair>
+    <pair><displayed-value>Turcomano</displayed-value><stored-value>tk</stored-value></pair>
+    <pair><displayed-value>Ucraniano</displayed-value><stored-value>uk</stored-value></pair>
+    <pair><displayed-value>Uigur</displayed-value><stored-value>ug</stored-value></pair>
+    <pair><displayed-value>Urdu</displayed-value><stored-value>ur</stored-value></pair>
+    <pair><displayed-value>Uzbeque</displayed-value><stored-value>uz</stored-value></pair>
+    <pair><displayed-value>Valão</displayed-value><stored-value>wa</stored-value></pair>
+    <pair><displayed-value>Venda</displayed-value><stored-value>ve</stored-value></pair>
+    <pair><displayed-value>Vietnamês</displayed-value><stored-value>vi</stored-value></pair>
+    <pair><displayed-value>Volapuk</displayed-value><stored-value>vo</stored-value></pair>
+    <pair><displayed-value>Wolof</displayed-value><stored-value>wo</stored-value></pair>
+    <pair><displayed-value>Xosa</displayed-value><stored-value>xh</stored-value></pair>
+    <pair><displayed-value>Zhuang</displayed-value><stored-value>za</stored-value></pair>
+    <pair><displayed-value>Zulu</displayed-value><stored-value>zu</stored-value></pair>
+</value-pairs>
+
+
+
+<value-pairs value-pairs-name="common_iso_countries" dc-term="language_iso">
+    <pair>
+        <displayed-value>Selecione o país</displayed-value>
+        <stored-value></stored-value>
+    </pair>
+    <pair><displayed-value>Brasil</displayed-value><stored-value>Brasil</stored-value></pair>
+    <pair><displayed-value>Afeganistão</displayed-value><stored-value>Afeganistão</stored-value></pair>
+    <pair><displayed-value>África do Sul</displayed-value><stored-value>África do Sul</stored-value></pair>
+    <pair><displayed-value>Albânia</displayed-value><stored-value>Albânia</stored-value></pair>
+    <pair><displayed-value>Alemanha</displayed-value><stored-value>Alemanha</stored-value></pair>
+    <pair><displayed-value>Andorra</displayed-value><stored-value>Andorra</stored-value></pair>
+    <pair><displayed-value>Angola</displayed-value><stored-value>Angola</stored-value></pair>
+    <pair><displayed-value>Anguilla</displayed-value><stored-value>Anguilla</stored-value></pair>
+    <pair><displayed-value>Antártica</displayed-value><stored-value>Antártica</stored-value></pair>
+    <pair><displayed-value>Antígua e Barbuda</displayed-value><stored-value>Antígua e Barbuda</stored-value></pair>
+    <pair><displayed-value>Arábia Saudita</displayed-value><stored-value>Arábia Saudita</stored-value></pair>
+    <pair><displayed-value>Argélia</displayed-value><stored-value>Argélia</stored-value></pair>
+    <pair><displayed-value>Argentina</displayed-value><stored-value>Argentina</stored-value></pair>
+    <pair><displayed-value>Armênia</displayed-value><stored-value>Armênia</stored-value></pair>
+    <pair><displayed-value>Aruba</displayed-value><stored-value>Aruba</stored-value></pair>
+    <pair><displayed-value>Austrália</displayed-value><stored-value>Austrália</stored-value></pair>
+    <pair><displayed-value>Áustria</displayed-value><stored-value>Áustria</stored-value></pair>
+    <pair><displayed-value>Azerbaijão</displayed-value><stored-value>Azerbaijão</stored-value></pair>
+    <pair><displayed-value>Bahamas</displayed-value><stored-value>Bahamas</stored-value></pair>
+    <pair><displayed-value>Bangladesh</displayed-value><stored-value>Bangladesh</stored-value></pair>
+    <pair><displayed-value>Barbados</displayed-value><stored-value>Barbados</stored-value></pair>
+    <pair><displayed-value>Barém</displayed-value><stored-value>Barém</stored-value></pair>
+    <pair><displayed-value>Belarus</displayed-value><stored-value>Belarus</stored-value></pair>
+    <pair><displayed-value>Bélgica</displayed-value><stored-value>Bélgica</stored-value></pair>
+    <pair><displayed-value>Belize</displayed-value><stored-value>Belize</stored-value></pair>
+    <pair><displayed-value>Benin</displayed-value><stored-value>Benin</stored-value></pair>
+    <pair><displayed-value>Bermuda</displayed-value><stored-value>Bermuda</stored-value></pair>
+    <pair><displayed-value>Birmânia</displayed-value><stored-value>Birmânia</stored-value></pair>
+    <pair><displayed-value>Bolívia</displayed-value><stored-value>Bolívia</stored-value></pair>
+    <pair><displayed-value>Bósnia e Herzegovina</displayed-value><stored-value>Bósnia e Herzegovina</stored-value></pair>
+    <pair><displayed-value>Botswana</displayed-value><stored-value>Botswana</stored-value></pair>
+    <pair><displayed-value>Brunei</displayed-value><stored-value>Brunei</stored-value></pair>
+    <pair><displayed-value>Bulgária</displayed-value><stored-value>Bulgária</stored-value></pair>
+    <pair><displayed-value>Burkina Faso</displayed-value><stored-value>Burkina Faso</stored-value></pair>
+    <pair><displayed-value>Burundi</displayed-value><stored-value>Burundi</stored-value></pair>
+    <pair><displayed-value>Butão</displayed-value><stored-value>Butão</stored-value></pair>
+    <pair><displayed-value>Cabo Verde</displayed-value><stored-value>Cabo Verde</stored-value></pair>
+    <pair><displayed-value>Camarões</displayed-value><stored-value>Camarões</stored-value></pair>
+    <pair><displayed-value>Camboja</displayed-value><stored-value>Camboja</stored-value></pair>
+    <pair><displayed-value>Canadá</displayed-value><stored-value>Canadá</stored-value></pair>
+    <pair><displayed-value>Cazaquistão</displayed-value><stored-value>Cazaquistão</stored-value></pair>
+    <pair><displayed-value>Chad</displayed-value><stored-value>Chad</stored-value></pair>
+    <pair><displayed-value>Chile</displayed-value><stored-value>Chile</stored-value></pair>
+    <pair><displayed-value>China</displayed-value><stored-value>China</stored-value></pair>
+    <pair><displayed-value>Chipre</displayed-value><stored-value>Chipre</stored-value></pair>
+    <pair><displayed-value>Cingapura</displayed-value><stored-value>Cingapura</stored-value></pair>
+    <pair><displayed-value>Cisjordânia</displayed-value><stored-value>Cisjordânia</stored-value></pair>
+    <pair><displayed-value>Colômbia</displayed-value><stored-value>Colômbia</stored-value></pair>
+    <pair><displayed-value>Cômoros</displayed-value><stored-value>Cômoros</stored-value></pair>
+    <pair><displayed-value>Congo, República Democrática do</displayed-value><stored-value>Congo, República Democrática do</stored-value></pair>
+    <pair><displayed-value>Congo, República do</displayed-value><stored-value>Congo, República do</stored-value></pair>
+    <pair><displayed-value>Coreia do Norte</displayed-value><stored-value>Coreia do Norte</stored-value></pair>
+    <pair><displayed-value>Coreia do Sul</displayed-value><stored-value>Coreia do Sul</stored-value></pair>
+    <pair><displayed-value>Costa do Marfim</displayed-value><stored-value>Costa do Marfim</stored-value></pair>
+    <pair><displayed-value>Costa Rica</displayed-value><stored-value>Costa Rica</stored-value></pair>
+    <pair><displayed-value>Croácia</displayed-value><stored-value>Croácia</stored-value></pair>
+    <pair><displayed-value>Cuba</displayed-value><stored-value>Cuba</stored-value></pair>
+    <pair><displayed-value>Curaçao</displayed-value><stored-value>Curaçao</stored-value></pair>
+    <pair><displayed-value>Dinamarca</displayed-value><stored-value>Dinamarca</stored-value></pair>
+    <pair><displayed-value>Djibuti</displayed-value><stored-value>Djibuti</stored-value></pair>
+    <pair><displayed-value>Dominica</displayed-value><stored-value>Dominica</stored-value></pair>
+    <pair><displayed-value>Egito</displayed-value><stored-value>Egito</stored-value></pair>
+    <pair><displayed-value>El Salvador</displayed-value><stored-value>El Salvador</stored-value></pair>
+    <pair><displayed-value>Emirados Árabes Unidos</displayed-value><stored-value>Emirados Árabes Unidos</stored-value></pair>
+    <pair><displayed-value>Equador</displayed-value><stored-value>Equador</stored-value></pair>
+    <pair><displayed-value>Eritréia</displayed-value><stored-value>Eritréia</stored-value></pair>
+    <pair><displayed-value>Eslováquia</displayed-value><stored-value>Eslováquia</stored-value></pair>
+    <pair><displayed-value>Eslovênia</displayed-value><stored-value>Eslovênia</stored-value></pair>
+    <pair><displayed-value>Espanha</displayed-value><stored-value>Espanha</stored-value></pair>
+    <pair><displayed-value>Estados Unidos</displayed-value><stored-value>Estados Unidos</stored-value></pair>
+    <pair><displayed-value>Estônia</displayed-value><stored-value>Estônia</stored-value></pair>
+    <pair><displayed-value>Etiópia</displayed-value><stored-value>Etiópia</stored-value></pair>
+    <pair><displayed-value>Faixa de Gaza</displayed-value><stored-value>Faixa de Gaza</stored-value></pair>
+    <pair><displayed-value>Fiji</displayed-value><stored-value>Fiji</stored-value></pair>
+    <pair><displayed-value>Filipinas</displayed-value><stored-value>Filipinas</stored-value></pair>
+    <pair><displayed-value>Finlândia</displayed-value><stored-value>Finlândia</stored-value></pair>
+    <pair><displayed-value>França Metropolitana</displayed-value><stored-value>França Metropolitana</stored-value></pair>
+    <pair><displayed-value>França</displayed-value><stored-value>França</stored-value></pair>
+    <pair><displayed-value>Gabão</displayed-value><stored-value>Gabão</stored-value></pair>
+    <pair><displayed-value>Gâmbia</displayed-value><stored-value>Gâmbia</stored-value></pair>
+    <pair><displayed-value>Gana</displayed-value><stored-value>Gana</stored-value></pair>
+    <pair><displayed-value>Geórgia do Sul e Ilhas</displayed-value><stored-value>Geórgia do Sul e Ilhas</stored-value></pair>
+    <pair><displayed-value>Geórgia</displayed-value><stored-value>Geórgia</stored-value></pair>
+    <pair><displayed-value>Gibraltar</displayed-value><stored-value>Gibraltar</stored-value></pair>
+    <pair><displayed-value>Grécia</displayed-value><stored-value>Grécia</stored-value></pair>
+    <pair><displayed-value>Greenland</displayed-value><stored-value>Greenland</stored-value></pair>
+    <pair><displayed-value>Grenada</displayed-value><stored-value>Grenada</stored-value></pair>
+    <pair><displayed-value>Guadelupe</displayed-value><stored-value>Guadelupe</stored-value></pair>
+    <pair><displayed-value>Guam</displayed-value><stored-value>Guam</stored-value></pair>
+    <pair><displayed-value>Guatemala</displayed-value><stored-value>Guatemala</stored-value></pair>
+    <pair><displayed-value>Guernsey</displayed-value><stored-value>Guernsey</stored-value></pair>
+    <pair><displayed-value>Guiana Francesa</displayed-value><stored-value>Guiana Francesa</stored-value></pair>
+    <pair><displayed-value>Guiana</displayed-value><stored-value>Guiana</stored-value></pair>
+    <pair><displayed-value>Guiné Equatorial</displayed-value><stored-value>Guiné Equatorial</stored-value></pair>
+    <pair><displayed-value>Guiné-Bissau</displayed-value><stored-value>Guiné-Bissau</stored-value></pair>
+    <pair><displayed-value>Guiné</displayed-value><stored-value>Guiné</stored-value></pair>
+    <pair><displayed-value>Haiti</displayed-value><stored-value>Haiti</stored-value></pair>
+    <pair><displayed-value>Holanda</displayed-value><stored-value>Holanda</stored-value></pair>
+    <pair><displayed-value>Honduras</displayed-value><stored-value>Honduras</stored-value></pair>
+    <pair><displayed-value>Hong Kong</displayed-value><stored-value>Hong Kong</stored-value></pair>
+    <pair><displayed-value>Hungria</displayed-value><stored-value>Hungria</stored-value></pair>
+    <pair><displayed-value>Iêmen</displayed-value><stored-value>Iêmen</stored-value></pair>
+    <pair><displayed-value>Ilha Bouvet</displayed-value><stored-value>Ilha Bouvet</stored-value></pair>
+    <pair><displayed-value>Ilha Christmas</displayed-value><stored-value>Ilha Christmas</stored-value></pair>
+    <pair><displayed-value>Ilha de Man</displayed-value><stored-value>Ilha de Man</stored-value></pair>
+    <pair><displayed-value>Ilha Norfolk</displayed-value><stored-value>Ilha Norfolk</stored-value></pair>
+    <pair><displayed-value>Ilhas Caiman</displayed-value><stored-value>Ilhas Caiman</stored-value></pair>
+    <pair><displayed-value>Ilhas Cocos (Keeling)</displayed-value><stored-value>Ilhas Cocos (Keeling)</stored-value></pair>
+    <pair><displayed-value>Ilhas Cook</displayed-value><stored-value>Ilhas Cook</stored-value></pair>
+    <pair><displayed-value>Ilhas Falkland (Malvinas)</displayed-value><stored-value>Ilhas Falkland (Malvinas)</stored-value></pair>
+    <pair><displayed-value>Ilhas Feroe</displayed-value><stored-value>Ilhas Feroe</stored-value></pair>
+    <pair><displayed-value>Ilhas Heard and McDonald</displayed-value><stored-value>Ilhas Heard and McDonald</stored-value></pair>
+    <pair><displayed-value>Ilhas Marianas do Norte</displayed-value><stored-value>Ilhas Marianas do Norte</stored-value></pair>
+    <pair><displayed-value>Ilhas Marshall</displayed-value><stored-value>Ilhas Marshall</stored-value></pair>
+    <pair><displayed-value>Ilhas Maurício</displayed-value><stored-value>Ilhas Maurício</stored-value></pair>
+    <pair><displayed-value>Ilhas Menores Distantes dos Estados Unidos</displayed-value><stored-value>Ilhas Menores Distantes dos Estados Unidos</stored-value></pair>
+    <pair><displayed-value>Ilhas Pitcairn</displayed-value><stored-value>Ilhas Pitcairn</stored-value></pair>
+    <pair><displayed-value>Ilhas Salomão</displayed-value><stored-value>Ilhas Salomão</stored-value></pair>
+    <pair><displayed-value>Ilhas Turks e Caicos</displayed-value><stored-value>Ilhas Turks e Caicos</stored-value></pair>
+    <pair><displayed-value>Ilhas Virgens Americanas</displayed-value><stored-value>Ilhas Virgens Americanas</stored-value></pair>
+    <pair><displayed-value>Ilhas Virgens Britânicas</displayed-value><stored-value>Ilhas Virgens Britânicas</stored-value></pair>
+    <pair><displayed-value>Ilhas Wallis e Futuna</displayed-value><stored-value>Ilhas Wallis e Futuna</stored-value></pair>
+    <pair><displayed-value>Índia</displayed-value><stored-value>Índia</stored-value></pair>
+    <pair><displayed-value>Indonésia</displayed-value><stored-value>Indonésia</stored-value></pair>
+    <pair><displayed-value>Irã</displayed-value><stored-value>Irã</stored-value></pair>
+    <pair><displayed-value>Iraque</displayed-value><stored-value>Iraque</stored-value></pair>
+    <pair><displayed-value>Irlanda</displayed-value><stored-value>Irlanda</stored-value></pair>
+    <pair><displayed-value>Islândia</displayed-value><stored-value>Islândia</stored-value></pair>
+    <pair><displayed-value>Israel</displayed-value><stored-value>Israel</stored-value></pair>
+    <pair><displayed-value>Itália</displayed-value><stored-value>Itália</stored-value></pair>
+    <pair><displayed-value>Jamaica</displayed-value><stored-value>Jamaica</stored-value></pair>
+    <pair><displayed-value>Japão</displayed-value><stored-value>Japão</stored-value></pair>
+    <pair><displayed-value>Jersey</displayed-value><stored-value>Jersey</stored-value></pair>
+    <pair><displayed-value>Jordânia</displayed-value><stored-value>Jordânia</stored-value></pair>
+    <pair><displayed-value>Kiribati</displayed-value><stored-value>Kiribati</stored-value></pair>
+    <pair><displayed-value>Kosovo</displayed-value><stored-value>Kosovo</stored-value></pair>
+    <pair><displayed-value>Kuwait</displayed-value><stored-value>Kuwait</stored-value></pair>
+    <pair><displayed-value>Laos</displayed-value><stored-value>Laos</stored-value></pair>
+    <pair><displayed-value>Lesoto</displayed-value><stored-value>Lesoto</stored-value></pair>
+    <pair><displayed-value>Letônia</displayed-value><stored-value>Letônia</stored-value></pair>
+    <pair><displayed-value>Líbano</displayed-value><stored-value>Líbano</stored-value></pair>
+    <pair><displayed-value>Libéria</displayed-value><stored-value>Libéria</stored-value></pair>
+    <pair><displayed-value>Líbia</displayed-value><stored-value>Líbia</stored-value></pair>
+    <pair><displayed-value>Liechtenstein</displayed-value><stored-value>Liechtenstein</stored-value></pair>
+    <pair><displayed-value>Lituânia</displayed-value><stored-value>Lituânia</stored-value></pair>
+    <pair><displayed-value>Luxemburgo</displayed-value><stored-value>Luxemburgo</stored-value></pair>
+    <pair><displayed-value>Macao</displayed-value><stored-value>Macao</stored-value></pair>
+    <pair><displayed-value>Macedônia</displayed-value><stored-value>Macedônia</stored-value></pair>
+    <pair><displayed-value>Madagascar</displayed-value><stored-value>Madagascar</stored-value></pair>
+    <pair><displayed-value>Maiote</displayed-value><stored-value>Maiote</stored-value></pair>
+    <pair><displayed-value>Malásia</displayed-value><stored-value>Malásia</stored-value></pair>
+    <pair><displayed-value>Malawi</displayed-value><stored-value>Malawi</stored-value></pair>
+    <pair><displayed-value>Maldivas</displayed-value><stored-value>Maldivas</stored-value></pair>
+    <pair><displayed-value>Mali</displayed-value><stored-value>Mali</stored-value></pair>
+    <pair><displayed-value>Malta</displayed-value><stored-value>Malta</stored-value></pair>
+    <pair><displayed-value>Marrocos</displayed-value><stored-value>Marrocos</stored-value></pair>
+    <pair><displayed-value>Martinica</displayed-value><stored-value>Martinica</stored-value></pair>
+    <pair><displayed-value>Mauritânia</displayed-value><stored-value>Mauritânia</stored-value></pair>
+    <pair><displayed-value>México</displayed-value><stored-value>México</stored-value></pair>
+    <pair><displayed-value>Micronésia, Estados Federados da</displayed-value><stored-value>Micronésia, Estados Federados da</stored-value></pair>
+    <pair><displayed-value>Moçambique</displayed-value><stored-value>Moçambique</stored-value></pair>
+    <pair><displayed-value>Moldova</displayed-value><stored-value>Moldova</stored-value></pair>
+    <pair><displayed-value>Mônaco</displayed-value><stored-value>Mônaco</stored-value></pair>
+    <pair><displayed-value>Mongólia</displayed-value><stored-value>Mongólia</stored-value></pair>
+    <pair><displayed-value>Montenegro</displayed-value><stored-value>Montenegro</stored-value></pair>
+    <pair><displayed-value>Montserrat</displayed-value><stored-value>Montserrat</stored-value></pair>
+    <pair><displayed-value>Namíbia</displayed-value><stored-value>Namíbia</stored-value></pair>
+    <pair><displayed-value>Nauru</displayed-value><stored-value>Nauru</stored-value></pair>
+    <pair><displayed-value>Nepal</displayed-value><stored-value>Nepal</stored-value></pair>
+    <pair><displayed-value>Nicarágua</displayed-value><stored-value>Nicarágua</stored-value></pair>
+    <pair><displayed-value>Níger</displayed-value><stored-value>Níger</stored-value></pair>
+    <pair><displayed-value>Nigéria</displayed-value><stored-value>Nigéria</stored-value></pair>
+    <pair><displayed-value>Niue</displayed-value><stored-value>Niue</stored-value></pair>
+    <pair><displayed-value>Noruega</displayed-value><stored-value>Noruega</stored-value></pair>
+    <pair><displayed-value>Nova Caledônia</displayed-value><stored-value>Nova Caledônia</stored-value></pair>
+    <pair><displayed-value>Nova Zelândia</displayed-value><stored-value>Nova Zelândia</stored-value></pair>
+    <pair><displayed-value>Omã</displayed-value><stored-value>Omã</stored-value></pair>
+    <pair><displayed-value>Palau</displayed-value><stored-value>Palau</stored-value></pair>
+    <pair><displayed-value>Panamá</displayed-value><stored-value>Panamá</stored-value></pair>
+    <pair><displayed-value>Papua Nova Guiné</displayed-value><stored-value>Papua Nova Guiné</stored-value></pair>
+    <pair><displayed-value>Paquistão</displayed-value><stored-value>Paquistão</stored-value></pair>
+    <pair><displayed-value>Paraguai</displayed-value><stored-value>Paraguai</stored-value></pair>
+    <pair><displayed-value>Peru</displayed-value><stored-value>Peru</stored-value></pair>
+    <pair><displayed-value>Polinésia Francesa</displayed-value><stored-value>Polinésia Francesa</stored-value></pair>
+    <pair><displayed-value>Polônia</displayed-value><stored-value>Polônia</stored-value></pair>
+    <pair><displayed-value>Porto Rico</displayed-value><stored-value>Porto Rico</stored-value></pair>
+    <pair><displayed-value>Portugal</displayed-value><stored-value>Portugal</stored-value></pair>
+    <pair><displayed-value>Qatar</displayed-value><stored-value>Qatar</stored-value></pair>
+    <pair><displayed-value>Quênia</displayed-value><stored-value>Quênia</stored-value></pair>
+    <pair><displayed-value>Quirguistão</displayed-value><stored-value>Quirguistão</stored-value></pair>
+    <pair><displayed-value>Reino Unido</displayed-value><stored-value>Reino Unido</stored-value></pair>
+    <pair><displayed-value>República Centro-Africana</displayed-value><stored-value>República Centro-Africana</stored-value></pair>
+    <pair><displayed-value>República Dominicana</displayed-value><stored-value>República Dominicana</stored-value></pair>
+    <pair><displayed-value>República Tcheca</displayed-value><stored-value>República Tcheca</stored-value></pair>
+    <pair><displayed-value>Reunião</displayed-value><stored-value>Reunião</stored-value></pair>
+    <pair><displayed-value>Romênia</displayed-value><stored-value>Romênia</stored-value></pair>
+    <pair><displayed-value>Ruanda</displayed-value><stored-value>Ruanda</stored-value></pair>
+    <pair><displayed-value>Rússia</displayed-value><stored-value>Rússia</stored-value></pair>
+    <pair><displayed-value>Saara Ocidental</displayed-value><stored-value>Saara Ocidental</stored-value></pair>
+    <pair><displayed-value>Saint Martin</displayed-value><stored-value>Saint Martin</stored-value></pair>
+    <pair><displayed-value>Saint Pierre e Miquelon</displayed-value><stored-value>Saint Pierre e Miquelon</stored-value></pair>
+    <pair><displayed-value>Samoa Americana</displayed-value><stored-value>Samoa Americana</stored-value></pair>
+    <pair><displayed-value>Samoa</displayed-value><stored-value>Samoa</stored-value></pair>
+    <pair><displayed-value>San Marino</displayed-value><stored-value>San Marino</stored-value></pair>
+    <pair><displayed-value>Santa Helena, Ascensão e Tristão da Cunha</displayed-value><stored-value>Santa Helena, Ascensão e Tristão da Cunha</stored-value></pair>
+    <pair><displayed-value>Santa Lúcia</displayed-value><stored-value>Santa Lúcia</stored-value></pair>
+    <pair><displayed-value>Santa Sé (Cidade do Vaticano)</displayed-value><stored-value>Santa Sé (Cidade do Vaticano)</stored-value></pair>
+    <pair><displayed-value>São Bartolomeu</displayed-value><stored-value>São Bartolomeu</stored-value></pair>
+    <pair><displayed-value>São Cristóvão e Nevis</displayed-value><stored-value>São Cristóvão e Nevis</stored-value></pair>
+    <pair><displayed-value>São Martinho</displayed-value><stored-value>São Martinho</stored-value></pair>
+    <pair><displayed-value>São Tomé e Príncipe</displayed-value><stored-value>São Tomé e Príncipe</stored-value></pair>
+    <pair><displayed-value>São Vicente e Granadinas</displayed-value><stored-value>São Vicente e Granadinas</stored-value></pair>
+    <pair><displayed-value>Seicheles</displayed-value><stored-value>Seicheles</stored-value></pair>
+    <pair><displayed-value>Senegal</displayed-value><stored-value>Senegal</stored-value></pair>
+    <pair><displayed-value>Serra Leoa</displayed-value><stored-value>Serra Leoa</stored-value></pair>
+    <pair><displayed-value>Sérvia</displayed-value><stored-value>Sérvia</stored-value></pair>
+    <pair><displayed-value>Síria</displayed-value><stored-value>Síria</stored-value></pair>
+    <pair><displayed-value>Somália</displayed-value><stored-value>Somália</stored-value></pair>
+    <pair><displayed-value>Sri Lanka</displayed-value><stored-value>Sri Lanka</stored-value></pair>
+    <pair><displayed-value>Suazilândia</displayed-value><stored-value>Suazilândia</stored-value></pair>
+    <pair><displayed-value>Sudão do Sul</displayed-value><stored-value>Sudão do Sul</stored-value></pair>
+    <pair><displayed-value>Sudão</displayed-value><stored-value>Sudão</stored-value></pair>
+    <pair><displayed-value>Suécia</displayed-value><stored-value>Suécia</stored-value></pair>
+    <pair><displayed-value>Suíça</displayed-value><stored-value>Suíça</stored-value></pair>
+    <pair><displayed-value>Sul da França e Antártica</displayed-value><stored-value>Sul da França e Antártica</stored-value></pair>
+    <pair><displayed-value>Suriname</displayed-value><stored-value>Suriname</stored-value></pair>
+    <pair><displayed-value>Svalbard</displayed-value><stored-value>Svalbard</stored-value></pair>
+    <pair><displayed-value>Tadjiquistão</displayed-value><stored-value>Tadjiquistão</stored-value></pair>
+    <pair><displayed-value>Tailândia</displayed-value><stored-value>Tailândia</stored-value></pair>
+    <pair><displayed-value>Taiwan</displayed-value><stored-value>Taiwan</stored-value></pair>
+    <pair><displayed-value>Tanzânia</displayed-value><stored-value>Tanzânia</stored-value></pair>
+    <pair><displayed-value>Território Britânico do Oceano Índico</displayed-value><stored-value>Território Britânico do Oceano Índico</stored-value></pair>
+    <pair><displayed-value>Timor-Leste</displayed-value><stored-value>Timor-Leste</stored-value></pair>
+    <pair><displayed-value>Togo</displayed-value><stored-value>Togo</stored-value></pair>
+    <pair><displayed-value>Tonga</displayed-value><stored-value>Tonga</stored-value></pair>
+    <pair><displayed-value>Toquelau</displayed-value><stored-value>Toquelau</stored-value></pair>
+    <pair><displayed-value>Trinidad e Tobago</displayed-value><stored-value>Trinidad e Tobago</stored-value></pair>
+    <pair><displayed-value>Tunísia</displayed-value><stored-value>Tunísia</stored-value></pair>
+    <pair><displayed-value>Turcomenistão</displayed-value><stored-value>Turcomenistão</stored-value></pair>
+    <pair><displayed-value>Turquia</displayed-value><stored-value>Turquia</stored-value></pair>
+    <pair><displayed-value>Tuvalu</displayed-value><stored-value>Tuvalu</stored-value></pair>
+    <pair><displayed-value>Ucrânia</displayed-value><stored-value>Ucrânia</stored-value></pair>
+    <pair><displayed-value>Uganda</displayed-value><stored-value>Uganda</stored-value></pair>
+    <pair><displayed-value>Uruguai</displayed-value><stored-value>Uruguai</stored-value></pair>
+    <pair><displayed-value>Uzbequistão</displayed-value><stored-value>Uzbequistão</stored-value></pair>
+    <pair><displayed-value>Vanuatu</displayed-value><stored-value>Vanuatu</stored-value></pair>
+    <pair><displayed-value>Venezuela</displayed-value><stored-value>Venezuela</stored-value></pair>
+    <pair><displayed-value>Vietnã</displayed-value><stored-value>Vietnã</stored-value></pair>
+    <pair><displayed-value>Zâmbia</displayed-value><stored-value>Zâmbia</stored-value></pair>
+    <pair><displayed-value>Zimbábue</displayed-value><stored-value>Zimbábue</stored-value></pair>
+
+</value-pairs>
+
+
+<value-pairs value-pairs-name="common_educational_instructionalMethod" dc-term="educational">
+    <pair>
+        <displayed-value>Curso</displayed-value>
+        <stored-value>Curso</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Ferramenta de aprendizado</displayed-value>
+        <stored-value>Ferramenta de aprendizado</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Pesquisa</displayed-value>
+        <stored-value>Pesquisa</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Recurso de aprendizagem</displayed-value>
+        <stored-value>Recurso de aprendizagem</stored-value>
+    </pair>
+</value-pairs>
+
+<value-pairs value-pairs-name="common_educational_granularity" dc-term="educational">
+    <pair>
+        <displayed-value>Aula</displayed-value>
+        <stored-value>Aula</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Curso (no todo)</displayed-value>
+        <stored-value>Curso (no todo)</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Módulo</displayed-value>
+        <stored-value>Módulo</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Unidade</displayed-value>
+        <stored-value>Unidade</stored-value>
+    </pair>
+</value-pairs>
+
+<value-pairs value-pairs-name="common_context" dc-term="educational">
+    <pair>
+        <displayed-value>Formação permanente</displayed-value>
+        <stored-value>Formação permanente</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Formação profissional</displayed-value>
+        <stored-value>Formação profissional</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Universidade (pós-graduação)</displayed-value>
+        <stored-value>Universidade (pós-graduação)</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Treinamento em serviço</displayed-value>
+        <stored-value>Treinamento em serviço</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Outros</displayed-value>
+        <stored-value>Outros</stored-value>
+    </pair>
+</value-pairs>
+
+<value-pairs value-pairs-name="common_audience" dc-term="audience">
+    <pair>
+        <displayed-value>Docentes</displayed-value>
+        <stored-value>Docentes</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Discentes</displayed-value>
+        <stored-value>Discentes</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Gestor</displayed-value>
+        <stored-value>Gestor</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Pesquisador</displayed-value>
+        <stored-value>Pesquisador</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Outros</displayed-value>
+        <stored-value>Outros</stored-value>
+    </pair>
+</value-pairs>
+
+<value-pairs value-pairs-name="common_rights" dc-term="rights">
+    <pair>
+        <displayed-value>Atribuição CC BY</displayed-value>
+        <stored-value>Atribuição CC BY</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Atribuição-CompartilhaIgual CC BY-SA</displayed-value>
+        <stored-value>Atribuição-CompartilhaIgual CC BY-SA</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Atribuição-SemDerivações CC BY-ND</displayed-value>
+        <stored-value>Atribuição-SemDerivações CC BY-ND</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Atribuição-NãoComercial CC BY-NC</displayed-value>
+        <stored-value>Atribuição-NãoComercial CC BY-NC</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Atribuição-NãoComercial-CompartilhaIgual CC BY-NC-SA</displayed-value>
+        <stored-value>Atribuição-NãoComercial-CompartilhaIgual CC BY-NC-SA</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Atribuição-SemDerivações-SemDerivados CC BY-NC-ND</displayed-value>
+        <stored-value>Atribuição-SemDerivações-SemDerivados CC BY-NC-ND</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Definido pelo Autor</displayed-value>
+        <stored-value>Definido pelo Autor</stored-value>
+    </pair>
+</value-pairs>
+
+
+
+<!-- Categorias del plan estrategico 2014-2019
+-->
+<value-pairs value-pairs-name="common_cat_strategic_plan" dc-term="subject">
+    <pair>
+        <displayed-value>Cat 1. Communicable Diseases</displayed-value>
+        <stored-value>Cat 1. Communicable Diseases</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Cat 2. Noncommunicable Diseases and Risk Factors</displayed-value>
+        <stored-value>Cat 2. Noncommunicable Diseases and Risk Factors</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Cat 3. Determinants of Health and Promoting Health throughout the Life Course</displayed-value>
+        <stored-value>Cat 3. Determinants of Health and Promoting Health throughout the Life Course</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Cat 4. Health Systems</displayed-value>
+        <stored-value>Cat 4. Health Systems</stored-value>
+    </pair>     
+    <pair>
+        <displayed-value>Cat 5. Preparedness, Surveillance, and Response</displayed-value>
+        <stored-value>Cat 5. Preparedness, Surveillance, and Response</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Cat 6. Corporate Services/Enabling Functions</displayed-value>
+        <stored-value>Cat 6. Corporate Services/Enabling Functions</stored-value>
+    </pair>
+</value-pairs>
+<value-pairs value-pairs-name="es_destacado" dc-term="isfeatured">
+    <pair>
+        <displayed-value>No</displayed-value>
+        <stored-value>0</stored-value>
+    </pair>
+    <pair>
+        <displayed-value>Si</displayed-value>
+        <stored-value>1</stored-value>
+    </pair>
+</value-pairs> 
+
+<value-pairs value-pairs-name="common_iso_rights" dc-term="isfeatured">
+    <pair>
+        <displayed-value>FUNASA</displayed-value>
+        <stored-value>FUNASA</stored-value>
+    </pair>
+
+</value-pairs> 
+
+
+<value-pairs value-pairs-name="common_types_funasa" dc-term="type">
+    <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
+    <pair><displayed-value>Animação</displayed-value><stored-value>Animação</stored-value></pair>
+    <pair><displayed-value>Apresentação</displayed-value><stored-value>Apresentação</stored-value></pair>
+    <pair><displayed-value>Artigo de jornal</displayed-value><stored-value>Artigo de jornal</stored-value></pair>
+    <pair><displayed-value>Boletim</displayed-value><stored-value>Boletim</stored-value></pair>
+    <pair><displayed-value>Certificado / Diploma</displayed-value><stored-value>Certificado / Diploma</stored-value></pair>
+    <pair><displayed-value>Conjunto de dados / dados estatísticos</displayed-value><stored-value>Conjunto de dados / dados estatísticos</stored-value></pair>
+    <pair><displayed-value>Discurso</displayed-value><stored-value>Discurso</stored-value></pair>
+    <pair><displayed-value>Documento de Órgãos Diretores</displayed-value><stored-value>Documento de Órgãos Diretores</stored-value></pair>
+    <pair><displayed-value>Documento oficial</displayed-value><stored-value>Documento oficial</stored-value></pair>
+    <pair><displayed-value>Estratégia de Cooperação com os Países</displayed-value><stored-value>Estratégia de Cooperação com os Países</stored-value></pair>
+    <pair><displayed-value>Fichas técnicas</displayed-value><stored-value>Fichas técnicas</stored-value></pair>
+    <pair><displayed-value>Folder</displayed-value><stored-value>Folder</stored-value></pair>
+    <pair><displayed-value>Fotografia</displayed-value><stored-value>Fotografia</stored-value></pair>
+    <pair><displayed-value>Gráficos</displayed-value><stored-value>Gráficos</stored-value></pair>
+    <pair><displayed-value>Gravação musical</displayed-value><stored-value>Gravação musical</stored-value></pair>
+    <pair><displayed-value>Gravação oral</displayed-value><stored-value>Gravação oral</stored-value></pair>
+    <pair><displayed-value>Guia</displayed-value><stored-value>Guia</stored-value></pair>
+    <pair><displayed-value>Kit de informações (pasta, banner, brochura)</displayed-value><stored-value>Kit de informações (pasta, banner, brochura)</stored-value></pair>
+    <pair><displayed-value>Mapa / Mapa interativo</displayed-value><stored-value>Mapa / Mapa interativo</stored-value></pair>
+    <pair><displayed-value>Material de aprendizagem / treinamento</displayed-value><stored-value>Material de aprendizagem / treinamento</stored-value></pair>
+    <pair><displayed-value>Prêmio / Distinção</displayed-value><stored-value>Prêmio / Distinção</stored-value></pair>
+    <pair><displayed-value>Publicação externa</displayed-value><stored-value>Publicação externa</stored-value></pair>
+    <pair><displayed-value>Publicação</displayed-value><stored-value>Publicação</stored-value></pair>
+    <pair><displayed-value>Relatório de progresso</displayed-value><stored-value>Relatório de progresso</stored-value></pair>
+    <pair><displayed-value>Relatório de reunião</displayed-value><stored-value>Relatório de reunião</stored-value></pair>
+    <pair><displayed-value>Relatório técnico</displayed-value><stored-value>Relatório técnico</stored-value></pair>
+    <pair><displayed-value>Relatórios</displayed-value><stored-value>Relatórios</stored-value></pair>
+    <pair><displayed-value>Resumo de Política</displayed-value><stored-value>Resumo de Política</stored-value></pair>
+    <pair><displayed-value>Software</displayed-value><stored-value>Software</stored-value></pair>
+    <pair><displayed-value>Vídeo</displayed-value><stored-value>Vídeo</stored-value></pair>
+    <pair><displayed-value>Website</displayed-value><stored-value>Website</stored-value></pair>
+</value-pairs>
+
+
+
+
+</form-value-pairs>
+
+</input-forms>
+

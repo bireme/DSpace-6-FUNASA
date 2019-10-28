@@ -1,0 +1,21 @@
+# Item Archived email message
+#
+# {0}  Title of submission
+# {1}  Name of collection
+# {2}  handle 
+#
+Subject: Envio aprovado e arquivado
+
+Você enviou: {0}
+
+Para coleção: {1}
+
+Seu envio foi aceito e arquivado no repositório,
+e foi atribuído o seguinte identificador:
+{2}
+
+Por favor, use esse identificador para citar o documento.
+
+Muito Obrigado!
+
+Repositório do Conhecimento FUNASA
