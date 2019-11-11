@@ -5,11 +5,6 @@ use JSON;
 use Data::Dumper;
 
 
-my $uuid_group_publishers = "536c9d30-06a4-4c24-9702-27675067865d";
-my $uuid_group_reviewers ="c36166fb-b640-4bae-b5e5-31b48b4c09d2";
-
-
-
 
 my $headers = {Accept => 'application/json'};
 my $client = REST::Client->new();
