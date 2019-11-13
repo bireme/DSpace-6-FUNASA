@@ -128,6 +128,7 @@ public class CollectionSetSubmitersAndReviewers {
 	            		System.out.println(g3.getName()+" GRUPO CREADO");
 	            	}
 	            	gs.addMember(context, g3, g1);
+                gs.update(context,g3);
 	            	
 	            	g4 = cs.createWorkflowGroup(context, mycoll, 1);
 	            	if (g4==null)
@@ -140,6 +141,11 @@ public class CollectionSetSubmitersAndReviewers {
 	            		System.out.println(g4.getName()+" GRUPO CREADO");
 	            	}
 	            	gs.addMember(context, g4, g2);
+                gs.update(context,g4);
+                
+                System.out.println("Actualizada informacion de coleccion:"+mycoll.getHandle());
+                
+                cs.update(context, mycoll);
 	            	
 	            	System.out.println("Agregado derechos de edicion a coleccion:"+mycoll.getHandle());	 
 	         }
