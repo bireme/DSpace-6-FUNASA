@@ -16,22 +16,289 @@
     <form-map>
         <name-map collection-handle="default" form-name="generalpub" />
 
+        <!-- 275 colecoes -->
+
+        <name-map collection-handle="123456789/337" form-name="legi" />
+        <name-map collection-handle="123456789/343" form-name="legi" />
+        <name-map collection-handle="123456789/349" form-name="legi" />
+        <name-map collection-handle="123456789/241" form-name="legi" />
+        <name-map collection-handle="123456789/247" form-name="legi" />
+        <name-map collection-handle="123456789/261" form-name="legi" />
+        <name-map collection-handle="123456789/267" form-name="legi" />
+        <name-map collection-handle="123456789/273" form-name="legi" />
+        <name-map collection-handle="123456789/279" form-name="legi" />
+        <name-map collection-handle="123456789/285" form-name="legi" />
+        <name-map collection-handle="123456789/291" form-name="legi" />
+        <name-map collection-handle="123456789/297" form-name="legi" />
+        <name-map collection-handle="123456789/304" form-name="legi" />
+        <name-map collection-handle="123456789/310" form-name="legi" />
+        <name-map collection-handle="123456789/317" form-name="legi" />
+        <name-map collection-handle="123456789/361" form-name="legi" />
+        <name-map collection-handle="123456789/366" form-name="legi" />
         <name-map collection-handle="123456789/57" form-name="legi" />
+        <name-map collection-handle="123456789/253" form-name="legi" />
         <name-map collection-handle="123456789/63" form-name="legi" />
         <name-map collection-handle="123456789/69" form-name="legi" />
         <name-map collection-handle="123456789/76" form-name="legi" />
+        <name-map collection-handle="123456789/82" form-name="legi" />
+        <name-map collection-handle="123456789/24" form-name="legi" />
+        <name-map collection-handle="123456789/5" form-name="legi" />
+        <name-map collection-handle="123456789/11" form-name="legi" />
+        <name-map collection-handle="123456789/17" form-name="legi" />
+        <name-map collection-handle="123456789/31" form-name="legi" />
+        <name-map collection-handle="123456789/37" form-name="legi" />
+        <name-map collection-handle="123456789/43" form-name="legi" />
+        <name-map collection-handle="123456789/49" form-name="legi" />
+        <name-map collection-handle="123456789/95" form-name="legi" />
+        <name-map collection-handle="123456789/89" form-name="legi" />
+        <name-map collection-handle="123456789/140" form-name="legi" />
+        <name-map collection-handle="123456789/101" form-name="legi" />
+        <name-map collection-handle="123456789/126" form-name="legi" />
+        <name-map collection-handle="123456789/132" form-name="legi" />
+        <name-map collection-handle="123456789/108" form-name="legi" />
+        <name-map collection-handle="123456789/114" form-name="legi" />
+        <name-map collection-handle="123456789/120" form-name="legi" />
+        <name-map collection-handle="123456789/146" form-name="legi" />
+        <name-map collection-handle="123456789/159" form-name="legi" />
+        <name-map collection-handle="123456789/152" form-name="legi" />
+        <name-map collection-handle="123456789/165" form-name="legi" />
+        <name-map collection-handle="123456789/172" form-name="legi" />
+        <name-map collection-handle="123456789/178" form-name="legi" />
+        <name-map collection-handle="123456789/185" form-name="legi" />
+        <name-map collection-handle="123456789/191" form-name="legi" />
+        <name-map collection-handle="123456789/198" form-name="legi" />
+        <name-map collection-handle="123456789/204" form-name="legi" />
+        <name-map collection-handle="123456789/211" form-name="legi" />
+        <name-map collection-handle="123456789/217" form-name="legi" />
+        <name-map collection-handle="123456789/223" form-name="legi" />
+        <name-map collection-handle="123456789/229" form-name="legi" />
+        <name-map collection-handle="123456789/235" form-name="legi" />
 
 
-        <name-map collection-handle="123456789/58" form-name="multimedia" />
-        <name-map collection-handle="123456789/70" form-name="multimedia" />
-        <name-map collection-handle="123456789/77" form-name="multimedia" />
-
-        <name-map collection-handle="123456789/61" form-name="lom" />
-        <name-map collection-handle="123456789/67" form-name="lom" />
-
-        <!-- Políticas, Planejamento, Gestão e Projetos e Produção Científica -->
+        <name-map collection-handle="123456789/33" form-name="pppp" />
+        <name-map collection-handle="123456789/13" form-name="pppp" />
+        <name-map collection-handle="123456789/368" form-name="pppp" />
+        <name-map collection-handle="123456789/7" form-name="pppp" />
+        <name-map collection-handle="123456789/263" form-name="pppp" />
+        <name-map collection-handle="123456789/269" form-name="pppp" />
+        <name-map collection-handle="123456789/275" form-name="pppp" />
+        <name-map collection-handle="123456789/281" form-name="pppp" />
+        <name-map collection-handle="123456789/287" form-name="pppp" />
+        <name-map collection-handle="123456789/97" form-name="pppp" />
+        <name-map collection-handle="123456789/319" form-name="pppp" />
+        <name-map collection-handle="123456789/103" form-name="pppp" />
+        <name-map collection-handle="123456789/312" form-name="pppp" />
+        <name-map collection-handle="123456789/110" form-name="pppp" />
+        <name-map collection-handle="123456789/293" form-name="pppp" />
+        <name-map collection-handle="123456789/299" form-name="pppp" />
+        <name-map collection-handle="123456789/306" form-name="pppp" />
+        <name-map collection-handle="123456789/116" form-name="pppp" />
+        <name-map collection-handle="123456789/122" form-name="pppp" />
+        <name-map collection-handle="123456789/128" form-name="pppp" />
+        <name-map collection-handle="123456789/134" form-name="pppp" />
+        <name-map collection-handle="123456789/142" form-name="pppp" />
+        <name-map collection-handle="123456789/148" form-name="pppp" />
+        <name-map collection-handle="123456789/154" form-name="pppp" />
+        <name-map collection-handle="123456789/161" form-name="pppp" />
+        <name-map collection-handle="123456789/167" form-name="pppp" />
+        <name-map collection-handle="123456789/174" form-name="pppp" />
+        <name-map collection-handle="123456789/180" form-name="pppp" />
+        <name-map collection-handle="123456789/351" form-name="pppp" />
+        <name-map collection-handle="123456789/363" form-name="pppp" />
+        <name-map collection-handle="123456789/345" form-name="pppp" />
+        <name-map collection-handle="123456789/51" form-name="pppp" />
         <name-map collection-handle="123456789/59" form-name="pppp" />
+        <name-map collection-handle="123456789/45" form-name="pppp" />
+        <name-map collection-handle="123456789/187" form-name="pppp" />
+        <name-map collection-handle="123456789/193" form-name="pppp" />
+        <name-map collection-handle="123456789/65" form-name="pppp" />
+        <name-map collection-handle="123456789/84" form-name="pppp" />
+        <name-map collection-handle="123456789/200" form-name="pppp" />
+        <name-map collection-handle="123456789/206" form-name="pppp" />
+        <name-map collection-handle="123456789/39" form-name="pppp" />
+        <name-map collection-handle="123456789/255" form-name="pppp" />
+        <name-map collection-handle="123456789/71" form-name="pppp" />
+        <name-map collection-handle="123456789/339" form-name="pppp" />
+        <name-map collection-handle="123456789/213" form-name="pppp" />
+        <name-map collection-handle="123456789/219" form-name="pppp" />
+        <name-map collection-handle="123456789/225" form-name="pppp" />
+        <name-map collection-handle="123456789/231" form-name="pppp" />
+        <name-map collection-handle="123456789/26" form-name="pppp" />
+        <name-map collection-handle="123456789/78" form-name="pppp" />
+        <name-map collection-handle="123456789/237" form-name="pppp" />
+        <name-map collection-handle="123456789/243" form-name="pppp" />
+        <name-map collection-handle="123456789/249" form-name="pppp" />
+        <name-map collection-handle="123456789/19" form-name="pppp" />
+        <name-map collection-handle="123456789/91" form-name="pppp" />
+        <name-map collection-handle="123456789/175" form-name="pppp" />
+        <name-map collection-handle="123456789/256" form-name="pppp" />
+        <name-map collection-handle="123456789/92" form-name="pppp" />
+        <name-map collection-handle="123456789/369" form-name="pppp" />
+        <name-map collection-handle="123456789/34" form-name="pppp" />
+        <name-map collection-handle="123456789/181" form-name="pppp" />
+        <name-map collection-handle="123456789/8" form-name="pppp" />
+        <name-map collection-handle="123456789/364" form-name="pppp" />
+        <name-map collection-handle="123456789/79" form-name="pppp" />
+        <name-map collection-handle="123456789/66" form-name="pppp" />
+        <name-map collection-handle="123456789/320" form-name="pppp" />
+        <name-map collection-handle="123456789/250" form-name="pppp" />
+        <name-map collection-handle="123456789/264" form-name="pppp" />
+        <name-map collection-handle="123456789/346" form-name="pppp" />
+        <name-map collection-handle="123456789/270" form-name="pppp" />
+        <name-map collection-handle="123456789/352" form-name="pppp" />
+        <name-map collection-handle="123456789/276" form-name="pppp" />
         <name-map collection-handle="123456789/60" form-name="pppp" />
+        <name-map collection-handle="123456789/282" form-name="pppp" />
+        <name-map collection-handle="123456789/52" form-name="pppp" />
+        <name-map collection-handle="123456789/27" form-name="pppp" />
+        <name-map collection-handle="123456789/98" form-name="pppp" />
+        <name-map collection-handle="123456789/46" form-name="pppp" />
+        <name-map collection-handle="123456789/20" form-name="pppp" />
+        <name-map collection-handle="123456789/313" form-name="pppp" />
+        <name-map collection-handle="123456789/104" form-name="pppp" />
+        <name-map collection-handle="123456789/214" form-name="pppp" />
+        <name-map collection-handle="123456789/238" form-name="pppp" />
+        <name-map collection-handle="123456789/307" form-name="pppp" />
+        <name-map collection-handle="123456789/288" form-name="pppp" />
+        <name-map collection-handle="123456789/188" form-name="pppp" />
+        <name-map collection-handle="123456789/294" form-name="pppp" />
+        <name-map collection-handle="123456789/220" form-name="pppp" />
+        <name-map collection-handle="123456789/300" form-name="pppp" />
+        <name-map collection-handle="123456789/194" form-name="pppp" />
+        <name-map collection-handle="123456789/111" form-name="pppp" />
+        <name-map collection-handle="123456789/14" form-name="pppp" />
+        <name-map collection-handle="123456789/117" form-name="pppp" />
+        <name-map collection-handle="123456789/40" form-name="pppp" />
+        <name-map collection-handle="123456789/123" form-name="pppp" />
+        <name-map collection-handle="123456789/226" form-name="pppp" />
+        <name-map collection-handle="123456789/129" form-name="pppp" />
+        <name-map collection-handle="123456789/244" form-name="pppp" />
+        <name-map collection-handle="123456789/135" form-name="pppp" />
+        <name-map collection-handle="123456789/201" form-name="pppp" />
+        <name-map collection-handle="123456789/143" form-name="pppp" />
+        <name-map collection-handle="123456789/232" form-name="pppp" />
+        <name-map collection-handle="123456789/149" form-name="pppp" />
+        <name-map collection-handle="123456789/207" form-name="pppp" />
+        <name-map collection-handle="123456789/155" form-name="pppp" />
+        <name-map collection-handle="123456789/85" form-name="pppp" />
+        <name-map collection-handle="123456789/162" form-name="pppp" />
+        <name-map collection-handle="123456789/72" form-name="pppp" />
+        <name-map collection-handle="123456789/168" form-name="pppp" />
+        <name-map collection-handle="123456789/340" form-name="pppp" />
+
+
+        <name-map collection-handle="123456789/195" form-name="lom" />
+        <name-map collection-handle="123456789/156" form-name="lom" />
+        <name-map collection-handle="123456789/295" form-name="lom" />
+        <name-map collection-handle="123456789/301" form-name="lom" />
+        <name-map collection-handle="123456789/308" form-name="lom" />
+        <name-map collection-handle="123456789/314" form-name="lom" />
+        <name-map collection-handle="123456789/215" form-name="lom" />
+        <name-map collection-handle="123456789/321" form-name="lom" />
+        <name-map collection-handle="123456789/163" form-name="lom" />
+        <name-map collection-handle="123456789/365" form-name="lom" />
+        <name-map collection-handle="123456789/370" form-name="lom" />
+        <name-map collection-handle="123456789/61" form-name="lom" />
+        <name-map collection-handle="123456789/233" form-name="lom" />
+        <name-map collection-handle="123456789/67" form-name="lom" />
+        <name-map collection-handle="123456789/73" form-name="lom" />
+        <name-map collection-handle="123456789/169" form-name="lom" />
+        <name-map collection-handle="123456789/80" form-name="lom" />
+        <name-map collection-handle="123456789/221" form-name="lom" />
+        <name-map collection-handle="123456789/86" form-name="lom" />
+        <name-map collection-handle="123456789/28" form-name="lom" />
+        <name-map collection-handle="123456789/176" form-name="lom" />
+        <name-map collection-handle="123456789/9" form-name="lom" />
+        <name-map collection-handle="123456789/15" form-name="lom" />
+        <name-map collection-handle="123456789/21" form-name="lom" />
+        <name-map collection-handle="123456789/182" form-name="lom" />
+        <name-map collection-handle="123456789/35" form-name="lom" />
+        <name-map collection-handle="123456789/257" form-name="lom" />
+        <name-map collection-handle="123456789/41" form-name="lom" />
+        <name-map collection-handle="123456789/47" form-name="lom" />
+        <name-map collection-handle="123456789/189" form-name="lom" />
+        <name-map collection-handle="123456789/227" form-name="lom" />
+        <name-map collection-handle="123456789/53" form-name="lom" />
+        <name-map collection-handle="123456789/93" form-name="lom" />
+        <name-map collection-handle="123456789/99" form-name="lom" />
+        <name-map collection-handle="123456789/289" form-name="lom" />
+        <name-map collection-handle="123456789/105" form-name="lom" />
+        <name-map collection-handle="123456789/202" form-name="lom" />
+        <name-map collection-handle="123456789/130" form-name="lom" />
+        <name-map collection-handle="123456789/136" form-name="lom" />
+        <name-map collection-handle="123456789/112" form-name="lom" />
+        <name-map collection-handle="123456789/118" form-name="lom" />
+        <name-map collection-handle="123456789/208" form-name="lom" />
+        <name-map collection-handle="123456789/124" form-name="lom" />
+        <name-map collection-handle="123456789/341" form-name="lom" />
+        <name-map collection-handle="123456789/347" form-name="lom" />
+        <name-map collection-handle="123456789/353" form-name="lom" />
+        <name-map collection-handle="123456789/239" form-name="lom" />
+        <name-map collection-handle="123456789/144" form-name="lom" />
+        <name-map collection-handle="123456789/245" form-name="lom" />
+        <name-map collection-handle="123456789/251" form-name="lom" />
+        <name-map collection-handle="123456789/265" form-name="lom" />
+        <name-map collection-handle="123456789/271" form-name="lom" />
+        <name-map collection-handle="123456789/277" form-name="lom" />
+        <name-map collection-handle="123456789/150" form-name="lom" />
+        <name-map collection-handle="123456789/283" form-name="lom" />
+
+
+        <name-map collection-handle="123456789/121" form-name="multimedia" />
+        <name-map collection-handle="123456789/338" form-name="multimedia" />
+        <name-map collection-handle="123456789/212" form-name="multimedia" />
+        <name-map collection-handle="123456789/192" form-name="multimedia" />
+        <name-map collection-handle="123456789/305" form-name="multimedia" />
+        <name-map collection-handle="123456789/344" form-name="multimedia" />
+        <name-map collection-handle="123456789/50" form-name="multimedia" />
+        <name-map collection-handle="123456789/350" form-name="multimedia" />
+        <name-map collection-handle="123456789/44" form-name="multimedia" />
+        <name-map collection-handle="123456789/186" form-name="multimedia" />
+        <name-map collection-handle="123456789/147" form-name="multimedia" />
+        <name-map collection-handle="123456789/236" form-name="multimedia" />
+        <name-map collection-handle="123456789/38" form-name="multimedia" />
+        <name-map collection-handle="123456789/32" form-name="multimedia" />
+        <name-map collection-handle="123456789/18" form-name="multimedia" />
+        <name-map collection-handle="123456789/179" form-name="multimedia" />
+        <name-map collection-handle="123456789/12" form-name="multimedia" />
+        <name-map collection-handle="123456789/218" form-name="multimedia" />
+        <name-map collection-handle="123456789/6" form-name="multimedia" />
+        <name-map collection-handle="123456789/274" form-name="multimedia" />
+        <name-map collection-handle="123456789/286" form-name="multimedia" />
+        <name-map collection-handle="123456789/242" form-name="multimedia" />
+        <name-map collection-handle="123456789/25" form-name="multimedia" />
+        <name-map collection-handle="123456789/173" form-name="multimedia" />
+        <name-map collection-handle="123456789/83" form-name="multimedia" />
+        <name-map collection-handle="123456789/77" form-name="multimedia" />
+        <name-map collection-handle="123456789/70" form-name="multimedia" />
+        <name-map collection-handle="123456789/166" form-name="multimedia" />
+        <name-map collection-handle="123456789/64" form-name="multimedia" />
+        <name-map collection-handle="123456789/58" form-name="multimedia" />
+        <name-map collection-handle="123456789/367" form-name="multimedia" />
+        <name-map collection-handle="123456789/160" form-name="multimedia" />
+        <name-map collection-handle="123456789/362" form-name="multimedia" />
+        <name-map collection-handle="123456789/298" form-name="multimedia" />
+        <name-map collection-handle="123456789/230" form-name="multimedia" />
+        <name-map collection-handle="123456789/141" form-name="multimedia" />
+        <name-map collection-handle="123456789/96" form-name="multimedia" />
+        <name-map collection-handle="123456789/90" form-name="multimedia" />
+        <name-map collection-handle="123456789/224" form-name="multimedia" />
+        <name-map collection-handle="123456789/102" form-name="multimedia" />
+        <name-map collection-handle="123456789/248" form-name="multimedia" />
+        <name-map collection-handle="123456789/280" form-name="multimedia" />
+        <name-map collection-handle="123456789/318" form-name="multimedia" />
+        <name-map collection-handle="123456789/127" form-name="multimedia" />
+        <name-map collection-handle="123456789/199" form-name="multimedia" />
+        <name-map collection-handle="123456789/262" form-name="multimedia" />
+        <name-map collection-handle="123456789/133" form-name="multimedia" />
+        <name-map collection-handle="123456789/254" form-name="multimedia" />
+        <name-map collection-handle="123456789/292" form-name="multimedia" />
+        <name-map collection-handle="123456789/109" form-name="multimedia" />
+        <name-map collection-handle="123456789/205" form-name="multimedia" />
+        <name-map collection-handle="123456789/311" form-name="multimedia" />
+        <name-map collection-handle="123456789/115" form-name="multimedia" />
+        <name-map collection-handle="123456789/268" form-name="multimedia" />
+        <name-map collection-handle="123456789/153" form-name="multimedia" />
 
     </form-map>
 
@@ -1072,7 +1339,7 @@
                     <repeatable></repeatable>
                     <label>ID do vídeo de Youtube</label>
                     <input-type>onebox</input-type>
-                    <hint>Ingresse o código de vídeo do Youtube para apresentar o visor online</hint>
+                    <hint>Exemplo: Para a url http://youtube.be/LiI2Y7Y07lwxpto, utilizar LiI2Y7Y07lwxpto no preenchimento.</hint>
                     <required></required>
                 </field>
 
@@ -1208,66 +1475,6 @@
                 </field>
 
                 <field>
-                    <dc-schema>paho</dc-schema>
-                    <dc-element>subject</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Category of the PAHO/WHO Strategic Plan 2014-2019 / Categoría del Plan Estratégico de OPS/OMS 2014-2019</label>
-                    <input-type value-pairs-name="common_cat_strategic_plan">dropdown</input-type>
-                    <hint>Only applicable for documents issued from 2014 to 2019 / Solo se aplica para documentos editados a partir de 2014 hasta 2019</hint>
-                </field>	   
-
-
-
-
-
-
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>publisher</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Publisher / Editor</label>
-                    <input-type value-pairs-name="common_publisher">dropdown</input-type>
-                    <hint>Select the correct form in case PAHO is the publisher of the publication / Seleccione una opción en caso que el editor de la publicación sea la OPS</hint>
-                    <required></required>
-                </field>
-
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>other</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>External publisher / Editor externo</label>
-                    <input-type>onebox</input-type>
-                    <hint>Add other publisher diferent than PAHO / Agregue otro editor diferente de OPS en este campo</hint>
-                </field>
-
-                <field>
-                    <dc-schema>paho</dc-schema>
-                    <dc-element>publisher</dc-element>
-                    <dc-qualifier>country</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
-                    <repeatable></repeatable>
-                    <label>Country / País</label>
-                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
-                    <hint>Select the country of edition (Ex: United States) / Seleccione el país de edición del documento, ej., Estados Unidos</hint>
-                    <required></required>
-                </field>
-
-                <field>
-                    <dc-schema>paho</dc-schema>
-                    <dc-element>publisher</dc-element>
-                    <dc-qualifier>city</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
-                    <repeatable></repeatable>
-                    <label>City / Ciudad</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the city of edition (Ex: Washington, D.C) / Ingrese la ciudad de edición del documento, ej., Washington, D.C</hint>
-                    <required>You must enter the city of publication / Debe ingresar la ciudad de publicación</required>
-                </field>
-
-                <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
@@ -1301,68 +1508,29 @@
                     <required></required>
                 </field>
 
-<!--
-<field>
-<dc-schema>dc</dc-schema>
-<dc-element>contributor</dc-element>
-<dc-qualifier>department</dc-qualifier>
-<repeatable>false</repeatable>
-<label>PAHO Area</label>
-<input-type>onebox</input-type>
-<hint>Enter the area of PAHO/OPS that contributes the item to the repository</hint>
-<required></required>
-</field> -->
-<field>
-    <dc-schema>dc</dc-schema>
-    <dc-element>identifier</dc-element>
-    <dc-qualifier>citation</dc-qualifier>
-    <repeatable>false</repeatable>
-    <label>Citation</label>
-    <input-type>onebox</input-type>
-    <hint>Enter the provided citation for the Publication. Do not enter if the correct information is not available / Ingrese la citación provista directamente por la publicacion. No ingrese este dato si la información no está disponible</hint>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>citation</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Citation</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the provided citation for the Publication. Do not enter if the correct information is not available / Ingrese la citación provista directamente por la publicacion. No ingrese este dato si la información no está disponible</hint>
+                   <required></required>
+               </field>
 
-    <required></required>
-</field>
+               <field>
+                   <dc-schema>dc</dc-schema>
+                   <dc-element>description</dc-element>
+                   <dc-qualifier>notes</dc-qualifier>
+                   <repeatable>false</repeatable>
+                   <label>Additional notes for the item / Notas adicionales para el ítem</label>
+                   <input-type>textarea</input-type>
+                   <hint>Enter the additional observations for the item / Ingrese las observaciones adicionales para el ítem</hint>
+                   <required></required>
+                </field>
 
-<field>
-    <dc-schema>dc</dc-schema>
-    <dc-element>description</dc-element>
-    <dc-qualifier>notes</dc-qualifier>
-    <repeatable>false</repeatable>
-    <label>Additional notes for the item / Notas adicionales para el ítem</label>
-    <input-type>textarea</input-type>
-    <hint>Enter the additional observations for the item / Ingrese las observaciones adicionales para el ítem</hint>
-    <required></required>
-</field>
-
-<field>
-    <dc-schema>dc</dc-schema>
-    <dc-element>rights</dc-element>
-    <dc-qualifier>holder</dc-qualifier>
-    <repeatable>false</repeatable>
-    <label>Rights Holder</label>
-    <input-type value-pairs-name="common_iso_rights">dropdown</input-type>
-
-    <hint>To be filled up by PAHO Headquarters only / A ser llenado por la OPS Sede solamente.</hint>
-    <required></required>
-</field> 
-
-
-
-
-
-<field>
-    <dc-schema>paho</dc-schema>
-    <dc-element>isfeatured</dc-element>
-    <dc-qualifier></dc-qualifier>
-    <repeatable>false</repeatable>
-    <label>Destacado?</label>
-    <input-type value-pairs-name="es_destacado">list</input-type>
-    <hint>Ingrese si el item aparecera entre los 10 (maximo) destacados</hint>
-    <required></required>
-</field> 
-
-</page>
+    </page>
 </form>
 
 
