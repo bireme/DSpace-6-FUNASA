@@ -66,7 +66,7 @@
                     <label>País do alcance do ato</label>
                     <!--input-type>onebox</input-type-->
                     <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
-                    <hint>Preencher este campo sempre que o ato for de alcance geográfico municipal, estadual ou nacional</hint>
+                    <hint></hint>
                     <required>Obrigatório selecionar o país de alcance do ato</required>
                 </field>
 
@@ -570,7 +570,7 @@
                     <repeatable></repeatable>
                     <label>ID do vídeo de Youtube</label>
                     <input-type>onebox</input-type>
-                    <hint>Ingresse o código de video de Youtube para apresentar o visor online</hint>
+                    <hint>Exemplo: Para a url http://youtube.be/LiI2Y7Y07lwxpto, utilizar LiI2Y7Y07lwxpto no preenchimento.</hint>
                     <required></required>
                 </field>
 
@@ -973,7 +973,7 @@
                     <required></required>
                 </field>
 
-                <field>
+                <!-- field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>rights</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -982,7 +982,7 @@
                     <input-type value-pairs-name="common_rights">dropdown</input-type>
                     <hint></hint>
                     <required></required>
-                </field> 
+                </field --> 
 
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1924,6 +1924,13 @@ An input-type of qualdrop_value MUST be marked as repeatable
                 <displayed-value>Disposição</displayed-value>
                 <stored-value>Disposição</stored-value>
             </pair>
+
+        <pair>
+            <displayed-value>Instrução Normativa</displayed-value>
+            <stored-value>Instrução Normativa</stored-value>
+        </pair>
+
+
             <pair>
                 <displayed-value>Lei</displayed-value>
                 <stored-value>Lei</stored-value>
@@ -1935,6 +1942,24 @@ An input-type of qualdrop_value MUST be marked as repeatable
                     <displayed-value>Norma Técnica</displayed-value>
                     <stored-value>Norma Técnica</stored-value>
                 </pair>
+
+        <pair>
+            <displayed-value>Normas e Procedimentos (MNP)</displayed-value>
+            <stored-value>Normas e Procedimentos (MNP)</stored-value>
+        </pair>
+
+        <pair>
+            <displayed-value>Normas Específicas (MNE)</displayed-value>
+            <stored-value>Normas Específicas (MNE)</stored-value>
+        </pair>
+
+        <pair>
+            <displayed-value>Manuais de Utilização de Sistemas (MUT)</displayed-value>
+            <stored-value>Manuais de Utilização de Sistemas (MUT)</stored-value>
+        </pair>
+
+
+
                 <pair>
                     <displayed-value>Ordem de Serviço</displayed-value>
                     <stored-value>Ordem de Serviço</stored-value>
@@ -1943,6 +1968,13 @@ An input-type of qualdrop_value MUST be marked as repeatable
                     <displayed-value>Portaria</displayed-value>
                     <stored-value>Portaria</stored-value>
                 </pair>
+
+        <pair>
+            <displayed-value>Procedimento Operacional</displayed-value>
+            <stored-value>Procedimento Operacional</stored-value>
+        </pair>
+
+
                 <pair>
                     <displayed-value>Projeto de Lei</displayed-value>
                     <stored-value>Projeto de Lei</stored-value>
