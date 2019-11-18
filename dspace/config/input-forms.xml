@@ -927,11 +927,12 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
-                    <dc-qualifier>other</dc-qualifier>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Identificador</label>
-                    <input-type>onebox</input-type>
-                    <hint></hint>
+                    <label>Identificadores</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>Se o documento apresentar números de identificação ou códigos associados, escolha o tipo de identificador e registre-o</hint>
                     <required></required>
                 </field>
 
@@ -1914,12 +1915,44 @@ An input-type of qualdrop_value MUST be marked as repeatable
             <stored-value>Animação</stored-value>
         </pair>
         <pair>
+            <displayed-value>Apresentação</displayed-value>
+            <stored-value>Apresentação</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Arquivo de Hypertexto</displayed-value>
+            <stored-value>Arquivo de Hypertexto</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>e-book</displayed-value>
+            <stored-value>e-book</stored-value>
+        </pair>
+        <pair>
             <displayed-value>Fotografia</displayed-value>
             <stored-value>Fotografia</stored-value>
         </pair>
         <pair>
             <displayed-value>Gráficos</displayed-value>
             <stored-value>Gráficos</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Imagem</displayed-value>
+            <stored-value>Imagem</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Imprensa (informe, boletim, jornal, revista, etc.)</displayed-value>
+            <stored-value>Imprensa (informe, boletim, jornal, revista, etc.)</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Peça Publicitária (folder, cartaz, banner, flyers, etc.)</displayed-value>
+            <stored-value>Peça Publicitária (folder, cartaz, banner, flyers, etc.)</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Produção interativa</displayed-value>
+            <stored-value>Produção interativa</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Publicação editorial</displayed-value>
+            <stored-value>Publicação editorial</stored-value>
         </pair>
         <pair>
             <displayed-value>Software</displayed-value>
@@ -1956,8 +1989,28 @@ An input-type of qualdrop_value MUST be marked as repeatable
             <stored-value>application/pdf</stored-value>
         </pair>
         <pair>
+            <displayed-value>AI</displayed-value>
+            <stored-value>application/Adobe-Illustrator</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>ASP</displayed-value>
+            <stored-value>application/Active-Server-Page</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>CDR</displayed-value>
+            <stored-value>application/CorelDRAW</stored-value>
+        </pair>
+        <pair>
             <displayed-value>CSS</displayed-value>
             <stored-value>text/css</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>e-PUB</displayed-value>
+            <stored-value>text/ePub</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Folio</displayed-value>
+            <stored-value>text/Folio</stored-value>
         </pair>
         <pair>
             <displayed-value>GIF</displayed-value>
@@ -1968,8 +2021,20 @@ An input-type of qualdrop_value MUST be marked as repeatable
             <stored-value>text/html</stored-value>
         </pair>
         <pair>
+            <displayed-value>INDD</displayed-value>
+            <stored-value>application/Adobe-InDesign</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>INX</displayed-value>
+            <stored-value>text/from-Adobe-InDesign</stored-value>
+        </pair>
+        <pair>
             <displayed-value>JPEG</displayed-value>
             <stored-value>image/jpeg</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Microsoft Excel</displayed-value>
+            <stored-value>application/vnd.ms-excel</stored-value>
         </pair>
         <pair>
             <displayed-value>Microsoft Powerpoint</displayed-value>
@@ -1982,6 +2047,14 @@ An input-type of qualdrop_value MUST be marked as repeatable
         <pair>
             <displayed-value>MPEG</displayed-value>
             <stored-value>video/mpeg</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>PHP</displayed-value>
+            <stored-value>application/PHP-source-code</stored-value>
+        </pair>
+        <pair>
+            <displayed-value>Photoshop</displayed-value>
+            <stored-value>application/x-photoshop</stored-value>
         </pair>
         <pair>
             <displayed-value>Postscript</displayed-value>
@@ -1999,6 +2072,11 @@ An input-type of qualdrop_value MUST be marked as repeatable
             <displayed-value>Text</displayed-value>
             <stored-value>text/plain</stored-value>
         </pair>
+        <pair>
+            <displayed-value>XML</displayed-value>
+            <stored-value>text/xml</stored-value>
+        </pair>
+
     </value-pairs>
 
 
@@ -2389,8 +2467,10 @@ An input-type of qualdrop_value MUST be marked as repeatable
                 </value-pairs>	 
 
                 <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
-
-
+                    <pair>
+                        <displayed-value>Selecione um identificador</displayed-value>
+                        <stored-value></stored-value>
+                    </pair>
 
                     <pair>
                         <displayed-value>ISBN</displayed-value>
@@ -2484,34 +2564,6 @@ An input-type of qualdrop_value MUST be marked as repeatable
                         <displayed-value>Revogado por</displayed-value>
                         <stored-value>revogadopor</stored-value>
                     </pair>
-                </value-pairs>
-
-
-                <value-pairs value-pairs-name="solo-issn" dc-term="identifier">
-                    <pair>
-                        <displayed-value>ISSN</displayed-value>
-                        <stored-value>issn</stored-value>
-                    </pair>
-
-                    <pair>
-                        <displayed-value>DOI</displayed-value>
-                        <stored-value>doi</stored-value>
-                    </pair>
-
-                    <pair>
-                        <displayed-value>Other</displayed-value>
-                        <stored-value>other</stored-value>
-                    </pair>
-
-                    <pair>
-                        <displayed-value>Gov't Doc #</displayed-value>
-                        <stored-value>govdoc</stored-value>
-                    </pair>
-                    <pair>
-                        <displayed-value>URL</displayed-value>
-                        <stored-value>uri</stored-value>
-                    </pair>
-
                 </value-pairs>
 
 
@@ -3474,8 +3526,10 @@ An input-type of qualdrop_value MUST be marked as repeatable
     <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
     <pair><displayed-value>Animação</displayed-value><stored-value>Animação</stored-value></pair>
     <pair><displayed-value>Apresentação</displayed-value><stored-value>Apresentação</stored-value></pair>
+    <pair><displayed-value>Apostila</displayed-value><stored-value>Apostila</stored-value></pair>
     <pair><displayed-value>Artigo de jornal</displayed-value><stored-value>Artigo de jornal</stored-value></pair>
     <pair><displayed-value>Boletim</displayed-value><stored-value>Boletim</stored-value></pair>
+    <pair><displayed-value>Cartilha</displayed-value><stored-value>Cartilha</stored-value></pair>
     <pair><displayed-value>Certificado / Diploma</displayed-value><stored-value>Certificado / Diploma</stored-value></pair>
     <pair><displayed-value>Conjunto de dados / dados estatísticos</displayed-value><stored-value>Conjunto de dados / dados estatísticos</stored-value></pair>
     <pair><displayed-value>Discurso</displayed-value><stored-value>Discurso</stored-value></pair>
@@ -3484,15 +3538,20 @@ An input-type of qualdrop_value MUST be marked as repeatable
     <pair><displayed-value>Estratégia de Cooperação com os Países</displayed-value><stored-value>Estratégia de Cooperação com os Países</stored-value></pair>
     <pair><displayed-value>Fichas técnicas</displayed-value><stored-value>Fichas técnicas</stored-value></pair>
     <pair><displayed-value>Folder</displayed-value><stored-value>Folder</stored-value></pair>
+    <pair><displayed-value>Folheto</displayed-value><stored-value>Folheto</stored-value></pair>
     <pair><displayed-value>Fotografia</displayed-value><stored-value>Fotografia</stored-value></pair>
     <pair><displayed-value>Gráficos</displayed-value><stored-value>Gráficos</stored-value></pair>
     <pair><displayed-value>Gravação musical</displayed-value><stored-value>Gravação musical</stored-value></pair>
     <pair><displayed-value>Gravação oral</displayed-value><stored-value>Gravação oral</stored-value></pair>
     <pair><displayed-value>Guia</displayed-value><stored-value>Guia</stored-value></pair>
     <pair><displayed-value>Kit de informações (pasta, banner, brochura)</displayed-value><stored-value>Kit de informações (pasta, banner, brochura)</stored-value></pair>
+    <pair><displayed-value>Manual</displayed-value><stored-value>Manual</stored-value></pair>
     <pair><displayed-value>Mapa / Mapa interativo</displayed-value><stored-value>Mapa / Mapa interativo</stored-value></pair>
     <pair><displayed-value>Material de aprendizagem / treinamento</displayed-value><stored-value>Material de aprendizagem / treinamento</stored-value></pair>
+    <pair><displayed-value>Monografia</displayed-value><stored-value>Monografia</stored-value></pair>
+    <pair><displayed-value>Plano</displayed-value><stored-value>Plano</stored-value></pair>
     <pair><displayed-value>Prêmio / Distinção</displayed-value><stored-value>Prêmio / Distinção</stored-value></pair>
+    <pair><displayed-value>Projeto</displayed-value><stored-value>Projeto</stored-value></pair>
     <pair><displayed-value>Publicação externa</displayed-value><stored-value>Publicação externa</stored-value></pair>
     <pair><displayed-value>Publicação</displayed-value><stored-value>Publicação</stored-value></pair>
     <pair><displayed-value>Relatório de progresso</displayed-value><stored-value>Relatório de progresso</stored-value></pair>
