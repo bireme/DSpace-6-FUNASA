@@ -618,7 +618,7 @@
                     <required></required>
                 </field>
 
-                <field>
+                <!-- field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
@@ -627,9 +627,9 @@
                     <input-type>onebox</input-type>
                     <hint>Autor do recurso</hint>
                     <required>Obrigatório ingressar o autor do recurso</required>
-                </field>
+                </field -->
 
-                <field>
+                <!-- field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>corporatename</dc-qualifier>
@@ -637,6 +637,28 @@
                     <label>Autor institucional</label>
                     <input-type>onebox</input-type>
                     <hint>Autor institucional do recurso</hint>
+                    <required></required>
+                </field -->
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor (direito autoral)</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Autor (direito patrimonial)</label>
+                    <input-type value-pairs-name="common_corporatename_funasa">dropdown</input-type>
+                    <hint></hint>
                     <required></required>
                 </field>
 
@@ -869,12 +891,34 @@
                     <required></required>
                 </field>
 
-                <field>
+                <!-- field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Autor pessoal</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field -->
+
+                <!-- field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>corporatename</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor institucional</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field -->
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor (direito autoral)</label>
                     <input-type>onebox</input-type>
                     <hint></hint>
                     <required></required>
@@ -884,9 +928,9 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>corporatename</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Autor institucional</label>
-                    <input-type>onebox</input-type>
+                    <repeatable></repeatable>
+                    <label>Autor (direito patrimonial)</label>
+                    <input-type value-pairs-name="common_corporatename_funasa">dropdown</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -2569,8 +2613,8 @@ An input-type of qualdrop_value MUST be marked as repeatable
 
                 <value-pairs value-pairs-name="common_publisher" dc-term="publisher">
                     <pair>
-                        <displayed-value>FUNASA</displayed-value>
-                        <stored-value>FUNASA</stored-value>
+                        <displayed-value>Fundação Nacional de Saúde (FUNASA)</displayed-value>
+                        <stored-value>Fundação Nacional de Saúde (FUNASA)</stored-value>
                     </pair>
                     <pair>
                         <displayed-value>Governo de Brasil</displayed-value>
@@ -2907,7 +2951,6 @@ An input-type of qualdrop_value MUST be marked as repeatable
 "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
 -->
 <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
-    <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
     <pair><displayed-value>Português</displayed-value><stored-value>pt</stored-value></pair>
     <pair><displayed-value>Inglês</displayed-value><stored-value>en</stored-value></pair>
     <pair><displayed-value>Espanhol</displayed-value><stored-value>es</stored-value></pair>
@@ -3094,15 +3137,16 @@ An input-type of qualdrop_value MUST be marked as repeatable
     <pair><displayed-value>Xosa</displayed-value><stored-value>xh</stored-value></pair>
     <pair><displayed-value>Zhuang</displayed-value><stored-value>za</stored-value></pair>
     <pair><displayed-value>Zulu</displayed-value><stored-value>zu</stored-value></pair>
+    <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
 </value-pairs>
 
 
 
 <value-pairs value-pairs-name="common_iso_countries" dc-term="language_iso">
-    <pair>
+    <!--pair>
         <displayed-value>Selecione o país</displayed-value>
         <stored-value></stored-value>
-    </pair>
+    </pair -->
     <pair><displayed-value>Brasil</displayed-value><stored-value>Brasil</stored-value></pair>
     <pair><displayed-value>Afeganistão</displayed-value><stored-value>Afeganistão</stored-value></pair>
     <pair><displayed-value>África do Sul</displayed-value><stored-value>África do Sul</stored-value></pair>
@@ -3353,6 +3397,7 @@ An input-type of qualdrop_value MUST be marked as repeatable
     <pair><displayed-value>Vietnã</displayed-value><stored-value>Vietnã</stored-value></pair>
     <pair><displayed-value>Zâmbia</displayed-value><stored-value>Zâmbia</stored-value></pair>
     <pair><displayed-value>Zimbábue</displayed-value><stored-value>Zimbábue</stored-value></pair>
+    <pair><displayed-value>N/A</displayed-value><stored-value></stored-value></pair>
 
 </value-pairs>
 
@@ -3564,6 +3609,12 @@ An input-type of qualdrop_value MUST be marked as repeatable
     <pair><displayed-value>Website</displayed-value><stored-value>Website</stored-value></pair>
 </value-pairs>
 
+<value-pairs value-pairs-name="common_corporatename_funasa" dc-term="corporatename">
+    <pair>
+        <displayed-value>Fundação Nacional de Saúde (Funasa)</displayed-value>
+        <stored-value>Fundação Nacional de Saúde (Funasa)</stored-value>
+    </pair>
+</value-pairs>
 
 
 
