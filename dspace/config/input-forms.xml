@@ -75,6 +75,7 @@
         <name-map collection-handle="123456789/235" form-name="legi" />
 
 
+        <!-- Observação:Duas coleções possuem o mesmo formulário, Coleção de Políticas, Planejamento, Gestão e Projetos, e Coleção de Produção Científica. -->
         <name-map collection-handle="123456789/33" form-name="pppp" />
         <name-map collection-handle="123456789/13" form-name="pppp" />
         <name-map collection-handle="123456789/368" form-name="pppp" />
@@ -325,19 +326,6 @@
             <page number="1">
 
                 <field>
-                    <dc-schema>bireme</dc-schema>
-                    <dc-element>publisher</dc-element>
-                    <dc-qualifier>country</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
-                    <repeatable></repeatable>
-                    <label>País do alcance do ato</label>
-                    <!--input-type>onebox</input-type-->
-                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
-                    <hint></hint>
-                    <required>Obrigatório selecionar o país de alcance do ato</required>
-                </field>
-
-                <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -406,14 +394,27 @@
                 <field>
                     <dc-schema>bireme</dc-schema>
                     <dc-element>publisher</dc-element>
-                    <dc-qualifier>state</dc-qualifier>
+                    <dc-qualifier>country</dc-qualifier>
                     <!-- An input-type of twobox MUST be marked as repeatable -->
                     <repeatable></repeatable>
+                    <label>País do alcance do ato</label>
+                    <!--input-type>onebox</input-type-->
+                    <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
+                    <hint></hint>
+                    <required>Obrigatório selecionar o país de alcance do ato</required>
+                </field>
+
+                <field>
+                    <dc-schema>bireme</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>state</dc-qualifier>
+                    <repeatable>false</repeatable>
                     <label>Estado do alcance do ato</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="common_iso_brazil_states">dropdown</input-type>
                     <hint>Preencher este campo apenas quando o ato for de alcance geográfico estadual</hint>
                     <required></required>
                 </field>
+
 
                 <field>
                     <dc-schema>bireme</dc-schema>
@@ -560,7 +561,7 @@
                     <repeatable>true</repeatable>
                     <label>Descritores de assunto</label>
                     <input-type>twobox</input-type>
-                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <hint>Busque os descritores desse documento com base no DeCS. Para buscar em outro idioma selecionar o botão de busca apropriado, Pesquisa para português, Lookup para inglês e Buscar para espanhol. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
                     <required>Obrigatório ingressar pelo menos um descritor</required>
                 </field>
                 
@@ -586,6 +587,17 @@
                     <label>Ingresse o tipo de relacionamento e o handle do documento relacionado</label>
                     <input-type value-pairs-name="common_relations">qualdrop_value</input-type>
                     <hint>Selecione o tipo de relacionamento e handle (identificador no repositório) do documento relacionado</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights_funasa">dropdown</input-type>
+                    <hint></hint>
                     <required></required>
                 </field>
 
@@ -617,28 +629,6 @@
                     <hint>O título em outro idioma (no caso de existir)</hint>
                     <required></required>
                 </field>
-
-                <!-- field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>author</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Autor</label>
-                    <input-type>onebox</input-type>
-                    <hint>Autor do recurso</hint>
-                    <required>Obrigatório ingressar o autor do recurso</required>
-                </field -->
-
-                <!-- field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>corporatename</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Autor institucional</label>
-                    <input-type>onebox</input-type>
-                    <hint>Autor institucional do recurso</hint>
-                    <required></required>
-                </field -->
 
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -699,25 +689,20 @@
                     <dc-schema>bireme</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>country</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
                     <repeatable></repeatable>
                     <label>País do publicação</label>
-                    <!--input-type>onebox</input-type-->
                     <input-type value-pairs-name="common_iso_countries">dropdown</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
 
-
-
                 <field>
                     <dc-schema>bireme</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>state</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
-                    <repeatable></repeatable>
+                    <repeatable>false</repeatable>
                     <label>Estado de publicação</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="common_iso_brazil_states">dropdown</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -726,14 +711,12 @@
                     <dc-schema>bireme</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier>city</dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
                     <repeatable></repeatable>
                     <label>Cidade de publicação</label>
                     <input-type>onebox</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
-
 
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -811,7 +794,7 @@
                     <repeatable>true</repeatable>
                     <label>Descritores de assunto</label>
                     <input-type>twobox</input-type>
-                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <hint>Busque os descritores desse documento com base no DeCS. Para buscar em outro idioma selecionar o botão de busca apropriado, Pesquisa para português, Lookup para inglês e Buscar para espanhol. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
                     <required>Obrigatório ingressar pelo menos um descritor</required>
                 </field>
 
@@ -863,6 +846,17 @@
                     <required></required>
                 </field>
 
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights_funasa">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
             </page>
         </form>
 
@@ -890,28 +884,6 @@
                     <hint></hint>
                     <required></required>
                 </field>
-
-                <!-- field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>author</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Autor pessoal</label>
-                    <input-type>onebox</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field -->
-
-                <!-- field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>corporatename</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Autor institucional</label>
-                    <input-type>onebox</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field -->
 
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1008,7 +980,7 @@
                     <dc-qualifier>state</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Estado</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="common_iso_brazil_states">dropdown</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -1075,7 +1047,7 @@
                     <repeatable>true</repeatable>
                     <label>Descritores de assunto</label>
                     <input-type>twobox</input-type>
-                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <hint>Busque os descritores desse documento com base no DeCS. Para buscar em outro idioma selecionar o botão de busca apropriado, Pesquisa para português, Lookup para inglês e Buscar para espanhol. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
                     <required>Obrigatório ingressar pelo menos um descritor</required>
                 </field>
 
@@ -1101,6 +1073,18 @@
                     <hint>Selecione o tipo de material a cadastrar</hint>
                     <required>Obrigatório selecionar um tipo de material</required>
                 </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights_funasa">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+
             </page>
         </form>
 
@@ -1143,11 +1127,11 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Contribuidor</label>
+                    <label>Autor (direito autoral)</label>
                     <input-type>onebox</input-type>
-                    <hint>Pessoa fisica ou instituição que contribui para o desenvolvimento do recurso</hint>
+                    <hint></hint>
                     <required></required>
                 </field>
 
@@ -1155,11 +1139,11 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>corporatename</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Criador</label>
-                    <input-type>onebox</input-type>
-                    <hint>Instituição, ou pessoa fisica reponsável pela criação do recurso</hint>
-                    <required>Obrigatório preencher esse campo</required>
+                    <repeatable></repeatable>
+                    <label>Autor (direito patrimonial)</label>
+                    <input-type value-pairs-name="common_corporatename_funasa">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
                 </field>
 
                 <field>
@@ -1314,7 +1298,7 @@
                     <repeatable>true</repeatable>
                     <label>Descritores de assunto</label>
                     <input-type>twobox</input-type>
-                    <hint>Busque os descritores desse documento com base no DeCS. Você pode registrar os descritores em outro idioma bastando selecionar o botão de busca apropriado. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
+                    <hint>Busque os descritores desse documento com base no DeCS. Para buscar em outro idioma selecionar o botão de busca apropriado, Pesquisa para português, Lookup para inglês e Buscar para espanhol. Também é possível registrar um descritor não reconhecido pelo DeCS, bastando colocar a primeira letra mais significativa de cada palavra em letra maiúscula, por exemplo: Doenças Não-Transmissíveis</hint>
                     <required>Obrigatório ingressar pelo menos um descritor</required>
                 </field>
 
@@ -1385,6 +1369,17 @@
                     <label>ID do vídeo de Youtube</label>
                     <input-type>onebox</input-type>
                     <hint>Exemplo: Para a url http://youtube.be/LiI2Y7Y07lwxpto, utilizar LiI2Y7Y07lwxpto no preenchimento.</hint>
+                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights_funasa">dropdown</input-type>
+                    <hint></hint>
                     <required></required>
                 </field>
 
@@ -1573,6 +1568,17 @@
                    <input-type>textarea</input-type>
                    <hint>Enter the additional observations for the item / Ingrese las observaciones adicionales para el ítem</hint>
                    <required></required>
+                </field>
+
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Licença de direitos</label>
+                    <input-type value-pairs-name="common_rights_funasa">dropdown</input-type>
+                    <hint></hint>
+                    <required></required>
                 </field>
 
     </page>
@@ -2533,15 +2539,11 @@ An input-type of qualdrop_value MUST be marked as repeatable
                         <stored-value>ismn</stored-value>
                     </pair>
                     <pair>
-                        <displayed-value>Gov't Doc #</displayed-value>
-                        <stored-value>govdoc</stored-value>
-                    </pair>
-                    <pair>
                         <displayed-value>URL</displayed-value>
                         <stored-value>uri</stored-value>
                     </pair>
                     <pair>
-                        <displayed-value>Other</displayed-value>
+                        <displayed-value>Outro</displayed-value>
                         <stored-value>other</stored-value>
                     </pair>
                 </value-pairs>
@@ -3401,6 +3403,36 @@ An input-type of qualdrop_value MUST be marked as repeatable
 
 </value-pairs>
 
+<value-pairs value-pairs-name="common_iso_brazil_states" dc-term="language_iso">
+    <pair><displayed-value>Selecione o estado</displayed-value><stored-value></stored-value></pair>
+    <pair><displayed-value>Distrito Federal</displayed-value><stored-value>Distrito Federal</stored-value></pair>
+    <pair><displayed-value>Acre</displayed-value><stored-value>Acre</stored-value></pair>
+    <pair><displayed-value>Alagoas</displayed-value><stored-value>Alagoas</stored-value></pair>
+    <pair><displayed-value>Amapá</displayed-value><stored-value>Amapá</stored-value></pair>
+    <pair><displayed-value>Amazonas</displayed-value><stored-value>Amazonas</stored-value></pair>
+    <pair><displayed-value>Bahia</displayed-value><stored-value>Bahia</stored-value></pair>
+    <pair><displayed-value>Ceará</displayed-value><stored-value>Ceará</stored-value></pair>
+    <pair><displayed-value>Espírito Santo</displayed-value><stored-value>Espírito Santo</stored-value></pair>
+    <pair><displayed-value>Goiás</displayed-value><stored-value>Goiás</stored-value></pair>
+    <pair><displayed-value>Maranhão</displayed-value><stored-value>Maranhão</stored-value></pair>
+    <pair><displayed-value>Mato Grosso</displayed-value><stored-value>Mato Grosso</stored-value></pair>
+    <pair><displayed-value>Mato Grosso do Sul</displayed-value><stored-value>Mato Grosso do Sul</stored-value></pair>
+    <pair><displayed-value>Minas Gerais</displayed-value><stored-value>Minas Gerais</stored-value></pair>
+    <pair><displayed-value>Paraná</displayed-value><stored-value>Paraná</stored-value></pair>
+    <pair><displayed-value>Paraíba</displayed-value><stored-value>Paraíba</stored-value></pair>
+    <pair><displayed-value>Pará</displayed-value><stored-value>Pará</stored-value></pair>
+    <pair><displayed-value>Pernambuco</displayed-value><stored-value>Pernambuco</stored-value></pair>
+    <pair><displayed-value>Piauí</displayed-value><stored-value>Piauí</stored-value></pair>
+    <pair><displayed-value>Rio de Janeiro</displayed-value><stored-value>Rio de Janeiro</stored-value></pair>
+    <pair><displayed-value>Rio Grande do Norte</displayed-value><stored-value>Rio Grande do Norte</stored-value></pair>
+    <pair><displayed-value>Rio Grande do Sul</displayed-value><stored-value>Rio Grande do Sul</stored-value></pair>
+    <pair><displayed-value>Rondônia</displayed-value><stored-value>Rondônia</stored-value></pair>
+    <pair><displayed-value>Roraima</displayed-value><stored-value>Roraima</stored-value></pair>
+    <pair><displayed-value>Santa Catarina</displayed-value><stored-value>Santa Catarina</stored-value></pair>
+    <pair><displayed-value>Sergipe</displayed-value><stored-value>Sergipe</stored-value></pair>
+    <pair><displayed-value>São Paulo</displayed-value><stored-value>São Paulo</stored-value></pair>
+    <pair><displayed-value>Tocantins</displayed-value><stored-value>Tocantins</stored-value></pair>
+</value-pairs>
 
 <value-pairs value-pairs-name="common_educational_instructionalMethod" dc-term="educational">
     <pair>
@@ -3517,6 +3549,13 @@ An input-type of qualdrop_value MUST be marked as repeatable
     </pair>
 </value-pairs>
 
+
+<value-pairs value-pairs-name="common_rights_funasa" dc-term="rights_funasa">
+    <pair>
+        <displayed-value>Atribuição BY-NC-SA 4.0</displayed-value>
+        <stored-value>https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR</stored-value>
+    </pair>
+</value-pairs>
 
 
 <!-- Categorias del plan estrategico 2014-2019
