@@ -22,10 +22,10 @@
   <!--  messages from V1.5 Translated by Francisco Javier Herrero Vicente (fherrero@uji.es) at Universitat Jaume I de Castellon (http://www.uji.es/)-->    
              
 <!-- General keys -->
-<message key="xmlui.general.dspace_home">Inicio Repositorio FUNASA</message>
+<message key="xmlui.general.dspace_home">Inicio Repositorio Funasa</message>
 <message key="xmlui.general.search">Ingrese aquí la búsqueda o haga click en la lupa para usar filtros</message>
 <message key="xmlui.general.go">Ir</message>
-<message key="xmlui.general.go_home">Ir a página principal del Repositorio FUNASA</message>
+<message key="xmlui.general.go_home">Ir a página principal del Repositorio Funasa</message>
 <message key="xmlui.general.save">Guardar</message>
 <message key="xmlui.general.cancel">Cancelar</message>
 <message key="xmlui.general.return">Volver</message>
@@ -63,7 +63,7 @@
 	<!--
 		This section is for feed syndications (RSS, atom, etc)
 	-->
-<message key="xmlui.feed.general_description">El repositorio digital de FUNASA captura, almacena, indexa, preserva y distribuye materiales de investigación en formato digital.</message>
+<message key="xmlui.feed.general_description">El repositorio digital de Funasa captura, almacena, indexa, preserva y distribuye materiales de investigación en formato digital.</message>
 <message key="xmlui.feed.header">RSS Feeds</message>
 <message key="xmlui.feed.logo_title">Imagen</message>
 <message key="xmlui.feed.untitled">Sin título</message>
@@ -95,7 +95,7 @@
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Comunidades o colecciones que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Ítems que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">La búsqueda no produjo resultados</message>
-<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo Repositorio FUNASA</message>
+<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo Repositorio Funasa</message>
 
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">título</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">fecha de publicación</message>
@@ -187,7 +187,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo Repositorio FUNASA</message>
+<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo Repositorio Funasa</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Búsqueda en esta colección:</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Títulos</message>
@@ -205,7 +205,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo Repositorio FUNASA</message>
+<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo Repositorio Funasa</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Buscar en esta comunidad y sus colecciones:</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Títulos</message>
@@ -231,7 +231,7 @@
 <message key="xmlui.ArtifactBrowser.FeedbackForm.title">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.head">Sugerencias</message>
-<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre el Repositorio FUNASA. ¡Tendremos en cuenta sus comentarios!</message>
+<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre el Repositorio Funasa. ¡Tendremos en cuenta sus comentarios!</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email">Su correo electrónico</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Esta dirección será utilizada para seguimiento de su sugerencia.</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comentarios</message>
@@ -253,7 +253,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Listar</message>
-<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo Repositorio FUNASA</message>
+<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo Repositorio Funasa</message>
 <message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunidades &amp; Colecciones</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_title">Títulos</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autores</message>
@@ -439,7 +439,7 @@
 	<!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
 <message key="xmlui.EPerson.CannotRegister.title">Registro no disponible</message>
 <message key="xmlui.EPerson.CannotRegister.head">Registro no disponible</message>
-<message key="xmlui.EPerson.CannotRegister.para1">La configuración de este repositorio de FUNASA no permite registro en este contexto. Por favor, contacte con el </message>
+<message key="xmlui.EPerson.CannotRegister.para1">La configuración de este repositorio de Funasa no permite registro en este contexto. Por favor, contacte con el </message>
 
 	<!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
 <message key="xmlui.EPerson.EditProfile.title_update">Modificar perfil</message>
@@ -499,20 +499,20 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 <message key="xmlui.EPerson.PasswordLogin.title">Acceder</message>
 <message key="xmlui.EPerson.PasswordLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a Repositorio FUNASA</message>
+<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a Repositorio Funasa</message>
 <message key="xmlui.EPerson.PasswordLogin.email_address">Correo electrónico</message>
 <message key="xmlui.EPerson.PasswordLogin.error_bad_login">La dirección de correo electrónico introducida y/o la contraseña no son válidas.</message>
 <message key="xmlui.EPerson.PasswordLogin.password">Contraseña</message>
 <message key="xmlui.EPerson.PasswordLogin.forgot_link">¿Olvidó su contraseña?</message>
 <message key="xmlui.EPerson.PasswordLogin.submit">Acceder</message>
 <message key="xmlui.EPerson.PasswordLogin.head2">Registrar un nuevo usuario</message>
-<message key="xmlui.EPerson.PasswordLogin.para1">Registre una cuenta para suscribirse a las colecciones, para recibir notificación de modificaciones y de nuevas adquisiciones de ítems en Repositorio FUNASA.</message>
+<message key="xmlui.EPerson.PasswordLogin.para1">Registre una cuenta para suscribirse a las colecciones, para recibir notificación de modificaciones y de nuevas adquisiciones de ítems en Repositorio Funasa.</message>
 <message key="xmlui.EPerson.PasswordLogin.register_link">Pulse aquí para registrarse.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 <message key="xmlui.EPerson.LDAPLogin.title">Acceder</message>
 <message key="xmlui.EPerson.LDAPLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.LDAPLogin.head1">Acceder al Repositorio FUNASA</message>
+<message key="xmlui.EPerson.LDAPLogin.head1">Acceder al Repositorio Funasa</message>
 <message key="xmlui.EPerson.LDAPLogin.username">Nombre de usuario</message>
 <message key="xmlui.EPerson.LDAPLogin.error_bad_login">El nombre de usuario o la contraseña no son validos</message>
 <message key="xmlui.EPerson.LDAPLogin.password">Contraseña</message>
@@ -551,7 +551,7 @@
 	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
 <message key="xmlui.EPerson.RegistrationFinished.title">Registro terminado</message>
 <message key="xmlui.EPerson.RegistrationFinished.head">Registro terminado</message>
-<message key="xmlui.EPerson.RegistrationFinished.para1">Ahora está registrado en el Repositorio FUNASA. Puede suscribirse a colecciones para recibir por correo electrónico las modificaciones y las nuevas incorporaciones.</message>
+<message key="xmlui.EPerson.RegistrationFinished.para1">Ahora está registrado en el Repositorio Funasa. Puede suscribirse a colecciones para recibir por correo electrónico las modificaciones y las nuevas incorporaciones.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
 <message key="xmlui.EPerson.ResetPassword.title">Restablecer contraseña</message>
@@ -567,7 +567,7 @@
 	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
 <message key="xmlui.EPerson.StartForgotPassword.title">¿Olvidó la contraseña?</message>
 <message key="xmlui.EPerson.StartForgotPassword.head">¿Olvidó la contraseña?</message>
-<message key="xmlui.EPerson.StartForgotPassword.para1">Introduzca la dirección de correo electrónico que proporcionó cuando se registró en el Repositorio FUNASA. Se le enviará un mensaje a esa dirección con las instrucciones pertinentes.</message>
+<message key="xmlui.EPerson.StartForgotPassword.para1">Introduzca la dirección de correo electrónico que proporcionó cuando se registró en el Repositorio Funasa. Se le enviará un mensaje a esa dirección con las instrucciones pertinentes.</message>
 <message key="xmlui.EPerson.StartForgotPassword.email_address">Dirección de correo electrónico</message>
 <message key="xmlui.EPerson.StartForgotPassword.email_address_help">Introduzca la misma dirección con la que se registró.</message>
 <message key="xmlui.EPerson.StartForgotPassword.error_not_found">Dirección de correo electrónico no encontrada.</message>
@@ -609,7 +609,7 @@
 
 
 	<!-- general submission aspect messages -->
-<message key="xmlui.Submission.general.mydspace_home">Repositorio FUNASA Principal</message>
+<message key="xmlui.Submission.general.mydspace_home">Repositorio Funasa Principal</message>
 <message key="xmlui.Submission.general.go_mydspace">Mi Repositorio</message>
 <message key="xmlui.Submission.general.submission.title">Envío de ítems</message>
 <message key="xmlui.Submission.general.submission.trail">Envío de ítems</message>
@@ -627,7 +627,8 @@
 <message key="xmlui.Submission.general.default.trail">Envío</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
-<message key="xmlui.Submission.CollectionViewer.link1">Enviar un ítem a esta colección</message>
+<!-- message key="xmlui.Submission.CollectionViewer.link1">Enviar un ítem a esta colección</message -->
+<message key="xmlui.Submission.CollectionViewer.link1"><h4 style="background-color: #FAFAD2;">Enviar un ítem a esta colección</h4></message>
 
 	<!-- org.dspace.app.xmlui.submission.Navigation -->
 <message key="xmlui.Submission.Navigation.submissions">Envíos</message>
@@ -688,7 +689,7 @@
 <message key="xmlui.Submission.Submissions.status_unknown">Estado desconocido</message>
         <!-- Same transformer, completed submissions section -->
 <message key="xmlui.Submission.Submissions.completed.head">Envíos Archivados</message>
-<message key="xmlui.Submission.Submissions.completed.info">Estos son sus envíos aceptados en Repositorio FUNASA</message>
+<message key="xmlui.Submission.Submissions.completed.info">Estos son sus envíos aceptados en Repositorio Funasa</message>
 <message key="xmlui.Submission.Submissions.completed.column1">Fecha de aceptación</message>
 <message key="xmlui.Submission.Submissions.completed.column2">Título</message>
 <message key="xmlui.Submission.Submissions.completed.column3">Colección</message>
@@ -904,7 +905,7 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
 <message key="xmlui.Submission.submit.LicenseStep.head">Licencia de distribución</message>
-<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>Queda un último paso:</strong> para permitir a Repositorio FUNASA reproducir, traducir y distribuir su envío a través del mundo, necesitamos su conformidad en los siguientes términos.</message>
+<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>Queda un último paso:</strong> para permitir a Repositorio Funasa reproducir, traducir y distribuir su envío a través del mundo, necesitamos su conformidad en los siguientes términos.</message>
 <message key="xmlui.Submission.submit.LicenseStep.info2">Conceda la licencia de distribución estándar seleccionando 'Conceder licencia' y pulsando 'Completar envío'.</message>
 <message key="xmlui.Submission.submit.LicenseStep.info3">Si tiene alguna duda sobre la licencia, por favor, contacte con el administrador del sistema.</message>
 <message key="xmlui.Submission.submit.LicenseStep.decision_label">Licencia de distribución</message>
@@ -2189,9 +2190,12 @@ Puede reemplazar la plantilla que gestiona el caso general dri2xhtml para mejora
 
 <message key="xmlui.dri2xhtml.METS-1.0.item-preview">Vista previa</message>
 <message key="xmlui.dri2xhtml.METS-1.0.item-title">Título</message>
-<message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message>
+<!-- message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message -->
+<message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor (copyright)</message>
+<message key="xmlui.dri2xhtml.METS-1.0.item-corporatename-author">Autor (Ley de Propiedad)</message>
+
 <message key="xmlui.dri2xhtml.METS-1.0.item-institutional-author">Autor Institucional</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-photographer">Fotógrafo(a)</message>
+<message key="xmlui.dri2xhtml.METS-1.0.item-photographer">Fotógrafo(a)</message>
 <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Resumen</message>
 <message key="xmlui.dri2xhtml.METS-1.0.item-description">Descripción</message>
 <message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
@@ -2804,9 +2808,10 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
     
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_content_in_original_bundle">Tiene Archivo(s)</message> 
   
-   <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Texto completo no disponible. Favor comunicarse con la Biblioteca de la OPS al siguiente</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">para obtener mas instrucciones</message>
+   <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Texto completo no disponible. Favor comunicarse con la Biblioteca de la OPS al siguiente</message -->
+   <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Texto completo no disponible.</message>
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message -->
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">para obtener mas instrucciones</message -->
   
    <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Recién publicadas</message>
    <message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Recién publicadas</message>
@@ -2841,7 +2846,7 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
    <message key="xmlui.general.home.memories">Memoria Institucional</message>
    <message key="xmlui.general.home.bulletin">Nuestro Boletín</message>
    <message key="xmlui.general.home.contact">Contacto</message>
-   <message key="xmlui.general.search-home">Buscar en Repositorio FUNASA</message>
+   <message key="xmlui.general.search-home">Buscar en Repositorio Funasa</message>
    <message key="xmlui.general.search-documents">documentos</message>
    <message key="xmlui.Discovery.FeauturedSubmissions.FeaturedSubmissionTransformer.head">Lista de documentos destacados</message>
    <message key="xmlui.Discovery.FeaturedSubmissions.FeaturedSubmissionTransformer.trail">Documentos destacados</message>
@@ -2881,7 +2886,7 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
    <message key="xmlui.footer.otherlinks">Links</message>
    <message key="xmlui.home.disclaimer">Desarrollado por BIREME usando tecnología IRIS-PAHO</message>
    <message key="xmlui.home.gotop">Volver al inicio</message> 
-   <message key="news.home">Bienvenido al Repositorio Institucional de FUNASA</message>
+   <message key="news.home">Bienvenido al Repositorio Institucional de Funasa</message>
    <message key="news.text">Aquí podrá encontrar el material de producción intelectual de la institución</message> 
    
    

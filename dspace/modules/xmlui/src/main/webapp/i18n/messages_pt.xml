@@ -250,15 +250,16 @@
 	<message key="xmlui.ArtifactBrowser.FeedbackSent.para1">Seus comentários foram recebidos.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.FrontPageSearch.java -->
-	<message key="xmlui.ArtifactBrowser.FrontPageSearch.head">Buscar no Repósitorio FUNASA</message>
-	<message key="xmlui.ArtifactBrowser.FrontPageSearch.para1">Digite algum texto na caixa abaixo para buscar no Repósitorio Institucional FUNASA.</message>
+	<message key="xmlui.ArtifactBrowser.FrontPageSearch.head">Buscar no Repósitorio Funasa</message>
+	<message key="xmlui.ArtifactBrowser.FrontPageSearch.para1">Digite algum texto na caixa abaixo para buscar no Repósitorio Institucional Funasa.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
 	<message key="xmlui.ArtifactBrowser.ItemViewer.trail">Ver item</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Este item aparece na(s) seguinte(s) coleção(s)</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Mostrar registro simples</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Mostrar registro completo</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Este item foi removido e não está disponível.</message>
+        <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Este item foi removido e não está disponível.</message>
+        <message key="xmlui.administrative.FlowItemUtils.item_withdrawn">O item foi retirado.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 	<message key="xmlui.ArtifactBrowser.Navigation.head_browse">Navegar</message>
@@ -405,7 +406,7 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 	<message key="xmlui.EPerson.PasswordLogin.title">Entrar</message>
 	<message key="xmlui.EPerson.PasswordLogin.trail">Entrar</message>
-	<message key="xmlui.EPerson.PasswordLogin.head1">Entrar no Repósitorio FUNASA</message>
+	<message key="xmlui.EPerson.PasswordLogin.head1">Entrar no Repósitorio Funasa</message>
 	<message key="xmlui.EPerson.PasswordLogin.email_address">Endereço de e-mail</message>
 	<message key="xmlui.EPerson.PasswordLogin.error_bad_login">O e-mail e/ou senha são inválidos.</message>
 	<message key="xmlui.EPerson.PasswordLogin.password">Senha</message>
@@ -418,7 +419,7 @@
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 	<message key="xmlui.EPerson.LDAPLogin.title">Entrar</message>
 	<message key="xmlui.EPerson.LDAPLogin.trail">Entrar</message>
-	<message key="xmlui.EPerson.LDAPLogin.head1">Entrar no Repósitorio FUNASA</message>
+	<message key="xmlui.EPerson.LDAPLogin.head1">Entrar no Repósitorio Funasa</message>
 	<message key="xmlui.EPerson.LDAPLogin.username">Nome de usuário</message>
 	<message key="xmlui.EPerson.LDAPLogin.error_bad_login">O nome de usuário e/ou senha não são válidos.</message>
 	<message key="xmlui.EPerson.LDAPLogin.password">Senha</message>
@@ -457,7 +458,7 @@
 	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
 	<message key="xmlui.EPerson.RegistrationFinished.title">Cadastro finalizado</message>
 	<message key="xmlui.EPerson.RegistrationFinished.head">Cadastro finalizado</message>
-	<message key="xmlui.EPerson.RegistrationFinished.para1">Você está agora cadastro para usar o repósitorio FUNASA. Você pode se inscrever nas coleções para receber e-mails sobre novos itens cadastrados.</message>
+	<message key="xmlui.EPerson.RegistrationFinished.para1">Você está agora cadastro para usar o repósitorio Funasa. Você pode se inscrever nas coleções para receber e-mails sobre novos itens cadastrados.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
 	<message key="xmlui.EPerson.ResetPassword.title">Alterar senha</message>
@@ -473,7 +474,7 @@
 	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
 	<message key="xmlui.EPerson.StartForgotPassword.title">Esqueceu a senha?</message>
 	<message key="xmlui.EPerson.StartForgotPassword.head">Esqueceu a senha?</message>
-	<message key="xmlui.EPerson.StartForgotPassword.para1">Digite o endereço de e-mail que você utilizou para se cadastrar no Repósitorio FUNASA. Um e-mail será enviado ao endereço com instruções.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.para1">Digite o endereço de e-mail que você utilizou para se cadastrar no Repósitorio Funasa. Um e-mail será enviado ao endereço com instruções.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address">Endereço de e-mail</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address_help">Digite o mesmo endereço de e-mail utilizado durante o cadastro.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.error_not_found">Endereço de e-mail não encontrado.</message>
@@ -486,7 +487,7 @@
 	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Alterar senha para</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Alterar senha</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">Cadastro de novo usuário</message>
-	<message key="xmlui.EPerson.StartRegistration.para2">Cadastre uma conta para para se inscrever nas coleções e receber atualizações por e-mail e enviar novos itens para o Repósitorio FUNASA.</message>
+	<message key="xmlui.EPerson.StartRegistration.para2">Cadastre uma conta para para se inscrever nas coleções e receber atualizações por e-mail e enviar novos itens para o Repósitorio Funasa.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Endereço de e-mail</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">Este endereço será verificado e usado como seu nome de login.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Não é possível enviar e-mail para este endereço.</message>
@@ -523,7 +524,8 @@
 	<message key="xmlui.Submission.general.submission.previous">Anterior</message>
 	<message key="xmlui.Submission.general.submission.save">Salvar e Sair</message>
 	<message key="xmlui.Submission.general.submission.next">Próximo</message>
-	<message key="xmlui.Submission.general.submission.complete">Submissão completa</message>
+	<!-- message key="xmlui.Submission.general.submission.complete">Submissão completa</message -->
+	<message key="xmlui.Submission.general.submission.complete">Finalizar submissão</message>
 	<message key="xmlui.Submission.general.workflow.title">Item submetido</message>
 	<message key="xmlui.Submission.general.workflow.trail">Item submetido</message>
 	<message key="xmlui.Submission.general.workflow.head">Item submetido</message>
@@ -533,7 +535,9 @@
 	<message key="xmlui.Submission.general.default.trail">Submissão</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
-	<message key="xmlui.Submission.CollectionViewer.link1">Submeter um novo item à coleção</message>
+	<!-- message key="xmlui.Submission.CollectionViewer.link1"><strong>Submeter um novo item à coleção</strong></message -->
+	<!-- message key="xmlui.Submission.CollectionViewer.link1"><i>Submeter um novo item à coleção</i></message -->
+	<message key="xmlui.Submission.CollectionViewer.link1"><h4 style="background-color: #FAFAD2;">Submeter um novo item à coleção</h4></message>
 
 	<!-- org.dspace.app.xmlui.submission.Navigation -->
 	<message key="xmlui.Submission.Navigation.submissions">Submissões</message>
@@ -613,7 +617,7 @@
 	<message key="xmlui.Submission.submit.progressbar.complete">Completar</message>
 
 	<!-- org.dspace.app.xmlui.Submission.submit.ResumeStep -->
-	<message key="xmlui.Submission.submit.ResumeStep.submit_resume">Resumo</message>
+	<message key="xmlui.Submission.submit.ResumeStep.submit_resume">Editar item</message>
 
 	<!-- org.dspace.app.xmlui.Submission.submit.SelectCollection -->
 	<message key="xmlui.Submission.submit.SelectCollection.head">Escolha uma coleção</message>
@@ -824,15 +828,15 @@
 	<message key="xmlui.Submission.workflow.PerformTaskStep.take_submit">Fazer a tarefa</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_help">Deixar esta tarefa no conjunto para que outra pessoa faça.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit">Fazer a tarefa</message>
-	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">Se você tiver revisado o item e ele é adequado para a inclusão na coleção, selecione "Aprovar".</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">Se você tiver revisado o item e ele é adequado para a inclusão na coleção, selecione "Aprovar item".</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit">Aprovar item</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Uma vez editado o item, utilize esta opção para publicá-lo.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit">Publicar</message>
-	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">Se você revisou o item e não estiver <strong>not</strong> adequado para a inclusão na Coleção, selecione "Rejeitar". Em seguida, será solicitado que digite uma mensagem indicando o motivo do item não ser adequado, e se o solicitante deve mudar alguma coisa e que reenvie.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">Se você revisou o item e considerou como <strong>não</strong> adequado para a inclusão nesta coleção, selecione "Rejeitar o item". Em seguida, informe o motivo e devolva para o Publicador para ser corrigido.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit">Rejeitar o item</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Selecione esta opção para alterar os metadados do item.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Editar metadado</message>
-	<message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Retornar esta tarefa para o conjunto para que outra pessoa possa executar.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Retornar esta tarefa para o conjunto de revisões pendentes de serem avaliadas.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.return_submit">Retornar tarefa para o conjunto</message>
 
 	<!-- org.dspace.app.xmlui.Submission.workflow.RejectTaskStep -->
@@ -2041,8 +2045,11 @@
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Visualização</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Título</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message>
+	<!-- message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message -->
+        <message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor (direito autoral)</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-institutional-author">Autor Institucional</message>
+        <message key="xmlui.dri2xhtml.METS-1.0.item-corporatename-author">Autor (direito patrimonial)</message>
+
 	<message key="xmlui.dri2xhtml.METS-1.0.item-photographer">Fotógrafo(a)</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Resumo</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Descrição</message>
@@ -2071,7 +2078,8 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.size-gigabytes">Gb</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.license-text">Os arquivos de licença a seguir estão associados a este item:</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Este é um artigo de acesso aberto distribuído sob os termos da Licença Creative Commons Attribution-NonCommercial-NoDerivs 3.0 IGO, que permite o uso, distribuição e reprodução em qualquer meio, desde que o trabalho original seja devidamente citado. Não são permitidas modificações ou uso comercial dos artigos. Em qualquer reprodução do artigo, não deve haver nenhuma sugestão de que a OPAS ou o artigo avaliem qualquer organização ou produtos específicos. Não é permitido o uso do logotipo da OPAS. Este aviso deve ser preservado juntamente com o URL original do artigo.</message>
+    <!-- message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Este é um artigo de acesso aberto distribuído sob os termos da Licença Creative Commons Attribution-NonCommercial-NoDerivs 3.0 IGO, que permite o uso, distribuição e reprodução em qualquer meio, desde que o trabalho original seja devidamente citado. Não são permitidas modificações ou uso comercial dos artigos. Em qualquer reprodução do artigo, não deve haver nenhuma sugestão de que a OPAS ou o artigo avaliem qualquer organização ou produtos específicos. Não é permitido o uso do logotipo da OPAS. Este aviso deve ser preservado juntamente com o URL original do artigo.</message -->
+    <message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Este é um artigo de acesso aberto distribuído sob os termos da Licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0), que permite Compartilhar - copiar e redistribuir o material em qualquer suporte ou formato, Adaptar - remixar, transformar, e criar a partir do material. De acordo com os termos seguntes: Atribuição - Você deve dar o crédito apropriado, prover um link para a licença e indicar se mudanças foram feitas. Você deve fazê-lo em qualquer circunstância razoável, mas de nenhuma maneira que sugira que o licenciante apoia você ou o seu uso. NãoComercial - Você não pode usar o material para fins comerciais. CompartilhaIgual - Se você remixar, transformar, ou criar a partir do material, tem de distribuir as suas contribuições sob a mesma licença que o original.</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.collection-not-implemented">
 		O sumário de visualização de uma coleção não é utilizada atualmente ou implementada. Isto pode ser fixado
@@ -2201,7 +2209,7 @@
      - JavaScript (AJAX) que completa a busca na janela popup.
      - Então, a posição dos parâmetros são @1@, @2@, etc.
     -->
-  <message key="xmlui.ChoiceLookupTransformer.title">Valor de busca no Repósitorio FUNASA</message>
+  <message key="xmlui.ChoiceLookupTransformer.title">Valor de busca no Repósitorio Funasa</message>
   <message key="xmlui.ChoiceLookupTransformer.accept">Aceito</message>
   <message key="xmlui.ChoiceLookupTransformer.add">Adicionar</message>
   <message key="xmlui.ChoiceLookupTransformer.cancel">Cancelar</message>
@@ -2556,13 +2564,17 @@
     <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.scorereviewaction">Pontuação de avaliação</message>
     <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep">Pontuação de avaliação</message>
 
-    <message key="xmlui.ChoiceLookupTransformer.field.dc_subject.title">Janela Seleção termos DeCS</message>
+    <message key="xmlui.ChoiceLookupTransformer.field.dc_subject.title">Janela seleção termos DeCS</message>
     <message key="xmlui.ChoiceLookupTransformer.field.dc_subject.help">Ajuda com a seleção de termos do DeCS</message>
     <message key="xmlui.ArtifactBrowser.SiteViewer.head_featured_items">Publicações destacadas</message>
+
+    <message key="xmlui.ChoiceLookupTransformer.field.bireme_subject.title">Janela seleção termos Funasa</message>
+    <message key="xmlui.ChoiceLookupTransformer.field.bireme_subject.help">Ajuda com a seleção de termos Funasa</message>
+
     
-      <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle">Posee Arquivo(s)</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_true">Si</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_false">No</message>
+      <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle">Possui arquivo(s)</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_true">Sim</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_false">Não</message>
   
   <!-- Custom Messages PAHO --> 
 
@@ -2593,9 +2605,10 @@
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.languageiso">Idioma</message>
    
    
-    <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Documento não disponível em texto completo. Favor comunicar-se com o seguente</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">para obter mais instruções</message>
+    <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Documento não disponível em texto completo. Favor comunicar-se com o seguinte</message -->
+    <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Documento não disponível em texto completo</message>
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message -->
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">para obter mais instruções</message -->
   
   
   
@@ -2619,7 +2632,7 @@
    <message key="xmlui.dri2xhtml.METS-1.0.item-tableofcontents">Índice</message>
      
    <message key="xmlui.general.home.communities">Coleção completa</message>
-   <message key="xmlui.general.home.aboutiris">Sobre o Repósitorio FUNASA</message>
+   <message key="xmlui.general.home.aboutiris">Sobre o Repósitorio Funasa</message>
    <message key="xmlui.general.home.memories">Memória Institucional</message>
    <message key="xmlui.general.home.bulletin">Nosso boletim</message>
    <message key="xmlui.general.home.contact">Contato</message>
@@ -2666,7 +2679,7 @@
    <message key="xmlui.home.disclaimer">Desenvolvido pela BIREME usando tecnologia IRIS-PAHO</message>
    <message key="xmlui.home.gotop">Voltar para o topo</message> 
    
-   <message key="news.home">Bemvindo ao Repositório Institucional de FUNASA</message>
+   <message key="news.home">Bem-vindo ao Repositório Institucional de Funasa</message>
    <message key="news.text">Aqui pode encontrar o material de produção intelectual da instituição</message> 
    
 
@@ -2713,5 +2726,7 @@
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.trail">Submissões recentes</message>
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.recent.head">Submissões recentes</message>
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.head">{0}: Submissões recentes</message>
+
+   <message key="xmlui.administrative.Navigation.administrative_content">Administração de conteúdo</message>
 
 </catalogue>

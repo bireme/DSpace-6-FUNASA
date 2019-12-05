@@ -197,7 +197,7 @@
         
          <div>
             <xsl:attribute name="rend">
-            <xsl:text>col-xs-12 col-md-4</xsl:text> 
+            <xsl:text>col-xs-12 col-sm-4</xsl:text> 
             </xsl:attribute>
             
             <div>

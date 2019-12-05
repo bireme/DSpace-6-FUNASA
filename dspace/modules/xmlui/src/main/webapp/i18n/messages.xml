@@ -21,10 +21,10 @@
 		-->
 
 	<!-- General keys -->
-	<message key="xmlui.general.dspace_home">FUNASA Repository Home</message>
+	<message key="xmlui.general.dspace_home">Funasa Repository Home</message>
 	<message key="xmlui.general.search">Insert your search here or click on zoom to use filters</message>
 	<message key="xmlui.general.go">Go</message>
-	<message key="xmlui.general.go_home">Go to FUNASA Repository home</message>
+	<message key="xmlui.general.go_home">Go to Funasa Repository home</message>
 	<message key="xmlui.general.save">Save</message>
 	<message key="xmlui.general.cancel">Cancel</message>
 	<message key="xmlui.general.return">Return</message>
@@ -206,7 +206,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
-	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All of FUNASA Repository</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All of Funasa Repository</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this collection:</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Titles</message>
@@ -219,12 +219,12 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Community List</message>
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Community List</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Communities in FUNASA Repository</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Communities in Funasa Repository</message>
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Select a community to browse its collections.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Search Scope</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">All of FUNASA Repository</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">All of Funasa Repository</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Search within this community and its collections:</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Titles</message>
@@ -249,7 +249,7 @@
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.title">Give feedback</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Give feedback</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.head">Give feedback</message>
-	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Thanks for sharing your feedback about the FUNASA Repository system. Your comments are appreciated!</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Thanks for sharing your feedback about the Funasa Repository system. Your comments are appreciated!</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.email">Your Email</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">This address will be used to follow up on your feedback.</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comments</message>
@@ -275,7 +275,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 	<message key="xmlui.ArtifactBrowser.Navigation.head_browse">Browse</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of FUNASA Repository</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of Funasa Repository</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Communities &amp; Collections</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Titles</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
@@ -461,7 +461,7 @@
 	<!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
 	<message key="xmlui.EPerson.CannotRegister.title">Registration unavailable</message>
 	<message key="xmlui.EPerson.CannotRegister.head">Registration unavailable</message>
-	<message key="xmlui.EPerson.CannotRegister.para1">The configuration of this FUNASA Repository repository does not allow registration in this context. Please contact the <a href="../contact">site administrator</a> with questions or comments.</message>
+	<message key="xmlui.EPerson.CannotRegister.para1">The configuration of this Funasa Repository repository does not allow registration in this context. Please contact the <a href="../contact">site administrator</a> with questions or comments.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
 	<message key="xmlui.EPerson.EditProfile.title_update">Update Profile</message>
@@ -521,7 +521,7 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 	<message key="xmlui.EPerson.PasswordLogin.title">Sign in</message>
 	<message key="xmlui.EPerson.PasswordLogin.trail">Sign in</message>
-	<message key="xmlui.EPerson.PasswordLogin.head1">Sign in to FUNASA Repository</message>
+	<message key="xmlui.EPerson.PasswordLogin.head1">Sign in to Funasa Repository</message>
 	<message key="xmlui.EPerson.PasswordLogin.email_address">E-Mail Address</message>
 	<message key="xmlui.EPerson.PasswordLogin.error_bad_login">The email address and/or password supplied were not valid.</message>
 	<message key="xmlui.EPerson.PasswordLogin.password">Password</message>
@@ -534,7 +534,7 @@
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 	<message key="xmlui.EPerson.LDAPLogin.title">Sign in</message>
 	<message key="xmlui.EPerson.LDAPLogin.trail">Sign in</message>
-	<message key="xmlui.EPerson.LDAPLogin.head1">Sign in to FUNASA Repository</message>
+	<message key="xmlui.EPerson.LDAPLogin.head1">Sign in to Funasa Repository</message>
 	<message key="xmlui.EPerson.LDAPLogin.username">User Name</message>
 	<message key="xmlui.EPerson.LDAPLogin.error_bad_login">The user name and/or password supplied were not valid.</message>
 	<message key="xmlui.EPerson.LDAPLogin.password">Password</message>
@@ -573,7 +573,7 @@
 	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
 	<message key="xmlui.EPerson.RegistrationFinished.title">Registration finished</message>
 	<message key="xmlui.EPerson.RegistrationFinished.head">Registration Finished</message>
-	<message key="xmlui.EPerson.RegistrationFinished.para1">You're now registered to use the FUNASA Repository system.  You can subscribe to collections to receive email updates about new items.</message>
+	<message key="xmlui.EPerson.RegistrationFinished.para1">You're now registered to use the Funasa Repository system.  You can subscribe to collections to receive email updates about new items.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
 	<message key="xmlui.EPerson.ResetPassword.title">Reset password</message>
@@ -589,7 +589,7 @@
 	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
 	<message key="xmlui.EPerson.StartForgotPassword.title">Forgot Password</message>
 	<message key="xmlui.EPerson.StartForgotPassword.head">Forgot Password</message>
-	<message key="xmlui.EPerson.StartForgotPassword.para1">Enter the email address you provided when you registered with FUNASA Repository. An email will be sent to that address with further instructions.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.para1">Enter the email address you provided when you registered with Funasa Repository. An email will be sent to that address with further instructions.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address_help">Enter the same address used when registering.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.error_not_found">Email address not found.</message>
@@ -649,7 +649,8 @@
 	<message key="xmlui.Submission.general.default.trail">Submission</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
-	<message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this collection</message>
+	<!-- message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this collection</message -->
+	<message key="xmlui.Submission.CollectionViewer.link1"><h4 style="background-color: #FAFAD2;">Submit a new item to this collection</h4></message>
 
 	<!-- org.dspace.app.xmlui.submission.Navigation -->
 	<message key="xmlui.Submission.Navigation.submissions">Submissions</message>
@@ -1317,7 +1318,7 @@
 	<!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.title">Metadata Registry</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Metadata registry</message>
-	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas.  However, FUNASA Repository requires the qualified Dublin Core schema. You may extend the Dublin Core schema with additional fields or add new schemas to the registry.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas.  However, Funasa Repository requires the qualified Dublin Core schema. You may extend the Dublin Core schema with additional fields or add new schemas to the registry.</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1"></message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Namespace</message>
@@ -2212,7 +2213,9 @@
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Preview</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Title</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message>
+	<!-- message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message -->
+        <message key="xmlui.dri2xhtml.METS-1.0.item-author">Author (copyright)</message>
+        <message key="xmlui.dri2xhtml.METS-1.0.item-corporatename-author">Author (property rights)</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-institutional-author">Institutional Owner</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-photographer">Photographer</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
@@ -2374,7 +2377,7 @@
      - JavaScript (AJAX) that completes the lookup popup window.
      - So, positional parameters are @1@, @2@, etc.
     -->
-  <message key="xmlui.ChoiceLookupTransformer.title">FUNASA Repository Value Lookup</message>
+  <message key="xmlui.ChoiceLookupTransformer.title">Funasa Repository Value Lookup</message>
   <message key="xmlui.ChoiceLookupTransformer.accept">Accept</message>
   <message key="xmlui.ChoiceLookupTransformer.add">Add</message>
   <message key="xmlui.ChoiceLookupTransformer.cancel">Cancel</message>
@@ -2562,9 +2565,10 @@
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_content_in_original_bundle">Has File(s)</message> 
    
    
-   <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Full text not available. Please contact PAHO Library using this</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">for further instructions</message> 
+   <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Full text not available. Please contact PAHO Library using this</message -->
+   <message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.1">Full text not available.</message>
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.2">e-mail</message -->
+  <!-- message key="xmlui.dri2xhtml.METS-1.0.contactlibrary.3">for further instructions</message --> 
   
   <message key="xmlui.Equity.healthtopics">Health topics</message>
   <message key="xmlui.Equity.programs">Programs</message>
@@ -2616,7 +2620,7 @@
    <message key="xmlui.general.home.memories">Institutional Memory</message>
    <message key="xmlui.general.home.bulletin">Our Newsletter</message>
    <message key="xmlui.general.home.contact">Contact</message>
-   <message key="xmlui.general.search-home">Search in FUNASA Repository</message>
+   <message key="xmlui.general.search-home">Search in Funasa Repository</message>
    <message key="xmlui.general.search-documents">documents</message>
    <message key="xmlui.Discovery.FeauturedSubmissions.FeaturedSubmissionTransformer.head">Featured submissions list</message>
    <message key="xmlui.Discovery.FeaturedSubmissions.FeaturedSubmissionTransformer.trail">Featured submissions</message>
@@ -2660,7 +2664,7 @@
    <message key="xmlui.home.disclaimer">Development made by BIREME using IRIS-PAHO/DSpace based repository technology</message>
    <message key="xmlui.home.gotop">Top</message> 
   
-   <message key="news.home">Welcome to the FUNASA's institutional repository</message>
+   <message key="news.home">Welcome to the Funasa's institutional repository</message>
    <message key="news.text">Here you will find the intellectual production of the institution</message> 
   
    

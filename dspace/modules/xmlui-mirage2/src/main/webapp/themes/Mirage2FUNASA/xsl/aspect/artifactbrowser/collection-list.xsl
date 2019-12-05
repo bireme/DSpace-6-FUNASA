@@ -50,7 +50,7 @@
                  
                 <xsl:variable name="ico">
                 <xsl:choose>
-                  <xsl:when test="contains($titlecoll,'Legi')">
+                  <xsl:when test="contains($titlecoll,'Normati')">
                     <xsl:text>icoLegislacao</xsl:text>
                   </xsl:when>
                   <xsl:when test="contains($titlecoll,'Multi')">
@@ -92,6 +92,7 @@
                     <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
                     <xsl:text>]</xsl:text>
                 </xsl:if>
+
             </h4>
             <xsl:variable name="abstract" select="$data/dim:field[@element = 'description' and @qualifier='abstract']/node()"/>
             <xsl:if test="$abstract and string-length($abstract[1]) &gt; 0">

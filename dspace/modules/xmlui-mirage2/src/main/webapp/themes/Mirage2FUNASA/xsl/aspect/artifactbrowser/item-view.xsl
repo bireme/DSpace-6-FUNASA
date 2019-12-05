@@ -131,6 +131,9 @@ Author: Alexey Maslov
                             <xsl:call-template name="itemSummaryView-DIM-issn"/>
                             <xsl:call-template name="itemSummaryView-DIM-doi"/>
 
+                            <xsl:call-template name="itemSummaryView-DIM-publisher"/>
+
+                            <xsl:call-template name="itemSummaryView-DIM-corporatename"/>
                             <xsl:call-template name="itemSummaryView-DIM-authors"/>
                             
                             
@@ -324,10 +327,10 @@ Author: Alexey Maslov
 
                     <div class="alert alert-warning">
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.contactlibrary.1</i18n:text>
-                        <xsl:text> </xsl:text>
+                        <!-- xsl:text> </xsl:text>
                         <a href="mailto:libraryhq@paho.org?subject={$mailinfo}"><i18n:text>xmlui.dri2xhtml.METS-1.0.contactlibrary.2</i18n:text></a>
                         <xsl:text> </xsl:text>
-                        <i18n:text>xmlui.dri2xhtml.METS-1.0.contactlibrary.3</i18n:text>
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.contactlibrary.3</i18n:text -->
 
                     </div>
 
@@ -1253,8 +1256,35 @@ Author: Alexey Maslov
                         </xsl:if>
                     </xsl:template>
 
+
+                    <xsl:template name="itemSummaryView-DIM-publisher">
+                        <xsl:if test="dim:field[@element='publisher']">
+                            <div class="simple-item-view-authors item-page-field-wrapper table">
+                                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-publisher</i18n:text></h5>
+                                <xsl:value-of select="dim:field[@element='publisher']" />
+                            </div>
+                        </xsl:if>
+                    </xsl:template>
+
+
+                    <xsl:template name="itemSummaryView-DIM-corporatename">
+                        <xsl:if test="dim:field[@element='contributor'][@qualifier='corporatename' and descendant::text()]">
+                            <div class="simple-item-view-authors item-page-field-wrapper table">
+                                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-corporatename-author</i18n:text></h5>
+                                <xsl:choose>
+                                    <xsl:when test="dim:field[@element='contributor'][@qualifier='corporatename']">
+                                        <xsl:value-of select="dim:field[@element='contributor'][@qualifier='corporatename']" />
+                                    </xsl:when>
+                                </xsl:choose>
+                            </div>
+                        </xsl:if>
+                    </xsl:template>
+
+
                     <xsl:template name="itemSummaryView-DIM-authors">
-                        <xsl:if test="dim:field[@element='contributor'][@qualifier='author' and descendant::text()] or dim:field[@element='creator' and descendant::text()] or dim:field[@element='contributor' and descendant::text()]">
+                        <!-- xsl:if test="dim:field[@element='contributor'][@qualifier='author' and descendant::text()] or dim:field[@element='creator' and descendant::text()] or dim:field[@element='contributor' and descendant::text()]" -->
+
+                        <xsl:if test="dim:field[@element='contributor'][@qualifier='author']">
                             <div class="simple-item-view-authors item-page-field-wrapper table">
                                 <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text></h5>
                                 <xsl:choose>
@@ -1268,8 +1298,8 @@ Author: Alexey Maslov
                                             <xsl:call-template name="itemSummaryView-DIM-authors-entry" />
                                         </xsl:for-each>
                                     </xsl:when>
-                                    <xsl:when test="dim:field[@element='contributor']">
-                                        <xsl:for-each select="dim:field[@element='contributor']">
+                                    <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
+                                        <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
                                             <div>
                                                 <xsl:variable name="miauth" select="node()" />
                                                 <a href="../../browse?value={$miauth}&amp;type=author"><xsl:copy-of select="node()"/></a>
@@ -1277,9 +1307,9 @@ Author: Alexey Maslov
 
                                         </xsl:for-each>
                                     </xsl:when>
-                                    <xsl:otherwise>
+                                    <!-- xsl:otherwise>
                                         <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
-                                    </xsl:otherwise>
+                                    </xsl:otherwise -->
                                 </xsl:choose>
                             </div>
                         </xsl:if>

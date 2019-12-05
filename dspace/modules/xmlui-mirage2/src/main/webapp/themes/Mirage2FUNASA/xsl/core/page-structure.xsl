@@ -174,7 +174,7 @@ exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc confman">
                                       <img src="{$theme-path}images/voltar.png" />
                                   </a> </div>
                                   <hr />
-                                  <p class="text-center" style="padding:10px;">Todo o conteúdo deste site está publicado sob licencia <a href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt">Atribuição-SemDerivações 3.0 Não Adaptada (CC BY-ND 3.0)</a></p>
+                                  <p class="text-center" style="padding:10px;">Todo o conteúdo deste site está publicado sob licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a></p>
                                   <hr />
 
                               </div>
@@ -617,7 +617,7 @@ AA: '{\\mathring A}'
 <div class="visible-xs topo">
   <nav class="menuTopo">
    <ul>
-    <li><a href="{$context-path}/community-list">Comunidades &amp; Colecciones</a></li>
+    <li><a href="{$context-path}/community-list">Comunidades &amp; Coleções</a></li>
     <li class="dropdown">
        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navegar</a><b class="caret"></b> 
        <ul class="dropdown-menu" role="menu">
@@ -676,185 +676,6 @@ AA: '{\\mathring A}'
 
 </div>
 
-        <!-- del containerCabecalho>
-            
-            
-            
-            <div class="navbar navbar-default navbar-static-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-
-                        <button type="button" class="navbar-toggle" data-toggle="offcanvas">
-                            <span class="sr-only">
-                                <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
-                            </span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <h1>
-                        <a href="{$context-path}/" class="navbar-brand">
-                            <img class="img-responsive" src="{$theme-path}images/funasa-logo.png" />
-                        </a>
-                        <p class="headerline1"> Fundação Nacional de Saúde </p>
-                        <p class="headerline2"> Repósitorio Institucional </p>
-                        
-                        </h1>
-
-                        <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
-                        <ul class="nav nav-pills pull-left ">
-
-                            <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
-                                <li id="ds-language-selection-xs" class="dropdown">
-                                    <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
-                                    <button id="language-dropdown-toggle-xs" href="#" role="button" class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown">
-                                        <b class="visible-xs glyphicon glyphicon-globe" aria-hidden="true"/>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="language-dropdown-toggle-xs" data-no-collapse="true">
-                                        <xsl:for-each
-                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']">
-                                            <xsl:variable name="locale" select="."/>
-                                            <li role="presentation">
-                                                <xsl:if test="$locale = $active-locale">
-                                                    <xsl:attribute name="class">
-                                                        <xsl:text>disabled</xsl:text>
-                                                    </xsl:attribute>
-                                                </xsl:if>
-                                                <a>
-                                                    <xsl:attribute name="href">
-                                                        <xsl:value-of select="$current-uri"/>
-                                                        <xsl:text>?locale-attribute=</xsl:text>
-                                                        <xsl:value-of select="$locale"/>
-                                                    </xsl:attribute>
-                                                    <xsl:value-of
-                                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/>
-                                                </a>
-                                            </li>
-                                        </xsl:for-each>
-                                    </ul>
-                                </li>
-                            </xsl:if>
-
-                            <xsl:choose>
-                                <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
-                                    <li class="dropdown">
-                                        <button class="dropdown-toggle navbar-toggle navbar-link" id="user-dropdown-toggle-xs" href="#" role="button"  data-toggle="dropdown">
-                                            <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
-                                        </button>
-                                        <ul class="dropdown-menu pull-right" role="menu"
-                                            aria-labelledby="user-dropdown-toggle-xs" data-no-collapse="true">
-                                            <li>
-                                                <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='url']}">
-                                                    <i18n:text>xmlui.EPerson.Navigation.profile</i18n:text>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='logoutURL']}">
-                                                    <i18n:text>xmlui.dri2xhtml.structural.logout</i18n:text>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <li>
-                                        <form style="display: inline" action="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}" method="get">
-                                            <button class="navbar-toggle navbar-link">
-                                            <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
-                                            </button>
-                                        </form>
-                                    </li>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="navbar-header pull-right hidden-xs">
-                        <ul class="nav navbar-nav pull-left">
-                              <xsl:call-template name="languageSelection"/>
-                        </ul>
-                        <ul class="nav navbar-nav pull-left">
-                            <xsl:choose>
-                                <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
-                                    <li class="dropdown">
-                                        <a id="user-dropdown-toggle" href="#" role="button" class="dropdown-toggle"
-                                           data-toggle="dropdown">
-                                            <span class="hidden-xs">
-                                                <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='firstName']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='lastName']"/>
-                                                &#160;
-                                                <b class="caret"/>
-                                            </span>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right" role="menu"
-                                            aria-labelledby="user-dropdown-toggle" data-no-collapse="true">
-                                            <li>
-                                                <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='url']}">
-                                                    <i18n:text>xmlui.EPerson.Navigation.profile</i18n:text>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='logoutURL']}">
-                                                    <i18n:text>xmlui.dri2xhtml.structural.logout</i18n:text>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <li>
-                                        <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}">
-                                            <span class="hidden-xs">
-                                                <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </ul>
-
-                        <button data-toggle="offcanvas" class="navbar-toggle visible-sm" type="button">
-                            <span class="sr-only"><i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        -->
-
-            <!-- Barra de servicios resembling FUNASA
-            <div id="services-container"> 
-            <nav id="services" class="container text-right"> 
-             <div> 
-               <h3 class="hide">Serviços</h3> 
-               <ul class="listagem-links"> 
-                <li class="link-item"> <a href="/perguntas-frequentes" title="Politicas" target="_self">Políticas del Repósitorio</a> </li>
-                <li class="link-item"> <a href="/enderecos" title="Contatos" target="_self">Contatos</a> </li> 
-                <li class="link-item"> <a href="/dados-abertos" title="Dados Abertos" target="_self">Dados Abertos</a> </li> 
-                <li class="link-item"> <a href="/correio" title="Webmail" target="_blank">Webmail</a> </li> 
-                <li class="link-item-last"> <a href="/conecta" title="Conecta" target="_blank">Conecta</a> </li> 
-              </ul> 
-            </div> 
-            </nav> 
-           </div>
-           
-       -->
-
-
-       <!-- </header> -->
 
    </xsl:template>
 
@@ -1011,7 +832,7 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
 </div> <div class="col-sm-8">
     <span>
         <i18n:text>xmlui.dri2xhtml.METS-1.0.cc-license-text</i18n:text>
-        <xsl:value-of select="$ccLicenseName"/>
+        <!-- xsl:value-of select="$ccLicenseName"/ -->
     </span>
 </div>
 </div>
@@ -1019,55 +840,50 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
 </xsl:template>
 
 <xsl:template name="cc-logo">
-<xsl:param name="ccLicenseName"/>
-<xsl:param name="ccLicenseUri"/>
-<xsl:variable name="ccLogo">
-<xsl:choose>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by/')">
-<xsl:value-of select="'cc-by.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by-sa/')">
-<xsl:value-of select="'cc-by-sa.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by-nd/')">
-<xsl:value-of select="'cc-by-nd.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by-nc/')">
-<xsl:value-of select="'cc-by-nc.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by-nc-sa/')">
-<xsl:value-of select="'cc-by-nc-sa.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/licenses/by-nc-nd/')">
-<xsl:value-of select="'cc-by-nc-nd.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/publicdomain/zero/')">
-<xsl:value-of select="'cc-zero.png'" />
-</xsl:when>
-<xsl:when test="starts-with($ccLicenseUri,
-'http://creativecommons.org/publicdomain/mark/')">
-<xsl:value-of select="'cc-mark.png'" />
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="'cc-generic.png'" />
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-<img class="img-responsive">
-<xsl:attribute name="src">
-<xsl:value-of select="concat($theme-path,'/images/creativecommons/', $ccLogo)"/>
-</xsl:attribute>
-<xsl:attribute name="alt">
-<xsl:value-of select="$ccLicenseName"/>
-</xsl:attribute>
-</img>
+    <xsl:param name="ccLicenseName"/>
+    <xsl:param name="ccLicenseUri"/>
+    <xsl:variable name="ccLogo">
+        <xsl:choose>
+             <xsl:when test="starts-with($ccLicenseUri,'https://creativecommons.org/licenses/by-nc-sa/4.0/')">
+                 <xsl:value-of select="'by-nc-sa-4_0-88x31.png'" />
+             </xsl:when>
+             <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by/')">
+                 <xsl:value-of select="'cc-by.png'" />
+             </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by-sa/')">
+                <xsl:value-of select="'cc-by-sa.png'" />
+             </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by-nd/')">
+                <xsl:value-of select="'cc-by-nd.png'" />
+            </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by-nc/')">
+                <xsl:value-of select="'cc-by-nc.png'" />
+            </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by-nc-sa/')">
+                <xsl:value-of select="'cc-by-nc-sa.png'" />
+            </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/licenses/by-nc-nd/')">
+                <xsl:value-of select="'cc-by-nc-nd.png'" />
+             </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/publicdomain/zero/')">
+                <xsl:value-of select="'cc-zero.png'" />
+            </xsl:when>
+            <xsl:when test="starts-with($ccLicenseUri,'http://creativecommons.org/publicdomain/mark/')">
+                 <xsl:value-of select="'cc-mark.png'" />
+            </xsl:when>
+            <xsl:otherwise>
+                 <xsl:value-of select="'cc-generic.png'" />
+            </xsl:otherwise>
+         </xsl:choose>
+     </xsl:variable>
+     <img class="img-responsive">
+         <xsl:attribute name="src">
+             <xsl:value-of select="concat($theme-path,'/images/creativecommons/', $ccLogo)"/>
+         </xsl:attribute>
+         <xsl:attribute name="alt">
+             <xsl:value-of select="$ccLicenseName"/>
+         </xsl:attribute>
+     </img>
 </xsl:template>
 
 <!-- Like the header, the footer contains various miscellaneous text, links, and image placeholders -->
@@ -1080,13 +896,6 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
         <div class="col-md-12">
           <h3>REDES SOCIAIS</h3>
           <ul class="socialnetwork">
-          <!-- Anterior
-            <li><a href="https://twitter.com/funasa"><img src="{$theme-path}images/twi.png" /></a></li>
-            <li><a href="https://www.youtube.com/user/Funasaoficial"><img src="{$theme-path}images/yt.png" /></a></li>
-            <li><a href="https://www.facebook.com/funasaoficial/"><img src="{$theme-path}images/fb.png" /></a></li>
-            <li><a href="https://www.flickr.com/people/funasaoficial"><img src="{$theme-path}images/flickr.png" /></a></li>
-        -->
-        <!-- Nova Parte -->
         <li><a href="https://www.facebook.com/funasaoficial" target="_blank"><img src="{$theme-path}images/iconFooterFacebook.svg" /></a></li>
         <li><a href="https://www.instagram.com/funasa_oficial" target="_blank"><img src="{$theme-path}images/iconFooterInstagram.svg" /></a></li>
         <li><a href="https://www.youtube.com/user/Funasaoficial" target="_blank"><img src="{$theme-path}images/iconFooterYoutube.svg" /></a></li>
@@ -1097,51 +906,6 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
 </div>
 </div>
 <hr />
-<!-- Link Footer Antigo -->
-<!-- <div class="row">
-  <div class="col-md-12">
-    <div class="col-sm-3">
-        <nav class="" id="footer-navigation">
-          <h3>REPOSITÓRIO FUNASA</h3> 
-          <ul class="listagem-links"> 
-              <li> <a href="{$context-path}/community-list"><span>Comunidades</span></a> </li> 
-              <li> <a href="{$context-path}/recent-submissions"><span>Documentos</span></a> </li> 
-          </ul> </nav>
-
-      </div>
-      <div class="col-sm-3">
-        <nav class="" id="footer-navigation"> 
-            <h3>ACESSO À INFORMAÇÃO ORGANIZACIONAL</h3>
-            <ul class="listagem-links"> 
-                <li> <a href="/perguntas-frequentes" title="Perguntas Frequentes" target="_self">Quem somos</a> </li> 
-                <li> <a href="/enderecos" title="Contatos" target="_self">Notícias</a> </li> 
-                <li> <a href="/documents/20182/24223/Portf%C3%B3lio+de+Servi%C3%A7os+Funasa" title="Serviços" target="_blank">Publicações</a> </li> 
-                <li> <a href="/dados-abertos" title="Dados Abertos" target="_self">Portarias</a> </li> 
-            </ul>
-        </nav>
-    </div>   
-    --><!-- </div> -->  
-    <!-- <div class="col-md-6 pull-right"> -->     
-     <!--<div class="col-sm-3">
-        <nav class="" id="footer-navigation"> 
-            <h3>CONTATO</h3>
-            <ul class="listagem-links"> 
-                <li> <a href="https://pt-br.facebook.com/funasa.oficial/" title="Facebook" target="_blank">Fale conosco</a> </li> 
-            </ul>
-        </nav>
-    </div>   
-    <div class="col-sm-3">
-        <nav class="" id="footer-navigation"> 
-            <h3>MANUAIS</h3>
-            <ul class="listagem-links"> 
-                <li> <a href="https://pt-br.facebook.com/funasa.oficial/" title="Facebook" target="_blank">Uso do repositório FUNASA</a> </li> 
-                <li> <a href="https://www.instagram.com/funasa_oficial/" title="Instagram" target="_blank">Políticas do repositório</a> </li> 
-            </ul>
-        </nav>
-    </div> 
-</div>
-</div>
--->
 
 <!-- Alterado Link Footer -->
 <div class="row">
@@ -1196,7 +960,7 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
         <nav class="" id="footer-navigation"> 
             <h3>MANUAIS</h3>
             <ul class="listagem-links"> 
-                <li> <a href="" target="_self" title="Uso do repositório FUNASA">Uso do repositório FUNASA</a> </li> 
+                <li> <a href="" target="_self" title="Uso do repositório Funasa">Uso do repositório Funasa</a> </li> 
                 <li> <a href="" target="_self" title="Políticas do repositório">Políticas do repositório</a> </li> 
             </ul>
         </nav>
