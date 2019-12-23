@@ -2716,6 +2716,7 @@
    <message key="xmlui.administrative.collection.general.collection_trail">Coleções</message>
  
    <message key="xmlui.general.accesibility">Acessibilidade</message>
+   <message key="xmlui.general.governance_policy">Política do repositório</message>
 
    <message key="xmlui.ArtifactBrowser.CollectionViewer.see_recent_submissions">Veja todas as submissões recentes</message>
 

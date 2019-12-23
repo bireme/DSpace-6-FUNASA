@@ -113,6 +113,19 @@
         </pageMeta>
     </xsl:template>
     
+    <xsl:template match="dri:pageMeta[dri:metadata[@element = 'request'][@qualifier = 'URI']/text() = 'page/governance_policy']">
+        <pageMeta>
+            <xsl:call-template name="copy-attributes"/>
+            <xsl:apply-templates select="*[not(self::dri:trail)]"/>
+            <trail target="{$context-path}/">
+                <i18n:text catalogue="default">xmlui.general.dspace_home</i18n:text>
+            </trail>
+            <trail>
+                <i18n:text catalogue="default">xmlui.general.governance_policy</i18n:text>
+            </trail>
+        </pageMeta>
+    </xsl:template>
+
 
     <xsl:template match="dri:pageMeta[dri:metadata[@element = 'request'][@qualifier = 'URI']/text() = 'page/about']">
         <pageMeta>

@@ -117,16 +117,21 @@ exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc confman">
             <div class="horizontal-slider clearfix">
 
                 <div class="col-xs-12 col-sm-12 col-md-9 main-content" id="main_container">
-                
-                    <xsl:if test="not(starts-with($request-uri, 'page/accesibility'))">      
-                        <xsl:apply-templates select="*[not(self::dri:options)]"/>
-                    </xsl:if>
+
                     <xsl:if test="starts-with($request-uri, 'page/accesibility')">
                             <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
                             <xsl:variable name="staticpage" select="concat('../../accesibility_',$active-locale)" />
-                            
+
                             <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
                     </xsl:if>
+
+                    <xsl:if test="starts-with($request-uri, 'page/governance_policy')">
+                            <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
+                            <xsl:variable name="staticpage" select="concat('../../governance_policy_',$active-locale)" />
+
+                            <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
+                    </xsl:if>
+
                 </div>
 
                 <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
@@ -135,7 +140,7 @@ exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc confman">
 
             </div>
         </div>
-    </xsl:if>
+        </xsl:if>
 
 
     <!-- Este es el home -->
@@ -352,9 +357,12 @@ exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc confman">
 <title>
     
     <xsl:choose>
-    <xsl:when test="starts-with($request-uri, 'page/acceibility')">
+    <xsl:when test="starts-with($request-uri, 'page/accesibility')">
         <i18n:text catalogue="default">xmlui.general.accesibility</i18n:text>
     </xsl:when>  
+    <xsl:when test="starts-with($request-uri, 'page/governance_policy')">
+        <i18n:text catalogue="default">xmlui.general.governance_policy</i18n:text>
+    </xsl:when>
     <xsl:when test="starts-with($request-uri, 'page/about')">
         <i18n:text>xmlui.mirage2.page-structure.aboutThisRepository</i18n:text>
     </xsl:when>
@@ -961,7 +969,7 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
             <h3>MANUAIS</h3>
             <ul class="listagem-links"> 
                 <li> <a href="" target="_self" title="Uso do repositório Funasa">Uso do repositório Funasa</a> </li> 
-                <li> <a href="" target="_self" title="Políticas do repositório">Políticas do repositório</a> </li> 
+                <li> <a href="{$context-path}/page/governance_policy" class="hidden-xs">Política do repositório</a> </li> 
             </ul>
         </nav>
     </div> 

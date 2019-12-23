@@ -2667,6 +2667,6 @@
    <message key="news.home">Welcome to the Funasa's institutional repository</message>
    <message key="news.text">Here you will find the intellectual production of the institution</message> 
   
-   
+   <message key="xmlui.general.governance_policy">Repository Policy</message>   
 	
 </catalogue>

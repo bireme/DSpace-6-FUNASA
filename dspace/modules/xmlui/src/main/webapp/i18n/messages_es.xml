@@ -2889,6 +2889,7 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
    <message key="news.home">Bienvenido al Repositorio Institucional de Funasa</message>
    <message key="news.text">Aquí podrá encontrar el material de producción intelectual de la institución</message> 
    
+   <message key="xmlui.general.governance_policy">Política de repositorio</message>
    
   
 </catalogue>
