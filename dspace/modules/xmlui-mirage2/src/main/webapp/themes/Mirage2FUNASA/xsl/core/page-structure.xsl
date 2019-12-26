@@ -111,36 +111,43 @@ exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc confman">
 
     <div id="main-container" class="container maxfunasa">
 
+        <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) > 1">
+            <div class="row row-offcanvas row-offcanvas-right">
+                <div class="horizontal-slider clearfix">
 
-        <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) > 1">  
-        <div class="row row-offcanvas row-offcanvas-right">
-            <div class="horizontal-slider clearfix">
+                    <div class="col-xs-12 col-sm-12 col-md-9 main-content" id="main_container">
 
-                <div class="col-xs-12 col-sm-12 col-md-9 main-content" id="main_container">
+                        <xsl:choose>
+                            <xsl:when test="starts-with($request-uri, 'page/accesibility')">
+                                <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
+                                <xsl:variable name="staticpage" select="concat('../../accesibility_',$active-locale)" />
+                                <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
+                            </xsl:when>
+                            <xsl:when test="starts-with($request-uri, 'page/governance_policy')">
+                                <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
+                                <xsl:variable name="staticpage" select="concat('../../governance_policy_',$active-locale)" />
+                                <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:if test="not(starts-with($request-uri, 'page/accesibility')) or not(starts-with($request-uri, 'page/governance_policy'))">
+                                    <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                </xsl:if>
+                            </xsl:otherwise>
 
-                    <xsl:if test="starts-with($request-uri, 'page/accesibility')">
-                            <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
-                            <xsl:variable name="staticpage" select="concat('../../accesibility_',$active-locale)" />
+                        </xsl:choose>
 
-                            <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
-                    </xsl:if>
+                    </div>
 
-                    <xsl:if test="starts-with($request-uri, 'page/governance_policy')">
-                            <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
-                            <xsl:variable name="staticpage" select="concat('../../governance_policy_',$active-locale)" />
-
-                            <xsl:copy-of select="document(concat($staticpage,'.xml'))" />
-                    </xsl:if>
+                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                        <xsl:apply-templates select="dri:options"/>
+                    </div>
 
                 </div>
-
-                <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                    <xsl:apply-templates select="dri:options"/>
-                </div>
-
             </div>
-        </div>
         </xsl:if>
+
+
+
 
 
     <!-- Este es el home -->
