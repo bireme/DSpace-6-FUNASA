@@ -2601,7 +2601,7 @@
   <message key="xmlui.paho-span-logo">ds-header-logo-pt</message>
   
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.materialtype">Tipo do Material</message>
-   <message key="xmlui.dri2xhtml.METS-1.0.item-othertitle">Título traduzido</message>
+   <message key="xmlui.dri2xhtml.METS-1.0.item-othertitle">Título alternativo</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.languageiso">Idioma</message>
    
    

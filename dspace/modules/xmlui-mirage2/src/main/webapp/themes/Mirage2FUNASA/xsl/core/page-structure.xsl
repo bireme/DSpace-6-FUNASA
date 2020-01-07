@@ -975,7 +975,7 @@ select="document($externalMetadataURL)//dim:field[@element='rights'][@qualifier=
         <nav class="" id="footer-navigation"> 
             <h3>MANUAIS</h3>
             <ul class="listagem-links"> 
-                <li> <a href="" target="_self" title="Uso do repositório Funasa">Uso do repositório Funasa</a> </li> 
+                <li> <a href="http://rcfunasa.bvsalud.org/rea/rc_funasa/" title="Uso do repositório Funasa" target="_blank">Uso do repositório Funasa</a> </li>
                 <li> <a href="{$context-path}/page/governance_policy" class="hidden-xs">Política do repositório</a> </li> 
             </ul>
         </nav>

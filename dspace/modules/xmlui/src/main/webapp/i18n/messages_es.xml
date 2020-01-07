@@ -2799,7 +2799,7 @@ Cuando se usa QDC para los elementos de DSpace se recomienda el uso de crosswalk
   
   <message key="xmlui.paho-span-logo">ds-header-logo-es</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.materialtype">Tipo de Material</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.item-othertitle">Título traducido</message>
+  <message key="xmlui.dri2xhtml.METS-1.0.item-othertitle">Título alternativo</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.languageiso">Idioma del material</message>
   
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle">Tiene Archivo(s)</message>
